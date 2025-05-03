@@ -1,6 +1,7 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 import Cookies from 'js-cookie';
+import { base_url } from '../config/config';
 
 const initialState = {
   user: null,
@@ -12,7 +13,7 @@ const initialState = {
 
 // Create axios instance
 const api = axios.create({
-  baseURL: 'http://localhost:5001/api',
+  baseURL: base_url,
   headers: {
     'Content-Type': 'application/json',
   },

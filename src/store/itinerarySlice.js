@@ -12,7 +12,7 @@ const initialState = {
 
 // Create axios instance with auth header
 const api = axios.create({
-  baseURL:  'http://localhost:5001/api',
+  baseURL:  base_url,
   headers: {
     'Content-Type': 'application/json',
   },
