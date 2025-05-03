@@ -1,5 +1,5 @@
 import React from "react";
-import ItineraryCard from "../component/common/itineraryCard";
+import ItineraryCard from "../component/common/ItineraryCard";
 
 export default function SavedItineraries() {
   const savedItineraries = [
