@@ -1,0 +1,4213 @@
+{
+    "tripTitle": "Discovering the Pearl: A 10-Day Sri Lanka Adventure",
+    "location": "Sri Lanka",
+    "geoCoordinates": {
+      "latitude": 7.8731,
+      "longitude": 80.7718
+    },
+    "description": "Sri Lanka, often called the 'Pearl of the Indian Ocean', is an island nation offering incredible diversity within a relatively small area. From ancient ruins and vibrant cultural sites to lush tea plantations, stunning mountains, abundant wildlife, and beautiful beaches, Sri Lanka has something for everyone. This 10-day itinerary provides a taste of the island's highlights, balancing history, nature, and relaxation.",
+    "duration": 10,
+    "people": 2,
+    "budget": "Mid-Range",
+    "bestTimeToVisit": {
+      "month": "October to March",
+      "description": "Sri Lanka has two monsoon seasons. The best time to visit the west and south coasts, as well as the Hill Country (covered in this itinerary), is from October to March. The weather is generally dry and sunny. The period from April to September is best for the east coast.",
+      "weather": "Warm, sunny days, lower humidity compared to monsoon season, less rainfall in the covered regions."
+    },
+    "accommodationOptions": [
+      "Hotels (ranging from budget guesthouses to boutique hotels and resorts)",
+      "Guesthouses and Homestays (popular and offer local interaction)",
+      "Villas and Apartment Rentals (via platforms like Airbnb)"
+    ],
+    "transportation": [
+      "Private Car with Driver: Most convenient way to travel between cities and sites, especially covering multiple locations daily. Can be hired for the whole trip.",
+      "Trains: Scenic and highly recommended for certain routes (e.g., Kandy to Ella). Very affordable but can be crowded.",
+      "Buses: Extensive network and very cheap, but can be slow, crowded, and less comfortable.",
+      "Tuk-tuks: Great for short distances within towns and cities. Always agree on the fare beforehand or use a meter if available.",
+      "Domestic Flights: Available for quicker travel between distant points, but more expensive."
+    ],
+    "permitsReservations": [
+      "Visa: Most nationalities require an Electronic Travel Authorization (ETA) before arrival.",
+      "Cultural Triangle Site Tickets: Separate tickets are required for major sites like Sigiriya, Polonnaruwa, and Anuradhapura (not included in this short itinerary but worth noting). A Cultural Triangle ticket might offer savings if visiting multiple sites.",
+      "National Park Entry Fees: Required for safaris (e.g., Udawalawe, Yala - note Yala can be very crowded).",
+      "Train Tickets: Highly recommended to book scenic train journeys (like Kandy-Ella) in advance, especially 1st or 2nd class seats.",
+      "Whale Watching Tours: Seasonal (Nov-Apr on the south coast), book in advance."
+    ],
+    "dailyItinerary": [
+      {
+        "day": 1,
+        "title": "Arrival in Negombo & Coastal Start",
+        "description": "Arrive at Bandaranaike International Airport (CMB), located near Colombo. Transfer to Negombo, a coastal town closer to the airport than Colombo city. Check into your accommodation, relax after your flight, and take a walk along the beach. Enjoy your first Sri Lankan dinner.",
+        "activities": [
+          "Airport Transfer & Check-in in Negombo",
+          "Relax at the beach",
+          "Explore Negombo town (optional)"
+        ],
+        "estimatedCost": {
+          "accommodation": 50,
+          "food": 30,
+          "activities": 0,
+          "transport": 25
+        },
+        "restaurantSuggestions": [
+          "Seafood restaurants along Negombo beach",
+          "Local eateries in town"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Journey to the Cultural Triangle & Dambulla Caves",
+        "description": "Travel from Negombo towards the Cultural Triangle region (approx. 4-5 hours). Check into your accommodation near Sigiriya or Dambulla. In the afternoon, visit the impressive Dambulla Royal Cave Temple and Golden Temple, a UNESCO World Heritage site with stunning Buddhist murals and statues inside five caves.",
+        "activities": [
+          "Travel to Sigiriya/Dambulla area",
+          "Visit Dambulla Cave Temple and Golden Temple"
+        ],
+        "estimatedCost": {
+          "accommodation": 50,
+          "food": 30,
+          "activities": 20,
+          "transport": 80
+        },
+        "restaurantSuggestions": [
+          "Local restaurants near Dambulla or Sigiriya",
+          "Try a traditional Rice and Curry"
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Sigiriya Rock & Ancient City",
+        "description": "Morning visit to Sigiriya Rock (Lion Rock), another UNESCO site. Climb to the top to see the ancient fortress ruins, frescoes, and panoramic views. Allow 3-4 hours. In the afternoon, visit the nearby ancient city of Polonnaruwa (approx. 1 hour drive), the second ancient capital of Sri Lanka, and explore its well-preserved ruins by bicycle.",
+        "activities": [
+          "Climb Sigiriya Rock",
+          "Explore Polonnaruwa ancient city (bicycle rental recommended)"
+        ],
+        "estimatedCost": {
+          "accommodation": 0,
+          "food": 30,
+          "activities": 80,
+          "transport": 30
+        },
+        "restaurantSuggestions": [
+          "Restaurants near Sigiriya",
+          "Local eateries in Polonnaruwa"
+        ]
+      },
+      {
+        "day": 4,
+        "title": "Towards Kandy & Spice Garden",
+        "description": "Travel from the Cultural Triangle to Kandy (approx. 2-3 hours). En route, stop at a Spice Garden to learn about Sri Lanka's spices. Check into your accommodation in Kandy. In the late afternoon, visit the sacred Temple of the Tooth Relic (Sri Dalada Maligawa), a major Buddhist site.",
+        "activities": [
+          "Travel to Kandy",
+          "Visit a Spice Garden",
+          "Visit Temple of the Tooth Relic"
+        ],
+        "estimatedCost": {
+          "accommodation": 50,
+          "food": 30,
+          "activities": 15,
+          "transport": 60
+        },
+        "restaurantSuggestions": [
+          "Restaurants around Kandy Lake",
+          "The Pub (for a drink)"
+        ]
+      },
+      {
+        "day": 5,
+        "title": "Kandy's Greenery & Culture",
+        "description": "Morning visit to the Royal Botanical Gardens, Peradeniya, known for its diverse plant collection, including orchids. Spend a few hours here. In the evening, consider attending a traditional Kandyan Dance performance.",
+        "activities": [
+          "Explore Royal Botanical Gardens, Peradeniya",
+          "Optional: Attend a Kandyan Dance Show"
+        ],
+        "estimatedCost": {
+          "accommodation": 0,
+          "food": 30,
+          "activities": 25,
+          "transport": 20
+        },
+        "restaurantSuggestions": [
+          "Cafe Divine Street",
+          "Balaji Dosai (South Indian)",
+          "Restaurants near your accommodation"
+        ]
+      },
+      {
+        "day": 6,
+        "title": "Scenic Train to Ella",
+        "description": "Take the famous scenic train journey from Kandy to Ella (approx. 6-7 hours). Widely considered one of the most beautiful train rides in the world, passing through tea plantations, mountains, and villages. Arrive in Ella and check into your accommodation. Explore the laid-back town.",
+        "activities": [
+          "Scenic train ride from Kandy to Ella",
+          "Check-in in Ella",
+          "Explore Ella town"
+        ],
+        "estimatedCost": {
+          "accommodation": 50,
+          "food": 30,
+          "activities": 0,
+          "transport": 15
+        },
+        "restaurantSuggestions": [
+          "Cafe Chill",
+          "Matey Hut",
+          "Restaurants on Ella's main street"
+        ]
+      },
+      {
+        "day": 7,
+        "title": "Ella's Natural Wonders",
+        "description": "Spend the day exploring Ella's natural attractions. Hike to Little Adam's Peak for sunrise or sunset views. Visit the iconic Nine Arch Bridge. You could also visit Ravana Falls or hike to Ella Rock (more challenging).",
+        "activities": [
+          "Hike to Little Adam's Peak",
+          "Visit Nine Arch Bridge",
+          "Optional: Ravana Falls or Ella Rock"
+        ],
+        "estimatedCost": {
+          "accommodation": 0,
+          "food": 30,
+          "activities": 0,
+          "transport": 15
+        },
+        "restaurantSuggestions": [
+          "Restaurants in Ella town",
+          "Local tea shops"
+        ]
+      },
+      {
+        "day": 8,
+        "title": "Journey to the South Coast",
+        "description": "Travel from Ella to the South Coast (approx. 3-4 hours depending on the destination, e.g., Mirissa, Unawatuna, Galle). Choose a town based on your preference (Mirissa for whale watching/surfing, Unawatuna for a popular beach, Galle for history). Check into your beachside accommodation and relax.",
+        "activities": [
+          "Travel to the South Coast",
+          "Check-in at beach accommodation",
+          "Relax at the beach"
+        ],
+        "estimatedCost": {
+          "accommodation": 60,
+          "food": 40,
+          "activities": 0,
+          "transport": 70
+        },
+        "restaurantSuggestions": [
+          "Seafood restaurants on the beach",
+          "Restaurants in your chosen town"
+        ]
+      },
+      {
+        "day": 9,
+        "title": "South Coast Exploration or Relaxation",
+        "description": "Enjoy a full day on the South Coast. Options include: whale watching tour (seasonal from Mirissa), surfing lessons, visiting the stilt fishermen (Ahangama - note: often posed for tourists), exploring Galle Fort (UNESCO site, beautiful colonial architecture, shops, cafes), or simply relaxing on the beach.",
+        "activities": [
+          "Choose from: Whale Watching (seasonal), Surfing, Visit Galle Fort, Beach Relaxation"
+        ],
+        "estimatedCost": {
+          "accommodation": 0,
+          "food": 40,
+          "activities": 50,
+          "transport": 20
+        },
+        "restaurantSuggestions": [
+          "Restaurants inside Galle Fort",
+          "Beachside cafes and restaurants"
+        ]
+      },
+      {
+        "day": 10,
+        "title": "Departure",
+        "description": "Enjoy a final Sri Lankan breakfast. Depending on your flight schedule, you might have time for some last-minute souvenir shopping or a final dip in the ocean. Transfer from the South Coast back to Bandaranaike International Airport (CMB) for your departure (approx. 2-3 hours depending on traffic and location).",
+        "activities": [
+          "Last-minute relaxation/shopping (optional)",
+          "Transfer to CMB Airport"
+        ],
+        "estimatedCost": {
+          "accommodation": 0,
+          "food": 20,
+          "activities": 0,
+          "transport": 60
+        },
+        "restaurantSuggestions": [
+          "Cafe near your accommodation"
+        ]
+      }
+    ],
+    "budgetTips": [
+      "Eat local: Enjoy rice and curry from small eateries (kades) for delicious and very affordable meals.",
+      "Utilize trains and buses for longer distances if you are on a tight budget and have more time.",
+      "Bargain respectfully when taking tuk-tuks (unless using a meter) and shopping in markets.",
+      "Stay in guesthouses and homestays, which are plentiful and offer good value.",
+      "Buy water from local shops rather than tourist areas.",
+      "Consider purchasing a local SIM card for affordable data and communication.",
+      "Look for happy hour deals at beach bars on the coast."
+    ],
+    "notes": "This itinerary is a suggestion for 2 people on a mid-range budget and can be adjusted based on your interests, pace, and budget. Estimated costs are approximate per person per day for food, activities, and transport, and total per night for accommodation, and can fluctuate. Hiring a private car with a driver for the entire trip (or segments) is a popular and convenient option, though more expensive than public transport. Book popular train tickets and whale watching tours in advance. Be prepared for warm weather and humidity. Dress modestly when visiting religious sites (shoulders and knees covered).",
+    "travelAdvisiorData": {
+      "places": [
+        {
+          "location_id": "13837644",
+          "name": "Cafe Into The Wild",
+          "latitude": "7.933374",
+          "longitude": "80.70417",
+          "num_reviews": "74",
+          "timezone": "Asia/Colombo",
+          "location_string": "Sigiriya, Central Province",
+          "photo": {
+            "images": {
+              "small": {
+                "width": "150",
+                "url": "https://media-cdn.tripadvisor.com/media/photo-l/2f/3a/4d/55/bar-and-restaurant-area.jpg",
+                "height": "150"
+              },
+              "thumbnail": {
+                "width": "50",
+                "url": "https://media-cdn.tripadvisor.com/media/photo-t/2f/3a/4d/55/bar-and-restaurant-area.jpg",
+                "height": "50"
+              },
+              "original": {
+                "width": "1280",
+                "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2f/3a/4d/55/bar-and-restaurant-area.jpg",
+                "height": "960"
+              },
+              "large": {
+                "width": "550",
+                "url": "https://media-cdn.tripadvisor.com/media/photo-s/2f/3a/4d/55/bar-and-restaurant-area.jpg",
+                "height": "412"
+              },
+              "medium": {
+                "width": "250",
+                "url": "https://media-cdn.tripadvisor.com/media/photo-f/2f/3a/4d/55/bar-and-restaurant-area.jpg",
+                "height": "188"
+              }
+            },
+            "is_blessed": true,
+            "uploaded_date": "2025-03-06T23:10:29-0500",
+            "caption": "Bar and restaurant area ",
+            "id": "792350037",
+            "helpful_votes": "0",
+            "published_date": "2025-03-06T23:10:29-0500",
+            "user": {
+              "user_id": null,
+              "member_id": "0",
+              "type": "user"
+            }
+          },
+          "awards": [],
+          "doubleclick_zone": "as.sri_lanka",
+          "preferred_map_engine": "default",
+          "raw_ranking": "4.8427228927612305",
+          "ranking_geo": "Sigiriya",
+          "ranking_geo_id": "304141",
+          "ranking_position": "1",
+          "ranking_denominator": "149",
+          "ranking_category": "restaurant",
+          "ranking": "#1 of 207 Restaurants in Sigiriya",
+          "distance": "10.029445890608603",
+          "distance_string": "10 km",
+          "bearing": "northwest",
+          "rating": "5.0",
+          "is_closed": false,
+          "open_now_text": "Closed Now",
+          "is_long_closed": false,
+          "price_level": "$$ - $$$",
+          "price": "$3 - $10",
+          "description": "",
+          "web_url": "https://www.tripadvisor.com/Restaurant_Review-g304141-d13837644-Reviews-Cafe_Into_The_Wild-Sigiriya_Central_Province.html",
+          "write_review": "https://www.tripadvisor.com/UserReview-g304141-d13837644-Cafe_Into_The_Wild-Sigiriya_Central_Province.html",
+          "ancestors": [
+            {
+              "subcategory": [
+                {
+                  "key": "city",
+                  "name": "City"
+                }
+              ],
+              "name": "Sigiriya",
+              "abbrv": null,
+              "location_id": "304141"
+            },
+            {
+              "subcategory": [
+                {
+                  "key": "province",
+                  "name": "Province"
+                }
+              ],
+              "name": "Central Province",
+              "abbrv": null,
+              "location_id": "2467830"
+            },
+            {
+              "subcategory": [
+                {
+                  "key": "country",
+                  "name": "Country"
+                }
+              ],
+              "name": "Sri Lanka",
+              "abbrv": null,
+              "location_id": "293961"
+            }
+          ],
+          "category": {
+            "key": "restaurant",
+            "name": "Restaurant"
+          },
+          "subcategory": [
+            {
+              "key": "sit_down",
+              "name": "Sit down"
+            }
+          ],
+          "parent_display_name": "Sigiriya",
+          "is_jfy_enabled": false,
+          "nearest_metro_station": [],
+          "phone": "+94 77 806 0537",
+          "website": "https://www.facebook.com/Intothe-WILD-sigiriya-186333925465341",
+          "email": "intothewildsigiriya@gmail.com",
+          "address_obj": {
+            "street1": "Sigiriya Rd",
+            "street2": "Galakotuwa",
+            "city": "Sigiriya",
+            "state": null,
+            "country": "Sri Lanka",
+            "postalcode": "21120"
+          },
+          "address": "Sigiriya Rd Galakotuwa, Sigiriya 21120 Sri Lanka",
+          "hours": {
+            "week_ranges": [
+              [
+                {
+                  "open_time": 420,
+                  "close_time": 930
+                },
+                {
+                  "open_time": 1050,
+                  "close_time": 1380
+                }
+              ],
+              [
+                {
+                  "open_time": 420,
+                  "close_time": 930
+                },
+                {
+                  "open_time": 1050,
+                  "close_time": 1380
+                }
+              ],
+              [
+                {
+                  "open_time": 420,
+                  "close_time": 930
+                },
+                {
+                  "open_time": 1050,
+                  "close_time": 1380
+                }
+              ],
+              [
+                {
+                  "open_time": 420,
+                  "close_time": 930
+                },
+                {
+                  "open_time": 1050,
+                  "close_time": 1380
+                }
+              ],
+              [
+                {
+                  "open_time": 420,
+                  "close_time": 930
+                },
+                {
+                  "open_time": 1050,
+                  "close_time": 1380
+                }
+              ],
+              [
+                {
+                  "open_time": 420,
+                  "close_time": 930
+                },
+                {
+                  "open_time": 1050,
+                  "close_time": 1380
+                }
+              ],
+              [
+                {
+                  "open_time": 420,
+                  "close_time": 930
+                },
+                {
+                  "open_time": 1050,
+                  "close_time": 1380
+                }
+              ]
+            ],
+            "timezone": "Asia/Colombo"
+          },
+          "is_candidate_for_contact_info_suppression": false,
+          "cuisine": [
+            {
+              "key": "10640",
+              "name": "Bar"
+            },
+            {
+              "key": "10659",
+              "name": "Asian"
+            },
+            {
+              "key": "10679",
+              "name": "Healthy"
+            },
+            {
+              "key": "10793",
+              "name": "Sri Lankan"
+            },
+            {
+              "key": "10643",
+              "name": "Seafood"
+            },
+            {
+              "key": "10651",
+              "name": "Barbecue"
+            },
+            {
+              "key": "10697",
+              "name": "Vegan options"
+            },
+            {
+              "key": "10665",
+              "name": "Vegetarian friendly"
+            }
+          ],
+          "dietary_restrictions": [
+            {
+              "key": "10697",
+              "name": "Vegan options"
+            },
+            {
+              "key": "10665",
+              "name": "Vegetarian friendly"
+            }
+          ],
+          "establishment_types": [
+            {
+              "key": "10591",
+              "name": "Restaurants"
+            }
+          ]
+        },
+        {
+          "location_id": "19970180",
+          "name": "King's Pavilion Sigiriya",
+          "latitude": "7.969074",
+          "longitude": "80.754684",
+          "num_reviews": "109",
+          "timezone": "Asia/Colombo",
+          "location_string": "Sigiriya, Central Province",
+          "photo": {
+            "images": {
+              "small": {
+                "width": "150",
+                "url": "https://media-cdn.tripadvisor.com/media/photo-l/1c/1b/f5/1a/cook-with-chef.jpg",
+                "height": "150"
+              },
+              "thumbnail": {
+                "width": "50",
+                "url": "https://media-cdn.tripadvisor.com/media/photo-t/1c/1b/f5/1a/cook-with-chef.jpg",
+                "height": "50"
+              },
+              "original": {
+                "width": "1280",
+                "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/1c/1b/f5/1a/cook-with-chef.jpg",
+                "height": "853"
+              },
+              "large": {
+                "width": "1024",
+                "url": "https://media-cdn.tripadvisor.com/media/photo-w/1c/1b/f5/1a/cook-with-chef.jpg",
+                "height": "683"
+              },
+              "medium": {
+                "width": "550",
+                "url": "https://media-cdn.tripadvisor.com/media/photo-s/1c/1b/f5/1a/cook-with-chef.jpg",
+                "height": "367"
+              }
+            },
+            "is_blessed": true,
+            "uploaded_date": "2020-10-02T03:04:57-0400",
+            "caption": "Cook with chef",
+            "id": "471594266",
+            "helpful_votes": "0",
+            "published_date": "2020-10-02T03:04:57-0400",
+            "user": {
+              "user_id": null,
+              "member_id": "0",
+              "type": "user"
+            }
+          },
+          "awards": [],
+          "doubleclick_zone": "as.sri_lanka",
+          "preferred_map_engine": "default",
+          "raw_ranking": "4.821208477020264",
+          "ranking_geo": "Sigiriya",
+          "ranking_geo_id": "304141",
+          "ranking_position": "2",
+          "ranking_denominator": "149",
+          "ranking_category": "restaurant",
+          "ranking": "#2 of 207 Restaurants in Sigiriya",
+          "distance": "10.846815269411263",
+          "distance_string": "10.8 km",
+          "bearing": "north",
+          "rating": "4.9",
+          "is_closed": false,
+          "open_now_text": "Closed Now",
+          "is_long_closed": false,
+          "price_level": "$$ - $$$",
+          "price": "$450 - $4,250",
+          "description": "The Indoor Restaurant is not only known for its romantic beauty but also the uniqueness of the rocky view. In fact, it is perfect for those looking for exclusivity and refinement. The dishes are always taken care of in every aspect, with maximum attention made to the quality of the ingredients, with the Sri Lankan culinary tradition, with addition of aromas, spices and fragrances",
+          "web_url": "https://www.tripadvisor.com/Restaurant_Review-g304141-d19970180-Reviews-King_s_Pavilion_Sigiriya-Sigiriya_Central_Province.html",
+          "write_review": "https://www.tripadvisor.com/UserReview-g304141-d19970180-King_s_Pavilion_Sigiriya-Sigiriya_Central_Province.html",
+          "ancestors": [
+            {
+              "subcategory": [
+                {
+                  "key": "city",
+                  "name": "City"
+                }
+              ],
+              "name": "Sigiriya",
+              "abbrv": null,
+              "location_id": "304141"
+            },
+            {
+              "subcategory": [
+                {
+                  "key": "province",
+                  "name": "Province"
+                }
+              ],
+              "name": "Central Province",
+              "abbrv": null,
+              "location_id": "2467830"
+            },
+            {
+              "subcategory": [
+                {
+                  "key": "country",
+                  "name": "Country"
+                }
+              ],
+              "name": "Sri Lanka",
+              "abbrv": null,
+              "location_id": "293961"
+            }
+          ],
+          "category": {
+            "key": "restaurant",
+            "name": "Restaurant"
+          },
+          "subcategory": [
+            {
+              "key": "sit_down",
+              "name": "Sit down"
+            }
+          ],
+          "parent_display_name": "Sigiriya",
+          "is_jfy_enabled": false,
+          "nearest_metro_station": [],
+          "phone": "+94 77 017 7177",
+          "website": "http://www.sigiriyakingsresort.com",
+          "email": "info@sigiriyakingsresort.com",
+          "address_obj": {
+            "street1": "176 Panelehena, Thalkote, Sigiriya",
+            "street2": null,
+            "city": "Sigiriya",
+            "state": null,
+            "country": "Sri Lanka",
+            "postalcode": "21120"
+          },
+          "address": "176 Panelehena, Thalkote, Sigiriya, Sigiriya 21120 Sri Lanka",
+          "hours": {
+            "week_ranges": [
+              [
+                {
+                  "open_time": 450,
+                  "close_time": 1350
+                }
+              ],
+              [
+                {
+                  "open_time": 450,
+                  "close_time": 1320
+                }
+              ],
+              [
+                {
+                  "open_time": 450,
+                  "close_time": 1320
+                }
+              ],
+              [
+                {
+                  "open_time": 450,
+                  "close_time": 1320
+                }
+              ],
+              [
+                {
+                  "open_time": 450,
+                  "close_time": 1320
+                }
+              ],
+              [
+                {
+                  "open_time": 450,
+                  "close_time": 1320
+                }
+              ],
+              [
+                {
+                  "open_time": 450,
+                  "close_time": 1320
+                }
+              ]
+            ],
+            "timezone": "Asia/Colombo"
+          },
+          "is_candidate_for_contact_info_suppression": false,
+          "cuisine": [
+            {
+              "key": "10679",
+              "name": "Healthy"
+            },
+            {
+              "key": "10793",
+              "name": "Sri Lankan"
+            },
+            {
+              "key": "10648",
+              "name": "International"
+            },
+            {
+              "key": "10665",
+              "name": "Vegetarian friendly"
+            },
+            {
+              "key": "10697",
+              "name": "Vegan options"
+            },
+            {
+              "key": "10992",
+              "name": "Gluten free options"
+            }
+          ],
+          "dietary_restrictions": [
+            {
+              "key": "10665",
+              "name": "Vegetarian friendly"
+            },
+            {
+              "key": "10697",
+              "name": "Vegan options"
+            },
+            {
+              "key": "10992",
+              "name": "Gluten free options"
+            }
+          ],
+          "establishment_types": [
+            {
+              "key": "10591",
+              "name": "Restaurants"
+            }
+          ]
+        },
+        {
+          "location_id": "24038580",
+          "name": "S.l.kafe Restaurant & Cooking Class",
+          "latitude": "7.955745",
+          "longitude": "80.75607",
+          "num_reviews": "119",
+          "timezone": "Asia/Colombo",
+          "location_string": "Sigiriya, Central Province",
+          "photo": {
+            "images": {
+              "small": {
+                "width": "150",
+                "url": "https://media-cdn.tripadvisor.com/media/photo-l/28/20/a4/5a/welcome-to-slkafe-loku.jpg",
+                "height": "150"
+              },
+              "thumbnail": {
+                "width": "50",
+                "url": "https://media-cdn.tripadvisor.com/media/photo-t/28/20/a4/5a/welcome-to-slkafe-loku.jpg",
+                "height": "50"
+              },
+              "original": {
+                "width": "1280",
+                "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/28/20/a4/5a/welcome-to-slkafe-loku.jpg",
+                "height": "854"
+              },
+              "large": {
+                "width": "1024",
+                "url": "https://media-cdn.tripadvisor.com/media/photo-w/28/20/a4/5a/welcome-to-slkafe-loku.jpg",
+                "height": "684"
+              },
+              "medium": {
+                "width": "550",
+                "url": "https://media-cdn.tripadvisor.com/media/photo-s/28/20/a4/5a/welcome-to-slkafe-loku.jpg",
+                "height": "367"
+              }
+            },
+            "is_blessed": true,
+            "uploaded_date": "2023-02-09T01:40:55-0500",
+            "caption": "welcome to slkafé, loku s open kitchen",
+            "id": "673227866",
+            "helpful_votes": "0",
+            "published_date": "2023-02-09T01:40:55-0500",
+            "user": {
+              "user_id": null,
+              "member_id": "0",
+              "type": "user"
+            }
+          },
+          "awards": [],
+          "doubleclick_zone": "as.sri_lanka",
+          "preferred_map_engine": "default",
+          "raw_ranking": "4.817174911499023",
+          "ranking_geo": "Sigiriya",
+          "ranking_geo_id": "304141",
+          "ranking_position": "3",
+          "ranking_denominator": "149",
+          "ranking_category": "restaurant",
+          "ranking": "#3 of 207 Restaurants in Sigiriya",
+          "distance": "9.360028414061423",
+          "distance_string": "9.4 km",
+          "bearing": "north",
+          "rating": "4.9",
+          "is_closed": false,
+          "open_now_text": "Closed Now",
+          "is_long_closed": false,
+          "price_level": "$",
+          "description": "Delicious, Fresh Home Made Typical Sri Lankan Meals Like Curries, Kotu, Rôti That You Can Learn How To Prepare And Enjoy After! Try Our Yummy Fresh Fruit Juces And Smoothies",
+          "web_url": "https://www.tripadvisor.com/Restaurant_Review-g304141-d24038580-Reviews-S_l_kafe_Restaurant_Cooking_Class-Sigiriya_Central_Province.html",
+          "write_review": "https://www.tripadvisor.com/UserReview-g304141-d24038580-S_l_kafe_Restaurant_Cooking_Class-Sigiriya_Central_Province.html",
+          "ancestors": [
+            {
+              "subcategory": [
+                {
+                  "key": "city",
+                  "name": "City"
+                }
+              ],
+              "name": "Sigiriya",
+              "abbrv": null,
+              "location_id": "304141"
+            },
+            {
+              "subcategory": [
+                {
+                  "key": "province",
+                  "name": "Province"
+                }
+              ],
+              "name": "Central Province",
+              "abbrv": null,
+              "location_id": "2467830"
+            },
+            {
+              "subcategory": [
+                {
+                  "key": "country",
+                  "name": "Country"
+                }
+              ],
+              "name": "Sri Lanka",
+              "abbrv": null,
+              "location_id": "293961"
+            }
+          ],
+          "category": {
+            "key": "restaurant",
+            "name": "Restaurant"
+          },
+          "subcategory": [],
+          "parent_display_name": "Sigiriya",
+          "is_jfy_enabled": false,
+          "nearest_metro_station": [],
+          "phone": "+94 76 582 2328",
+          "email": "mari_loo1@hotmail.com",
+          "address_obj": {
+            "street1": "113/5 Kalapuraya",
+            "street2": "10minutes Walking Distance from the lion rock",
+            "city": "Sigiriya",
+            "state": null,
+            "country": "Sri Lanka",
+            "postalcode": "21120"
+          },
+          "address": "113/5 Kalapuraya 10minutes Walking Distance from the lion rock, Sigiriya 21120 Sri Lanka",
+          "hours": {
+            "week_ranges": [
+              [
+                {
+                  "open_time": 420,
+                  "close_time": 1380
+                }
+              ],
+              [
+                {
+                  "open_time": 420,
+                  "close_time": 1380
+                }
+              ],
+              [
+                {
+                  "open_time": 420,
+                  "close_time": 1380
+                }
+              ],
+              [
+                {
+                  "open_time": 420,
+                  "close_time": 1380
+                }
+              ],
+              [
+                {
+                  "open_time": 420,
+                  "close_time": 1380
+                }
+              ],
+              [
+                {
+                  "open_time": 420,
+                  "close_time": 1380
+                }
+              ],
+              [
+                {
+                  "open_time": 420,
+                  "close_time": 1380
+                }
+              ]
+            ],
+            "timezone": "Asia/Colombo"
+          },
+          "is_candidate_for_contact_info_suppression": false,
+          "cuisine": [
+            {
+              "key": "10659",
+              "name": "Asian"
+            },
+            {
+              "key": "10793",
+              "name": "Sri Lankan"
+            },
+            {
+              "key": "10679",
+              "name": "Healthy"
+            },
+            {
+              "key": "10665",
+              "name": "Vegetarian friendly"
+            },
+            {
+              "key": "10697",
+              "name": "Vegan options"
+            },
+            {
+              "key": "10992",
+              "name": "Gluten free options"
+            }
+          ],
+          "dietary_restrictions": [
+            {
+              "key": "10665",
+              "name": "Vegetarian friendly"
+            },
+            {
+              "key": "10697",
+              "name": "Vegan options"
+            },
+            {
+              "key": "10992",
+              "name": "Gluten free options"
+            }
+          ],
+          "establishment_types": [
+            {
+              "key": "10591",
+              "name": "Restaurants"
+            }
+          ]
+        },
+        {
+          "location_id": "23838105",
+          "name": "Sigiri Liya Rest",
+          "latitude": "7.949217",
+          "longitude": "80.74967",
+          "num_reviews": "294",
+          "timezone": "Asia/Colombo",
+          "location_string": "Sigiriya, Central Province",
+          "photo": {
+            "images": {
+              "small": {
+                "width": "150",
+                "url": "https://media-cdn.tripadvisor.com/media/photo-l/2e/88/cc/81/caption.jpg",
+                "height": "150"
+              },
+              "thumbnail": {
+                "width": "50",
+                "url": "https://media-cdn.tripadvisor.com/media/photo-t/2e/88/cc/81/caption.jpg",
+                "height": "50"
+              },
+              "original": {
+                "width": "1280",
+                "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2e/88/cc/81/caption.jpg",
+                "height": "1280"
+              },
+              "large": {
+                "width": "550",
+                "url": "https://media-cdn.tripadvisor.com/media/photo-p/2e/88/cc/81/caption.jpg",
+                "height": "550"
+              },
+              "medium": {
+                "width": "450",
+                "url": "https://media-cdn.tripadvisor.com/media/photo-s/2e/88/cc/81/caption.jpg",
+                "height": "450"
+              }
+            },
+            "is_blessed": false,
+            "uploaded_date": "2025-01-10T20:39:18-0500",
+            "caption": "",
+            "id": "780717185",
+            "helpful_votes": "0",
+            "published_date": "2025-01-10T20:39:18-0500",
+            "user": {
+              "user_id": null,
+              "member_id": "0",
+              "type": "user"
+            }
+          },
+          "awards": [],
+          "doubleclick_zone": "as.sri_lanka",
+          "preferred_map_engine": "default",
+          "raw_ranking": "4.78581428527832",
+          "ranking_geo": "Sigiriya",
+          "ranking_geo_id": "304141",
+          "ranking_position": "4",
+          "ranking_denominator": "149",
+          "ranking_category": "restaurant",
+          "ranking": "#4 of 207 Restaurants in Sigiriya",
+          "distance": "8.815744670847225",
+          "distance_string": "8.8 km",
+          "bearing": "north",
+          "rating": "4.9",
+          "is_closed": false,
+          "open_now_text": "Closed Now",
+          "is_long_closed": false,
+          "price_level": "$",
+          "description": "",
+          "web_url": "https://www.tripadvisor.com/Restaurant_Review-g304141-d23838105-Reviews-Sigiri_Liya_Rest-Sigiriya_Central_Province.html",
+          "write_review": "https://www.tripadvisor.com/UserReview-g304141-d23838105-Sigiri_Liya_Rest-Sigiriya_Central_Province.html",
+          "ancestors": [
+            {
+              "subcategory": [
+                {
+                  "key": "city",
+                  "name": "City"
+                }
+              ],
+              "name": "Sigiriya",
+              "abbrv": null,
+              "location_id": "304141"
+            },
+            {
+              "subcategory": [
+                {
+                  "key": "province",
+                  "name": "Province"
+                }
+              ],
+              "name": "Central Province",
+              "abbrv": null,
+              "location_id": "2467830"
+            },
+            {
+              "subcategory": [
+                {
+                  "key": "country",
+                  "name": "Country"
+                }
+              ],
+              "name": "Sri Lanka",
+              "abbrv": null,
+              "location_id": "293961"
+            }
+          ],
+          "category": {
+            "key": "restaurant",
+            "name": "Restaurant"
+          },
+          "subcategory": [],
+          "parent_display_name": "Sigiriya",
+          "is_jfy_enabled": false,
+          "nearest_metro_station": [],
+          "phone": "+94 76 134 7569",
+          "address_obj": {
+            "street1": "65A A/ 1 Kayamwala",
+            "street2": null,
+            "city": "Sigiriya",
+            "state": null,
+            "country": "Sri Lanka",
+            "postalcode": "21120"
+          },
+          "address": "65A A/ 1 Kayamwala, Sigiriya 21120 Sri Lanka",
+          "hours": {
+            "week_ranges": [
+              [
+                {
+                  "open_time": 420,
+                  "close_time": 1410
+                }
+              ],
+              [
+                {
+                  "open_time": 420,
+                  "close_time": 1410
+                }
+              ],
+              [
+                {
+                  "open_time": 450,
+                  "close_time": 1410
+                }
+              ],
+              [
+                {
+                  "open_time": 420,
+                  "close_time": 1410
+                }
+              ],
+              [
+                {
+                  "open_time": 420,
+                  "close_time": 1410
+                }
+              ],
+              [
+                {
+                  "open_time": 450,
+                  "close_time": 1410
+                }
+              ],
+              [
+                {
+                  "open_time": 420,
+                  "close_time": 1410
+                }
+              ]
+            ],
+            "timezone": "Asia/Colombo"
+          },
+          "is_candidate_for_contact_info_suppression": false,
+          "cuisine": [
+            {
+              "key": "10659",
+              "name": "Asian"
+            },
+            {
+              "key": "10793",
+              "name": "Sri Lankan"
+            },
+            {
+              "key": "10679",
+              "name": "Healthy"
+            },
+            {
+              "key": "10665",
+              "name": "Vegetarian friendly"
+            },
+            {
+              "key": "10697",
+              "name": "Vegan options"
+            }
+          ],
+          "dietary_restrictions": [
+            {
+              "key": "10665",
+              "name": "Vegetarian friendly"
+            },
+            {
+              "key": "10697",
+              "name": "Vegan options"
+            }
+          ],
+          "establishment_types": [
+            {
+              "key": "10591",
+              "name": "Restaurants"
+            }
+          ]
+        },
+        {
+          "location_id": "17796477",
+          "name": "Kenoli restaurant",
+          "latitude": "7.949937",
+          "longitude": "80.7496",
+          "num_reviews": "341",
+          "timezone": "Asia/Colombo",
+          "location_string": "Sigiriya, Central Province",
+          "photo": {
+            "images": {
+              "small": {
+                "width": "150",
+                "url": "https://media-cdn.tripadvisor.com/media/photo-l/18/a2/6f/0d/kenoli-restaurant.jpg",
+                "height": "150"
+              },
+              "thumbnail": {
+                "width": "50",
+                "url": "https://media-cdn.tripadvisor.com/media/photo-t/18/a2/6f/0d/kenoli-restaurant.jpg",
+                "height": "50"
+              },
+              "original": {
+                "width": "1040",
+                "url": "https://media-cdn.tripadvisor.com/media/photo-o/18/a2/6f/0d/kenoli-restaurant.jpg",
+                "height": "780"
+              },
+              "large": {
+                "width": "550",
+                "url": "https://media-cdn.tripadvisor.com/media/photo-s/18/a2/6f/0d/kenoli-restaurant.jpg",
+                "height": "413"
+              },
+              "medium": {
+                "width": "250",
+                "url": "https://media-cdn.tripadvisor.com/media/photo-f/18/a2/6f/0d/kenoli-restaurant.jpg",
+                "height": "188"
+              }
+            },
+            "is_blessed": false,
+            "uploaded_date": "2019-08-04T12:24:53-0400",
+            "caption": "Kenoli Restaurant ",
+            "id": "413298445",
+            "helpful_votes": "3",
+            "published_date": "2019-08-04T12:24:53-0400",
+            "user": {
+              "user_id": null,
+              "member_id": "0",
+              "type": "user"
+            }
+          },
+          "awards": [],
+          "doubleclick_zone": "as.sri_lanka",
+          "preferred_map_engine": "default",
+          "raw_ranking": "4.777826309204102",
+          "ranking_geo": "Sigiriya",
+          "ranking_geo_id": "304141",
+          "ranking_position": "5",
+          "ranking_denominator": "149",
+          "ranking_category": "restaurant",
+          "ranking": "#5 of 207 Restaurants in Sigiriya",
+          "distance": "8.894856431196462",
+          "distance_string": "8.9 km",
+          "bearing": "north",
+          "rating": "4.9",
+          "is_closed": false,
+          "open_now_text": "Closed Now",
+          "is_long_closed": false,
+          "price_level": "$",
+          "price": "$200 - $1,500",
+          "description": "Our restaurant produce freshly made food with only natural ingredients. We pride ourselves with delivering a truly authentic taste of local Sri Lankan dishes.",
+          "web_url": "https://www.tripadvisor.com/Restaurant_Review-g304141-d17796477-Reviews-Kenoli_restaurant-Sigiriya_Central_Province.html",
+          "write_review": "https://www.tripadvisor.com/UserReview-g304141-d17796477-Kenoli_restaurant-Sigiriya_Central_Province.html",
+          "ancestors": [
+            {
+              "subcategory": [
+                {
+                  "key": "city",
+                  "name": "City"
+                }
+              ],
+              "name": "Sigiriya",
+              "abbrv": null,
+              "location_id": "304141"
+            },
+            {
+              "subcategory": [
+                {
+                  "key": "province",
+                  "name": "Province"
+                }
+              ],
+              "name": "Central Province",
+              "abbrv": null,
+              "location_id": "2467830"
+            },
+            {
+              "subcategory": [
+                {
+                  "key": "country",
+                  "name": "Country"
+                }
+              ],
+              "name": "Sri Lanka",
+              "abbrv": null,
+              "location_id": "293961"
+            }
+          ],
+          "category": {
+            "key": "restaurant",
+            "name": "Restaurant"
+          },
+          "subcategory": [
+            {
+              "key": "sit_down",
+              "name": "Sit down"
+            }
+          ],
+          "parent_display_name": "Sigiriya",
+          "is_jfy_enabled": false,
+          "nearest_metro_station": [],
+          "phone": "+94 77 630 0611",
+          "email": "Susanthasr2@gmail.com",
+          "address_obj": {
+            "street1": "No:65/A2 Kayamwala, Sigiriya",
+            "street2": null,
+            "city": "Sigiriya",
+            "state": null,
+            "country": "Sri Lanka",
+            "postalcode": "21120"
+          },
+          "address": "No:65/A2 Kayamwala, Sigiriya, Sigiriya 21120 Sri Lanka",
+          "hours": {
+            "week_ranges": [
+              [
+                {
+                  "open_time": 690,
+                  "close_time": 1290
+                }
+              ],
+              [
+                {
+                  "open_time": 690,
+                  "close_time": 1290
+                }
+              ],
+              [
+                {
+                  "open_time": 690,
+                  "close_time": 1290
+                }
+              ],
+              [
+                {
+                  "open_time": 690,
+                  "close_time": 1290
+                }
+              ],
+              [
+                {
+                  "open_time": 690,
+                  "close_time": 1290
+                }
+              ],
+              [
+                {
+                  "open_time": 690,
+                  "close_time": 1290
+                }
+              ],
+              []
+            ],
+            "timezone": "Asia/Colombo"
+          },
+          "is_candidate_for_contact_info_suppression": false,
+          "cuisine": [
+            {
+              "key": "10659",
+              "name": "Asian"
+            },
+            {
+              "key": "10679",
+              "name": "Healthy"
+            },
+            {
+              "key": "10793",
+              "name": "Sri Lankan"
+            },
+            {
+              "key": "10665",
+              "name": "Vegetarian friendly"
+            },
+            {
+              "key": "10697",
+              "name": "Vegan options"
+            },
+            {
+              "key": "10992",
+              "name": "Gluten free options"
+            }
+          ],
+          "dietary_restrictions": [
+            {
+              "key": "10665",
+              "name": "Vegetarian friendly"
+            },
+            {
+              "key": "10697",
+              "name": "Vegan options"
+            },
+            {
+              "key": "10992",
+              "name": "Gluten free options"
+            }
+          ],
+          "establishment_types": [
+            {
+              "key": "10591",
+              "name": "Restaurants"
+            }
+          ]
+        },
+        {
+          "location_id": "13135312",
+          "name": "Mango Tree Restaurant",
+          "latitude": "7.93053",
+          "longitude": "80.69496",
+          "num_reviews": "172",
+          "timezone": "Asia/Colombo",
+          "location_string": "Dambulla, Central Province",
+          "photo": {
+            "images": {
+              "small": {
+                "width": "150",
+                "url": "https://media-cdn.tripadvisor.com/media/photo-l/12/eb/81/03/tasty-food.jpg",
+                "height": "150"
+              },
+              "thumbnail": {
+                "width": "50",
+                "url": "https://media-cdn.tripadvisor.com/media/photo-t/12/eb/81/03/tasty-food.jpg",
+                "height": "50"
+              },
+              "original": {
+                "width": "960",
+                "url": "https://media-cdn.tripadvisor.com/media/photo-o/12/eb/81/03/tasty-food.jpg",
+                "height": "960"
+              },
+              "large": {
+                "width": "550",
+                "url": "https://media-cdn.tripadvisor.com/media/photo-p/12/eb/81/03/tasty-food.jpg",
+                "height": "550"
+              },
+              "medium": {
+                "width": "450",
+                "url": "https://media-cdn.tripadvisor.com/media/photo-s/12/eb/81/03/tasty-food.jpg",
+                "height": "450"
+              }
+            },
+            "is_blessed": true,
+            "uploaded_date": "2018-05-11T21:39:52-0400",
+            "caption": "Tasty food",
+            "id": "317423875",
+            "helpful_votes": "2",
+            "published_date": "2018-05-11T21:39:52-0400",
+            "user": {
+              "user_id": null,
+              "member_id": "0",
+              "type": "user"
+            }
+          },
+          "awards": [],
+          "doubleclick_zone": "as.sri_lanka",
+          "preferred_map_engine": "default",
+          "raw_ranking": "4.770663738250732",
+          "ranking_geo": "Dambulla",
+          "ranking_geo_id": "304133",
+          "ranking_position": "1",
+          "ranking_denominator": "63",
+          "ranking_category": "restaurant",
+          "ranking": "#1 of 91 Restaurants in Dambulla",
+          "distance": "10.61189239430018",
+          "distance_string": "10.6 km",
+          "bearing": "northwest",
+          "rating": "4.9",
+          "is_closed": false,
+          "open_now_text": "Closed Now",
+          "is_long_closed": false,
+          "price_level": "$",
+          "price": "$250 - $2,000",
+          "description": "Mango Tree Restaurant cuisine has been shaped by many local historical, cultural, and other factors. Mango Tree Also has influences Southern India have all helped to shape Sri Lankan cuisine. Today, some of the staples of Sri Lankan cuisine are rice, coconut, and various spices. With other menu items of sweet and savory roti, kottu, samosa. Also serving Chinese, Western and Asian Fusion cuisines.",
+          "web_url": "https://www.tripadvisor.com/Restaurant_Review-g304133-d13135312-Reviews-Mango_Tree_Restaurant-Dambulla_Central_Province.html",
+          "write_review": "https://www.tripadvisor.com/UserReview-g304133-d13135312-Mango_Tree_Restaurant-Dambulla_Central_Province.html",
+          "ancestors": [
+            {
+              "subcategory": [
+                {
+                  "key": "city",
+                  "name": "City"
+                }
+              ],
+              "name": "Dambulla",
+              "abbrv": null,
+              "location_id": "304133"
+            },
+            {
+              "subcategory": [
+                {
+                  "key": "province",
+                  "name": "Province"
+                }
+              ],
+              "name": "Central Province",
+              "abbrv": null,
+              "location_id": "2467830"
+            },
+            {
+              "subcategory": [
+                {
+                  "key": "country",
+                  "name": "Country"
+                }
+              ],
+              "name": "Sri Lanka",
+              "abbrv": null,
+              "location_id": "293961"
+            }
+          ],
+          "category": {
+            "key": "restaurant",
+            "name": "Restaurant"
+          },
+          "subcategory": [
+            {
+              "key": "cafe",
+              "name": "Café"
+            }
+          ],
+          "parent_display_name": "Dambulla",
+          "is_jfy_enabled": false,
+          "nearest_metro_station": [],
+          "phone": "+94 76 916 2280",
+          "website": "https://www.facebook.com/p/Mango-Tree-Restaurant-100057303437468/",
+          "address_obj": {
+            "street1": "168 Inamaluwa - Sigiriya Rd",
+            "street2": null,
+            "city": "Dambulla",
+            "state": null,
+            "country": "Sri Lanka",
+            "postalcode": "21120"
+          },
+          "address": "168 Inamaluwa - Sigiriya Rd, Dambulla 21120 Sri Lanka",
+          "hours": {
+            "week_ranges": [
+              [
+                {
+                  "open_time": 420,
+                  "close_time": 1380
+                }
+              ],
+              [
+                {
+                  "open_time": 420,
+                  "close_time": 1380
+                }
+              ],
+              [
+                {
+                  "open_time": 420,
+                  "close_time": 1380
+                }
+              ],
+              [
+                {
+                  "open_time": 420,
+                  "close_time": 1380
+                }
+              ],
+              [
+                {
+                  "open_time": 420,
+                  "close_time": 1380
+                }
+              ],
+              [
+                {
+                  "open_time": 420,
+                  "close_time": 1380
+                }
+              ],
+              [
+                {
+                  "open_time": 420,
+                  "close_time": 1380
+                }
+              ]
+            ],
+            "timezone": "Asia/Colombo"
+          },
+          "is_candidate_for_contact_info_suppression": false,
+          "cuisine": [
+            {
+              "key": "10346",
+              "name": "Indian"
+            },
+            {
+              "key": "10659",
+              "name": "Asian"
+            },
+            {
+              "key": "10793",
+              "name": "Sri Lankan"
+            },
+            {
+              "key": "10665",
+              "name": "Vegetarian friendly"
+            },
+            {
+              "key": "10697",
+              "name": "Vegan options"
+            },
+            {
+              "key": "10992",
+              "name": "Gluten free options"
+            }
+          ],
+          "dietary_restrictions": [
+            {
+              "key": "10665",
+              "name": "Vegetarian friendly"
+            },
+            {
+              "key": "10697",
+              "name": "Vegan options"
+            },
+            {
+              "key": "10992",
+              "name": "Gluten free options"
+            }
+          ],
+          "establishment_types": [
+            {
+              "key": "10591",
+              "name": "Restaurants"
+            }
+          ]
+        },
+        {
+          "location_id": "17660325",
+          "name": "Sigiriya wew Thawulla Restaurant",
+          "latitude": "7.95131",
+          "longitude": "80.75504",
+          "num_reviews": "277",
+          "timezone": "Asia/Colombo",
+          "location_string": "Sigiriya, Central Province",
+          "photo": {
+            "images": {
+              "small": {
+                "width": "150",
+                "url": "https://media-cdn.tripadvisor.com/media/photo-l/1a/35/99/4a/photo0jpg.jpg",
+                "height": "150"
+              },
+              "thumbnail": {
+                "width": "50",
+                "url": "https://media-cdn.tripadvisor.com/media/photo-t/1a/35/99/4a/photo0jpg.jpg",
+                "height": "50"
+              },
+              "original": {
+                "width": "1280",
+                "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/1a/35/99/4a/photo0jpg.jpg",
+                "height": "960"
+              },
+              "large": {
+                "width": "550",
+                "url": "https://media-cdn.tripadvisor.com/media/photo-s/1a/35/99/4a/photo0jpg.jpg",
+                "height": "413"
+              },
+              "medium": {
+                "width": "250",
+                "url": "https://media-cdn.tripadvisor.com/media/photo-f/1a/35/99/4a/photo0jpg.jpg",
+                "height": "188"
+              }
+            },
+            "is_blessed": true,
+            "uploaded_date": "2019-12-04T14:40:22-0500",
+            "caption": "",
+            "id": "439720266",
+            "helpful_votes": "1",
+            "published_date": "2019-12-04T14:40:22-0500",
+            "user": {
+              "user_id": null,
+              "member_id": "0",
+              "type": "user"
+            }
+          },
+          "awards": [],
+          "doubleclick_zone": "as.sri_lanka",
+          "preferred_map_engine": "default",
+          "raw_ranking": "4.754421234130859",
+          "ranking_geo": "Sigiriya",
+          "ranking_geo_id": "304141",
+          "ranking_position": "6",
+          "ranking_denominator": "149",
+          "ranking_category": "restaurant",
+          "ranking": "#6 of 207 Restaurants in Sigiriya",
+          "distance": "8.8983284702143",
+          "distance_string": "8.9 km",
+          "bearing": "north",
+          "rating": "4.9",
+          "is_closed": false,
+          "open_now_text": "Closed Now",
+          "is_long_closed": false,
+          "price_level": "$",
+          "price": "$2 - $15",
+          "description": "Sigiriya Wew Thawulla Restaurant running by most experienced cheff Mr.Nalaka. Ihave worked more star class hotels. We providing all kinds of foods and fresh juices. Our place face to Sigiriya rock and Lake. Most times at the evening you can see wikd elephants during the eating.",
+          "web_url": "https://www.tripadvisor.com/Restaurant_Review-g304141-d17660325-Reviews-Sigiriya_wew_Thawulla_Restaurant-Sigiriya_Central_Province.html",
+          "write_review": "https://www.tripadvisor.com/UserReview-g304141-d17660325-Sigiriya_wew_Thawulla_Restaurant-Sigiriya_Central_Province.html",
+          "ancestors": [
+            {
+              "subcategory": [
+                {
+                  "key": "city",
+                  "name": "City"
+                }
+              ],
+              "name": "Sigiriya",
+              "abbrv": null,
+              "location_id": "304141"
+            },
+            {
+              "subcategory": [
+                {
+                  "key": "province",
+                  "name": "Province"
+                }
+              ],
+              "name": "Central Province",
+              "abbrv": null,
+              "location_id": "2467830"
+            },
+            {
+              "subcategory": [
+                {
+                  "key": "country",
+                  "name": "Country"
+                }
+              ],
+              "name": "Sri Lanka",
+              "abbrv": null,
+              "location_id": "293961"
+            }
+          ],
+          "category": {
+            "key": "restaurant",
+            "name": "Restaurant"
+          },
+          "subcategory": [
+            {
+              "key": "sit_down",
+              "name": "Sit down"
+            }
+          ],
+          "parent_display_name": "Sigiriya",
+          "is_jfy_enabled": false,
+          "nearest_metro_station": [],
+          "phone": "+94 77 616 9542",
+          "email": "puppiesdonat@gmail.com",
+          "address_obj": {
+            "street1": "Hotel road",
+            "street2": null,
+            "city": "Sigiriya",
+            "state": null,
+            "country": "Sri Lanka",
+            "postalcode": "21120"
+          },
+          "address": "Hotel road, Sigiriya 21120 Sri Lanka",
+          "hours": {
+            "week_ranges": [
+              [
+                {
+                  "open_time": 420,
+                  "close_time": 1380
+                }
+              ],
+              [
+                {
+                  "open_time": 420,
+                  "close_time": 1380
+                }
+              ],
+              [
+                {
+                  "open_time": 420,
+                  "close_time": 1380
+                }
+              ],
+              [
+                {
+                  "open_time": 420,
+                  "close_time": 1380
+                }
+              ],
+              [
+                {
+                  "open_time": 420,
+                  "close_time": 1380
+                }
+              ],
+              [
+                {
+                  "open_time": 420,
+                  "close_time": 1380
+                }
+              ],
+              [
+                {
+                  "open_time": 420,
+                  "close_time": 1380
+                }
+              ]
+            ],
+            "timezone": "Asia/Colombo"
+          },
+          "is_candidate_for_contact_info_suppression": false,
+          "cuisine": [
+            {
+              "key": "10659",
+              "name": "Asian"
+            },
+            {
+              "key": "10793",
+              "name": "Sri Lankan"
+            },
+            {
+              "key": "10686",
+              "name": "Street Food"
+            },
+            {
+              "key": "10665",
+              "name": "Vegetarian friendly"
+            },
+            {
+              "key": "10697",
+              "name": "Vegan options"
+            }
+          ],
+          "dietary_restrictions": [
+            {
+              "key": "10665",
+              "name": "Vegetarian friendly"
+            },
+            {
+              "key": "10697",
+              "name": "Vegan options"
+            }
+          ],
+          "establishment_types": [
+            {
+              "key": "10591",
+              "name": "Restaurants"
+            }
+          ]
+        },
+        {
+          "location_id": "9694624",
+          "name": "Rithu Restaurant",
+          "latitude": "7.930292",
+          "longitude": "80.703224",
+          "num_reviews": "397",
+          "timezone": "Asia/Colombo",
+          "location_string": "Dambulla, Central Province",
+          "photo": {
+            "images": {
+              "small": {
+                "width": "150",
+                "url": "https://media-cdn.tripadvisor.com/media/photo-l/0f/39/50/f6/img-20170509-wa0002-largejpg.jpg",
+                "height": "150"
+              },
+              "thumbnail": {
+                "width": "50",
+                "url": "https://media-cdn.tripadvisor.com/media/photo-t/0f/39/50/f6/img-20170509-wa0002-largejpg.jpg",
+                "height": "50"
+              },
+              "original": {
+                "width": "1280",
+                "url": "https://media-cdn.tripadvisor.com/media/photo-o/0f/39/50/f6/img-20170509-wa0002-largejpg.jpg",
+                "height": "960"
+              },
+              "large": {
+                "width": "550",
+                "url": "https://media-cdn.tripadvisor.com/media/photo-s/0f/39/50/f6/img-20170509-wa0002-largejpg.jpg",
+                "height": "413"
+              },
+              "medium": {
+                "width": "250",
+                "url": "https://media-cdn.tripadvisor.com/media/photo-f/0f/39/50/f6/img-20170509-wa0002-largejpg.jpg",
+                "height": "188"
+              }
+            },
+            "is_blessed": true,
+            "uploaded_date": "2017-05-09T10:00:36-0400",
+            "caption": "",
+            "id": "255414518",
+            "helpful_votes": "2",
+            "published_date": "2017-05-09T10:00:36-0400",
+            "user": {
+              "user_id": null,
+              "member_id": "0",
+              "type": "user"
+            }
+          },
+          "awards": [],
+          "doubleclick_zone": "as.sri_lanka",
+          "preferred_map_engine": "default",
+          "raw_ranking": "4.699528217315674",
+          "ranking_geo": "Dambulla",
+          "ranking_geo_id": "304133",
+          "ranking_position": "2",
+          "ranking_denominator": "63",
+          "ranking_category": "restaurant",
+          "ranking": "#2 of 91 Restaurants in Dambulla",
+          "distance": "9.882926333761734",
+          "distance_string": "9.9 km",
+          "bearing": "northwest",
+          "rating": "4.8",
+          "is_closed": false,
+          "is_long_closed": false,
+          "price_level": "$",
+          "description": "",
+          "web_url": "https://www.tripadvisor.com/Restaurant_Review-g304133-d9694624-Reviews-Rithu_Restaurant-Dambulla_Central_Province.html",
+          "write_review": "https://www.tripadvisor.com/UserReview-g304133-d9694624-Rithu_Restaurant-Dambulla_Central_Province.html",
+          "ancestors": [
+            {
+              "subcategory": [
+                {
+                  "key": "city",
+                  "name": "City"
+                }
+              ],
+              "name": "Dambulla",
+              "abbrv": null,
+              "location_id": "304133"
+            },
+            {
+              "subcategory": [
+                {
+                  "key": "province",
+                  "name": "Province"
+                }
+              ],
+              "name": "Central Province",
+              "abbrv": null,
+              "location_id": "2467830"
+            },
+            {
+              "subcategory": [
+                {
+                  "key": "country",
+                  "name": "Country"
+                }
+              ],
+              "name": "Sri Lanka",
+              "abbrv": null,
+              "location_id": "293961"
+            }
+          ],
+          "category": {
+            "key": "restaurant",
+            "name": "Restaurant"
+          },
+          "subcategory": [],
+          "parent_display_name": "Dambulla",
+          "is_jfy_enabled": false,
+          "nearest_metro_station": [],
+          "phone": "+94 77 445 1529",
+          "website": "http://www.toursrilanka.lk",
+          "address_obj": {
+            "street1": "Inamaluwa Sigiriya",
+            "street2": null,
+            "city": "Dambulla",
+            "state": null,
+            "country": "Sri Lanka",
+            "postalcode": "21120"
+          },
+          "address": "Inamaluwa Sigiriya, Dambulla 21120 Sri Lanka",
+          "is_candidate_for_contact_info_suppression": false,
+          "cuisine": [
+            {
+              "key": "10643",
+              "name": "Seafood"
+            },
+            {
+              "key": "10646",
+              "name": "Fast Food"
+            },
+            {
+              "key": "10676",
+              "name": "Diner"
+            },
+            {
+              "key": "10793",
+              "name": "Sri Lankan"
+            },
+            {
+              "key": "10665",
+              "name": "Vegetarian friendly"
+            },
+            {
+              "key": "10697",
+              "name": "Vegan options"
+            },
+            {
+              "key": "10992",
+              "name": "Gluten free options"
+            }
+          ],
+          "dietary_restrictions": [
+            {
+              "key": "10665",
+              "name": "Vegetarian friendly"
+            },
+            {
+              "key": "10697",
+              "name": "Vegan options"
+            },
+            {
+              "key": "10992",
+              "name": "Gluten free options"
+            }
+          ],
+          "establishment_types": [
+            {
+              "key": "10591",
+              "name": "Restaurants"
+            }
+          ]
+        },
+        {
+          "location_id": "19244719",
+          "name": "One More Bite Burgers",
+          "latitude": "7.946005",
+          "longitude": "80.76074",
+          "num_reviews": "219",
+          "timezone": "Asia/Colombo",
+          "location_string": "Sigiriya, Central Province",
+          "photo": {
+            "images": {
+              "small": {
+                "width": "250",
+                "url": "https://media-cdn.tripadvisor.com/media/photo-f/2c/dd/c6/2c/happy-group.jpg",
+                "height": "141"
+              },
+              "thumbnail": {
+                "width": "50",
+                "url": "https://media-cdn.tripadvisor.com/media/photo-t/2c/dd/c6/2c/happy-group.jpg",
+                "height": "50"
+              },
+              "original": {
+                "width": "1280",
+                "url": "https://media-cdn.tripadvisor.com/media/photo-o/2c/dd/c6/2c/happy-group.jpg",
+                "height": "720"
+              },
+              "large": {
+                "width": "1024",
+                "url": "https://media-cdn.tripadvisor.com/media/photo-w/2c/dd/c6/2c/happy-group.jpg",
+                "height": "576"
+              },
+              "medium": {
+                "width": "550",
+                "url": "https://media-cdn.tripadvisor.com/media/photo-s/2c/dd/c6/2c/happy-group.jpg",
+                "height": "309"
+              }
+            },
+            "is_blessed": true,
+            "uploaded_date": "2024-07-16T07:18:24-0400",
+            "caption": "Happy Group",
+            "id": "752731692",
+            "helpful_votes": "0",
+            "published_date": "2024-07-16T07:18:24-0400",
+            "user": {
+              "user_id": null,
+              "member_id": "0",
+              "type": "user"
+            }
+          },
+          "awards": [],
+          "doubleclick_zone": "as.sri_lanka",
+          "preferred_map_engine": "default",
+          "raw_ranking": "4.652205467224121",
+          "ranking_geo": "Sigiriya",
+          "ranking_geo_id": "304141",
+          "ranking_position": "8",
+          "ranking_denominator": "149",
+          "ranking_category": "restaurant",
+          "ranking": "#7 of 207 Restaurants in Sigiriya",
+          "distance": "8.205051771930082",
+          "distance_string": "8.2 km",
+          "bearing": "north",
+          "rating": "4.8",
+          "is_closed": false,
+          "open_now_text": "Closed Now",
+          "is_long_closed": false,
+          "price_level": "$",
+          "price": "$3 - $6",
+          "description": "Lovely Travelers.. Welcome to the One More Bite Burgers....!!!\nSince 2020 We are making the cheesy Juicy Burgers with our own secret recipe Home Made Burger Patties, \nwe are Serving Vegan, Vegetarian, Chicken, Beef Burgers with More Varieties. \nAll the Burgers are served with  Yellow Sweet Potato fries which is organic and very healthy. \nwe are serving fresh juices, soft drinks, milkshakes, and our signature iced Lemon tea. \nAfter Enjoy Your Meal you can have an ice-cream (Vanilla/Chocolate/Strawberry) for the dessert. \nWe want to make you happy with our 100% best food and service to return back. \nplease make sure about the correct restaurant (One More Bite Burgers), because around one more bite Burger's other all  restaurants have burger signs, because of that some guests are confusing and by mistaken some lovely guests are sitting in other places. Thank you and see you soon to try our delicious  Burger bite...",
+          "web_url": "https://www.tripadvisor.com/Restaurant_Review-g304141-d19244719-Reviews-One_More_Bite_Burgers-Sigiriya_Central_Province.html",
+          "write_review": "https://www.tripadvisor.com/UserReview-g304141-d19244719-One_More_Bite_Burgers-Sigiriya_Central_Province.html",
+          "ancestors": [
+            {
+              "subcategory": [
+                {
+                  "key": "city",
+                  "name": "City"
+                }
+              ],
+              "name": "Sigiriya",
+              "abbrv": null,
+              "location_id": "304141"
+            },
+            {
+              "subcategory": [
+                {
+                  "key": "province",
+                  "name": "Province"
+                }
+              ],
+              "name": "Central Province",
+              "abbrv": null,
+              "location_id": "2467830"
+            },
+            {
+              "subcategory": [
+                {
+                  "key": "country",
+                  "name": "Country"
+                }
+              ],
+              "name": "Sri Lanka",
+              "abbrv": null,
+              "location_id": "293961"
+            }
+          ],
+          "category": {
+            "key": "restaurant",
+            "name": "Restaurant"
+          },
+          "subcategory": [
+            {
+              "key": "cafe",
+              "name": "Café"
+            }
+          ],
+          "parent_display_name": "Sigiriya",
+          "is_jfy_enabled": false,
+          "nearest_metro_station": [],
+          "phone": "+94 70 254 7385",
+          "website": "https://www.facebook.com/p/One-More-Bite-Burgers-100063700204055/",
+          "email": "onemorebiteburgers@gmail.com",
+          "address_obj": {
+            "street1": "Kalapuraya Road",
+            "street2": null,
+            "city": "Sigiriya",
+            "state": null,
+            "country": "Sri Lanka",
+            "postalcode": "21120"
+          },
+          "address": "Kalapuraya Road, Sigiriya 21120 Sri Lanka",
+          "hours": {
+            "week_ranges": [
+              [
+                {
+                  "open_time": 600,
+                  "close_time": 1380
+                }
+              ],
+              [
+                {
+                  "open_time": 600,
+                  "close_time": 1380
+                }
+              ],
+              [
+                {
+                  "open_time": 600,
+                  "close_time": 1380
+                }
+              ],
+              [
+                {
+                  "open_time": 600,
+                  "close_time": 1380
+                }
+              ],
+              [
+                {
+                  "open_time": 600,
+                  "close_time": 1380
+                }
+              ],
+              [
+                {
+                  "open_time": 600,
+                  "close_time": 1380
+                }
+              ],
+              [
+                {
+                  "open_time": 1140,
+                  "close_time": 1380
+                }
+              ]
+            ],
+            "timezone": "Asia/Colombo"
+          },
+          "is_candidate_for_contact_info_suppression": false,
+          "cuisine": [
+            {
+              "key": "10659",
+              "name": "Asian"
+            },
+            {
+              "key": "10679",
+              "name": "Healthy"
+            },
+            {
+              "key": "10766",
+              "name": "Armenian"
+            },
+            {
+              "key": "10665",
+              "name": "Vegetarian friendly"
+            },
+            {
+              "key": "10697",
+              "name": "Vegan options"
+            }
+          ],
+          "dietary_restrictions": [
+            {
+              "key": "10665",
+              "name": "Vegetarian friendly"
+            },
+            {
+              "key": "10697",
+              "name": "Vegan options"
+            }
+          ],
+          "establishment_types": [
+            {
+              "key": "10591",
+              "name": "Restaurants"
+            }
+          ]
+        },
+        {
+          "location_id": "18840954",
+          "name": "Little Hut",
+          "latitude": "7.950567",
+          "longitude": "80.759315",
+          "num_reviews": "116",
+          "timezone": "Asia/Colombo",
+          "location_string": "Sigiriya, Central Province",
+          "photo": {
+            "images": {
+              "small": {
+                "width": "150",
+                "url": "https://media-cdn.tripadvisor.com/media/photo-l/19/4d/98/d5/received-448267662698845.jpg",
+                "height": "150"
+              },
+              "thumbnail": {
+                "width": "50",
+                "url": "https://media-cdn.tripadvisor.com/media/photo-t/19/4d/98/d5/received-448267662698845.jpg",
+                "height": "50"
+              },
+              "original": {
+                "width": "1024",
+                "url": "https://media-cdn.tripadvisor.com/media/photo-w/19/4d/98/d5/received-448267662698845.jpg",
+                "height": "662"
+              },
+              "large": {
+                "width": "1024",
+                "url": "https://media-cdn.tripadvisor.com/media/photo-o/19/4d/98/d5/received-448267662698845.jpg",
+                "height": "662"
+              },
+              "medium": {
+                "width": "550",
+                "url": "https://media-cdn.tripadvisor.com/media/photo-s/19/4d/98/d5/received-448267662698845.jpg",
+                "height": "356"
+              }
+            },
+            "is_blessed": true,
+            "uploaded_date": "2019-09-18T06:49:12-0400",
+            "caption": "",
+            "id": "424515797",
+            "helpful_votes": "1",
+            "published_date": "2019-09-19T02:51:14-0400",
+            "user": {
+              "user_id": null,
+              "member_id": "0",
+              "type": "user"
+            }
+          },
+          "awards": [],
+          "doubleclick_zone": "as.sri_lanka",
+          "preferred_map_engine": "default",
+          "raw_ranking": "4.645153999328613",
+          "ranking_geo": "Sigiriya",
+          "ranking_geo_id": "304141",
+          "ranking_position": "9",
+          "ranking_denominator": "149",
+          "ranking_category": "restaurant",
+          "ranking": "#8 of 207 Restaurants in Sigiriya",
+          "distance": "8.730870866854255",
+          "distance_string": "8.7 km",
+          "bearing": "north",
+          "rating": "4.9",
+          "is_closed": false,
+          "open_now_text": "Closed Now",
+          "is_long_closed": false,
+          "price_level": "$",
+          "price": "$14 - $2,500",
+          "description": "Fast food srilankan grild fried western. Come and enjoy thanks you .",
+          "web_url": "https://www.tripadvisor.com/Restaurant_Review-g304141-d18840954-Reviews-Little_Hut-Sigiriya_Central_Province.html",
+          "write_review": "https://www.tripadvisor.com/UserReview-g304141-d18840954-Little_Hut-Sigiriya_Central_Province.html",
+          "ancestors": [
+            {
+              "subcategory": [
+                {
+                  "key": "city",
+                  "name": "City"
+                }
+              ],
+              "name": "Sigiriya",
+              "abbrv": null,
+              "location_id": "304141"
+            },
+            {
+              "subcategory": [
+                {
+                  "key": "province",
+                  "name": "Province"
+                }
+              ],
+              "name": "Central Province",
+              "abbrv": null,
+              "location_id": "2467830"
+            },
+            {
+              "subcategory": [
+                {
+                  "key": "country",
+                  "name": "Country"
+                }
+              ],
+              "name": "Sri Lanka",
+              "abbrv": null,
+              "location_id": "293961"
+            }
+          ],
+          "category": {
+            "key": "restaurant",
+            "name": "Restaurant"
+          },
+          "subcategory": [
+            {
+              "key": "cafe",
+              "name": "Café"
+            }
+          ],
+          "parent_display_name": "Sigiriya",
+          "is_jfy_enabled": false,
+          "nearest_metro_station": [],
+          "phone": "+94 78 919 6964",
+          "website": "https://www.facebook.com/Little-hut-105963450793301/",
+          "address_obj": {
+            "street1": "Mailethtewa Rode",
+            "street2": null,
+            "city": "Sigiriya",
+            "state": null,
+            "country": "Sri Lanka",
+            "postalcode": "21120"
+          },
+          "address": "Mailethtewa Rode, Sigiriya 21120 Sri Lanka",
+          "hours": {
+            "week_ranges": [
+              [
+                {
+                  "open_time": 540,
+                  "close_time": 1380
+                }
+              ],
+              [
+                {
+                  "open_time": 540,
+                  "close_time": 1380
+                }
+              ],
+              [
+                {
+                  "open_time": 540,
+                  "close_time": 1380
+                }
+              ],
+              [
+                {
+                  "open_time": 540,
+                  "close_time": 1380
+                }
+              ],
+              [
+                {
+                  "open_time": 540,
+                  "close_time": 1380
+                }
+              ],
+              [
+                {
+                  "open_time": 540,
+                  "close_time": 1380
+                }
+              ],
+              [
+                {
+                  "open_time": 540,
+                  "close_time": 1380
+                }
+              ]
+            ],
+            "timezone": "Asia/Colombo"
+          },
+          "is_candidate_for_contact_info_suppression": false,
+          "cuisine": [
+            {
+              "key": "10679",
+              "name": "Healthy"
+            },
+            {
+              "key": "10793",
+              "name": "Sri Lankan"
+            },
+            {
+              "key": "10665",
+              "name": "Vegetarian friendly"
+            },
+            {
+              "key": "10697",
+              "name": "Vegan options"
+            }
+          ],
+          "dietary_restrictions": [
+            {
+              "key": "10665",
+              "name": "Vegetarian friendly"
+            },
+            {
+              "key": "10697",
+              "name": "Vegan options"
+            }
+          ],
+          "establishment_types": [
+            {
+              "key": "10591",
+              "name": "Restaurants"
+            }
+          ]
+        }
+      ],
+      "attractions": [
+        {
+          "location_id": "4782530",
+          "name": "Sigiriya The Ancient Rock Fortress",
+          "latitude": "7.956884",
+          "longitude": "80.76046",
+          "num_reviews": "11847",
+          "timezone": "Asia/Colombo",
+          "location_string": "Sigiriya, Central Province",
+          "photo": {
+            "images": {
+              "small": {
+                "width": "150",
+                "url": "https://media-cdn.tripadvisor.com/media/photo-l/0f/ed/85/6b/um-palacio-no-topo-da.jpg",
+                "height": "150"
+              },
+              "thumbnail": {
+                "width": "50",
+                "url": "https://media-cdn.tripadvisor.com/media/photo-t/0f/ed/85/6b/um-palacio-no-topo-da.jpg",
+                "height": "50"
+              },
+              "original": {
+                "width": "1366",
+                "url": "https://media-cdn.tripadvisor.com/media/photo-o/0f/ed/85/6b/um-palacio-no-topo-da.jpg",
+                "height": "973"
+              },
+              "large": {
+                "width": "2560",
+                "url": "https://media-cdn.tripadvisor.com/media/photo-b/2560x500/0f/ed/85/6b/um-palacio-no-topo-da.jpg",
+                "height": "500"
+              },
+              "medium": {
+                "width": "1280",
+                "url": "https://media-cdn.tripadvisor.com/media/photo-b/1280x250/0f/ed/85/6b/um-palacio-no-topo-da.jpg",
+                "height": "250"
+              }
+            },
+            "is_blessed": false,
+            "uploaded_date": "2017-07-17T22:19:19-0400",
+            "caption": "Um palacio no topo da Rocha construído pelo Rei Kassyapa",
+            "id": "267224427",
+            "helpful_votes": "87",
+            "published_date": "2017-07-17T22:19:19-0400",
+            "user": {
+              "user_id": null,
+              "member_id": "0",
+              "type": "user"
+            }
+          },
+          "awards": [],
+          "location_subtype": "none",
+          "doubleclick_zone": "as.sri_lanka",
+          "preferred_map_engine": "default",
+          "raw_ranking": "5.0",
+          "ranking_geo": "Sigiriya",
+          "ranking_geo_id": "304141",
+          "ranking_position": "1",
+          "ranking_denominator": "24",
+          "ranking_category": "attraction",
+          "ranking_subcategory": "#1 of 24 things to do in Sigiriya",
+          "subcategory_ranking": "#1 of 24 things to do in Sigiriya",
+          "ranking": "#1 of 24 things to do in Sigiriya",
+          "distance": "9.40819276861901",
+          "distance_string": "9.4 km",
+          "bearing": "north",
+          "rating": "4.6",
+          "is_closed": false,
+          "is_long_closed": false,
+          "description": "",
+          "web_url": "https://www.tripadvisor.com/Attraction_Review-g304141-d4782530-Reviews-Sigiriya_The_Ancient_Rock_Fortress-Sigiriya_Central_Province.html",
+          "write_review": "https://www.tripadvisor.com/UserReview-g304141-d4782530-Sigiriya_The_Ancient_Rock_Fortress-Sigiriya_Central_Province.html",
+          "ancestors": [
+            {
+              "subcategory": [
+                {
+                  "key": "city",
+                  "name": "City"
+                }
+              ],
+              "name": "Sigiriya",
+              "abbrv": null,
+              "location_id": "304141"
+            },
+            {
+              "subcategory": [
+                {
+                  "key": "province",
+                  "name": "Province"
+                }
+              ],
+              "name": "Central Province",
+              "abbrv": null,
+              "location_id": "2467830"
+            },
+            {
+              "subcategory": [
+                {
+                  "key": "country",
+                  "name": "Country"
+                }
+              ],
+              "name": "Sri Lanka",
+              "abbrv": null,
+              "location_id": "293961"
+            }
+          ],
+          "category": {
+            "key": "attraction",
+            "name": "Attraction"
+          },
+          "subcategory": [
+            {
+              "key": "47",
+              "name": "Sights & Landmarks"
+            }
+          ],
+          "parent_display_name": "Sigiriya",
+          "is_jfy_enabled": false,
+          "nearest_metro_station": [],
+          "address_obj": {
+            "street1": null,
+            "street2": null,
+            "city": "Sigiriya",
+            "state": null,
+            "country": "Sri Lanka",
+            "postalcode": "21120"
+          },
+          "address": "Sigiriya 21120 Sri Lanka",
+          "is_candidate_for_contact_info_suppression": false,
+          "subtype": [
+            {
+              "key": "163",
+              "name": "Points of Interest & Landmarks"
+            },
+            {
+              "key": "2",
+              "name": "Ancient Ruins"
+            }
+          ],
+          "booking": {
+            "provider": "Viator",
+            "url": "https://www.tripadvisor.com/Commerce?url=https%3A%2F%2Fwww.viator.com%2Ftours%2FKandy%2FDay-tour-to-Sigiriya-and-Dambulla-from-Kandy%2Fd22283-85402P4%3Feap%3Dmobile-app-11383%26aid%3Dtripenandr&partnerKey=1&urlKey=5b875af497f03e783&logme=true&uidparam=refid&attrc=true&Provider=Viator&area=TOP&slot=1&cnt=1&geo=4782530&clt=TM&from=api&nt=true"
+          },
+          "offer_group": {
+            "lowest_price": "$5.34",
+            "offer_list": [
+              {
+                "url": "https://www.tripadvisor.com/Commerce?url=https%3A%2F%2Fwww.viator.com%2Ftours%2FKandy%2FDay-tour-to-Sigiriya-and-Dambulla-from-Kandy%2Fd22283-85402P4%3Feap%3Dmobile-app-11383%26aid%3Dtripenandr&partnerKey=1&urlKey=5b875af497f03e783&logme=true&uidparam=refid&attrc=true&Provider=Viator&area=viator_multi&slot=1&cnt=1&geo=4782530&clt=TM&from=api&nt=true",
+                "price": "$99.00",
+                "rounded_up_price": "$99",
+                "offer_type": "",
+                "title": "Day tour to Sigiriya & Dambulla from Kandy by Aaliya Tours",
+                "product_code": "85402P4",
+                "partner": "Viator",
+                "image_url": "https://media.tacdn.com/media/attractions-splice-spp-360x240/06/75/64/19.jpg",
+                "description": null,
+                "primary_category": "Cultural Tours"
+              },
+              {
+                "url": "https://www.tripadvisor.com/Commerce?url=https%3A%2F%2Fwww.viator.com%2Ftours%2FKandy%2FDambulla-Sigiriya-Tour-with-MTH%2Fd22283-51560P3%3Feap%3Dmobile-app-11383%26aid%3Dtripenandr&partnerKey=1&urlKey=f3e1bc4a52cf72f59&logme=true&uidparam=refid&attrc=true&Provider=Viator&area=viator_multi&slot=2&cnt=1&geo=4782530&clt=TM&from=api&nt=true",
+                "price": "$59.00",
+                "rounded_up_price": "$59",
+                "offer_type": "",
+                "title": "Kandy Private Dambulla Sigiriya Tour with Lunch",
+                "product_code": "51560P3",
+                "partner": "Viator",
+                "image_url": "https://media.tacdn.com/media/attractions-splice-spp-360x240/07/01/2b/13.jpg",
+                "description": null,
+                "primary_category": "Day Trips"
+              },
+              {
+                "url": "https://www.tripadvisor.com/Commerce?url=https%3A%2F%2Fwww.viator.com%2Ftours%2FColombo%2FHighlights-Of-Sigiriya-and-Dambulla-Day-Excursions-From-Colombo%2Fd4619-68395P15%3Feap%3Dmobile-app-11383%26aid%3Dtripenandr&partnerKey=1&urlKey=297533d8be1004c4a&logme=true&uidparam=refid&attrc=true&Provider=Viator&area=viator_multi&slot=3&cnt=1&geo=4782530&clt=TM&from=api&nt=true",
+                "price": "$70.00",
+                "rounded_up_price": "$70",
+                "offer_type": "",
+                "title": "Sigiriya Rock and Dambulla Cave Temples Tour from Colombo",
+                "product_code": "68395P15",
+                "partner": "Viator",
+                "image_url": "https://media.tacdn.com/media/attractions-splice-spp-360x240/15/73/8b/b6.jpg",
+                "description": null,
+                "primary_category": "Cultural Tours"
+              },
+              {
+                "url": "https://www.tripadvisor.com/Commerce?url=https%3A%2F%2Fwww.viator.com%2Ftours%2FColombo%2FPRIVATE-SIGIRIYA-and-DAMBULLA-DAY-TOUR-From-Colombo%2Fd4619-38355P138%3Feap%3Dmobile-app-11383%26aid%3Dtripenandr&partnerKey=1&urlKey=ea3e2c2560e332c90&logme=true&uidparam=refid&attrc=true&Provider=Viator&area=viator_multi&slot=4&cnt=1&geo=4782530&clt=TM&from=api&nt=true",
+                "price": "$71.80",
+                "rounded_up_price": "$72",
+                "offer_type": "",
+                "title": "Private Sigiriya & Dambulla Day Tour From Colombo",
+                "product_code": "38355P138",
+                "partner": "Viator",
+                "image_url": "https://media.tacdn.com/media/attractions-splice-spp-360x240/07/ba/e2/d5.jpg",
+                "description": null,
+                "primary_category": "Historical & Heritage Tours"
+              },
+              {
+                "url": "https://www.tripadvisor.com/Commerce?url=https%3A%2F%2Fwww.viator.com%2Ftours%2FColombo%2FFull-Day-Tour-of-Sigiriya-Rock-Fortress-and-Dambulla-Cave-Temples-Tour-by-Luxury-Vehicle%2Fd4619-17652P24%3Feap%3Dmobile-app-11383%26aid%3Dtripenandr&partnerKey=1&urlKey=3f2fd60e236627b95&logme=true&uidparam=refid&attrc=true&Provider=Viator&area=viator_multi&slot=5&cnt=1&geo=4782530&clt=TM&from=api&nt=true",
+                "price": "$83.34",
+                "rounded_up_price": "$84",
+                "offer_type": "",
+                "title": "Sigiriya Rock Fortress, Dambulla Cave Temple Full-Day Tour",
+                "product_code": "17652P24",
+                "partner": "Viator",
+                "image_url": "https://media.tacdn.com/media/attractions-splice-spp-360x240/09/cf/e5/e8.jpg",
+                "description": null,
+                "primary_category": "Cultural Tours"
+              }
+            ],
+            "has_see_all_url": true,
+            "is_eligible_for_ap_list": true
+          }
+        },
+        {
+          "location_id": "3220900",
+          "name": "Pidurangala Rock",
+          "latitude": "7.966372",
+          "longitude": "80.7618",
+          "num_reviews": "2582",
+          "timezone": "Asia/Colombo",
+          "location_string": "Sigiriya, Central Province",
+          "photo": {
+            "images": {
+              "small": {
+                "width": "150",
+                "url": "https://media-cdn.tripadvisor.com/media/photo-l/22/a2/b0/2d/top-of-the-pidurangala.jpg",
+                "height": "150"
+              },
+              "thumbnail": {
+                "width": "50",
+                "url": "https://media-cdn.tripadvisor.com/media/photo-t/22/a2/b0/2d/top-of-the-pidurangala.jpg",
+                "height": "50"
+              },
+              "original": {
+                "width": "1280",
+                "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/22/a2/b0/2d/top-of-the-pidurangala.jpg",
+                "height": "608"
+              },
+              "large": {
+                "width": "1024",
+                "url": "https://media-cdn.tripadvisor.com/media/photo-w/22/a2/b0/2d/top-of-the-pidurangala.jpg",
+                "height": "486"
+              },
+              "medium": {
+                "width": "550",
+                "url": "https://media-cdn.tripadvisor.com/media/photo-s/22/a2/b0/2d/top-of-the-pidurangala.jpg",
+                "height": "261"
+              }
+            },
+            "is_blessed": true,
+            "uploaded_date": "2022-03-22T23:13:16-0400",
+            "caption": "Top of the pidurangala rock ",
+            "id": "581087277",
+            "helpful_votes": "0",
+            "published_date": "2022-03-22T23:13:16-0400",
+            "user": {
+              "user_id": null,
+              "member_id": "0",
+              "type": "user"
+            }
+          },
+          "awards": [],
+          "location_subtype": "none",
+          "doubleclick_zone": "as.sri_lanka",
+          "preferred_map_engine": "default",
+          "raw_ranking": "4.23601770401001",
+          "ranking_geo": "Sigiriya",
+          "ranking_geo_id": "304141",
+          "ranking_position": "2",
+          "ranking_denominator": "24",
+          "ranking_category": "attraction",
+          "ranking_subcategory": "#2 of 24 things to do in Sigiriya",
+          "subcategory_ranking": "#2 of 24 things to do in Sigiriya",
+          "ranking": "#2 of 24 things to do in Sigiriya",
+          "distance": "10.439071785156365",
+          "distance_string": "10.4 km",
+          "bearing": "north",
+          "rating": "4.8",
+          "is_closed": false,
+          "open_now_text": "Closed Now",
+          "is_long_closed": false,
+          "description": "Pidurangala is a massive rock formation located a few kilometers north of Sigiriya in Sri Lanka. It has an interesting history closely related to that of the Sigiriya Rock Fortress. Climbing to the top of Pidurangala Rock is more strenuous than climbing Sigiriya. If you are fit and adventurous it is a climb worth making. It will take you about two hours. There is far less to see on this site than Sigiriya",
+          "web_url": "https://www.tripadvisor.com/Attraction_Review-g304141-d3220900-Reviews-Pidurangala_Rock-Sigiriya_Central_Province.html",
+          "write_review": "https://www.tripadvisor.com/UserReview-g304141-d3220900-Pidurangala_Rock-Sigiriya_Central_Province.html",
+          "ancestors": [
+            {
+              "subcategory": [
+                {
+                  "key": "city",
+                  "name": "City"
+                }
+              ],
+              "name": "Sigiriya",
+              "abbrv": null,
+              "location_id": "304141"
+            },
+            {
+              "subcategory": [
+                {
+                  "key": "province",
+                  "name": "Province"
+                }
+              ],
+              "name": "Central Province",
+              "abbrv": null,
+              "location_id": "2467830"
+            },
+            {
+              "subcategory": [
+                {
+                  "key": "country",
+                  "name": "Country"
+                }
+              ],
+              "name": "Sri Lanka",
+              "abbrv": null,
+              "location_id": "293961"
+            }
+          ],
+          "category": {
+            "key": "attraction",
+            "name": "Attraction"
+          },
+          "subcategory": [
+            {
+              "key": "47",
+              "name": "Sights & Landmarks"
+            }
+          ],
+          "parent_display_name": "Sigiriya",
+          "is_jfy_enabled": false,
+          "nearest_metro_station": [],
+          "address_obj": {
+            "street1": null,
+            "street2": null,
+            "city": "Sigiriya",
+            "state": null,
+            "country": "Sri Lanka",
+            "postalcode": "21120"
+          },
+          "address": "Sigiriya 21120 Sri Lanka",
+          "hours": {
+            "week_ranges": [
+              [
+                {
+                  "open_time": 0,
+                  "close_time": 375
+                }
+              ],
+              [
+                {
+                  "open_time": 540,
+                  "close_time": 1020
+                }
+              ],
+              [
+                {
+                  "open_time": 540,
+                  "close_time": 1020
+                }
+              ],
+              [
+                {
+                  "open_time": 540,
+                  "close_time": 1020
+                }
+              ],
+              [
+                {
+                  "open_time": 540,
+                  "close_time": 1020
+                }
+              ],
+              [
+                {
+                  "open_time": 540,
+                  "close_time": 1020
+                }
+              ],
+              []
+            ],
+            "timezone": "Asia/Colombo"
+          },
+          "is_candidate_for_contact_info_suppression": false,
+          "subtype": [
+            {
+              "key": "163",
+              "name": "Points of Interest & Landmarks"
+            }
+          ],
+          "booking": {
+            "provider": "Viator",
+            "url": "https://www.tripadvisor.com/Commerce?url=https%3A%2F%2Fwww.viator.com%2Ftours%2FKandy%2FDay-tour-to-Sigiriya-and-Dambulla-from-Kandy%2Fd22283-85402P4%3Feap%3Dmobile-app-11383%26aid%3Dtripenandr&partnerKey=1&urlKey=5b875af497f03e783&logme=true&uidparam=refid&attrc=true&Provider=Viator&area=TOP&slot=1&cnt=1&geo=3220900&clt=TM&from=api&nt=true"
+          },
+          "offer_group": {
+            "lowest_price": "$6.25",
+            "offer_list": [
+              {
+                "url": "https://www.tripadvisor.com/Commerce?url=https%3A%2F%2Fwww.viator.com%2Ftours%2FKandy%2FDay-tour-to-Sigiriya-and-Dambulla-from-Kandy%2Fd22283-85402P4%3Feap%3Dmobile-app-11383%26aid%3Dtripenandr&partnerKey=1&urlKey=5b875af497f03e783&logme=true&uidparam=refid&attrc=true&Provider=Viator&area=viator_multi&slot=1&cnt=1&geo=3220900&clt=TM&from=api&nt=true",
+                "price": "$99.00",
+                "rounded_up_price": "$99",
+                "offer_type": "",
+                "title": "Day tour to Sigiriya & Dambulla from Kandy by Aaliya Tours",
+                "product_code": "85402P4",
+                "partner": "Viator",
+                "image_url": "https://media.tacdn.com/media/attractions-splice-spp-360x240/06/75/64/19.jpg",
+                "description": null,
+                "primary_category": "Cultural Tours"
+              },
+              {
+                "url": "https://www.tripadvisor.com/Commerce?url=https%3A%2F%2Fwww.viator.com%2Ftours%2FColombo%2FROCK-CLIMBING-PIDURANGALA-ROCK-and-SIGIRIYA-ROCK-FROM-COLOMBO%2Fd4619-68395P38%3Feap%3Dmobile-app-11383%26aid%3Dtripenandr&partnerKey=1&urlKey=6111b4aa44bc1465c&logme=true&uidparam=refid&attrc=true&Provider=Viator&area=viator_multi&slot=2&cnt=1&geo=3220900&clt=TM&from=api&nt=true",
+                "price": "$152.00",
+                "rounded_up_price": "$152",
+                "offer_type": "",
+                "title": "Rock Climbing Pidurangala Rock & Sigiriya Rock From Colombo",
+                "product_code": "68395P38",
+                "partner": "Viator",
+                "image_url": "https://media.tacdn.com/media/attractions-splice-spp-360x240/06/d7/1b/30.jpg",
+                "description": null,
+                "primary_category": "Climbing"
+              },
+              {
+                "url": "https://www.tripadvisor.com/Commerce?url=https%3A%2F%2Fwww.viator.com%2Ftours%2FColombo%2FDay-Tour-to-Pidurangala-From-Negombo%2Fd4619-193175P3%3Feap%3Dmobile-app-11383%26aid%3Dtripenandr&partnerKey=1&urlKey=52013a89a8c1b2d4e&logme=true&uidparam=refid&attrc=true&Provider=Viator&area=viator_multi&slot=3&cnt=1&geo=3220900&clt=TM&from=api&nt=true",
+                "price": "$200.50",
+                "rounded_up_price": "$201",
+                "offer_type": "",
+                "title": "Pidurangala Day Tour From Negombo",
+                "product_code": "193175P3",
+                "partner": "Viator",
+                "image_url": "https://media.tacdn.com/media/attractions-splice-spp-360x240/10/23/a5/f1.jpg",
+                "description": null,
+                "primary_category": "Day Trips"
+              },
+              {
+                "url": "https://www.tripadvisor.com/Commerce?url=https%3A%2F%2Fwww.viator.com%2Ftours%2FNegombo%2FTours-and-taxi%2Fd33888-148924P1%3Feap%3Dmobile-app-11383%26aid%3Dtripenandr&partnerKey=1&urlKey=5c9b7045220ad44c0&logme=true&uidparam=refid&attrc=true&Provider=Viator&area=viator_multi&slot=4&cnt=1&geo=3220900&clt=TM&from=api&nt=true",
+                "price": "$80.00",
+                "rounded_up_price": "$80",
+                "offer_type": "",
+                "title": "Private Sri Lanka 8-Day Round-Island Tour from Colombo",
+                "product_code": "148924P1",
+                "partner": "Viator",
+                "image_url": "https://media.tacdn.com/media/attractions-splice-spp-360x240/12/02/15/38.jpg",
+                "description": null,
+                "primary_category": "Cultural Tours"
+              },
+              {
+                "url": "https://www.tripadvisor.com/Commerce?url=https%3A%2F%2Fwww.viator.com%2Ftours%2FColombo%2FSigiriya-Rock-Fortress-and-Cave-Temples-Private-Day-Trip%2Fd4619-104893P48%3Feap%3Dmobile-app-11383%26aid%3Dtripenandr&partnerKey=1&urlKey=79fc76034f5bed240&logme=true&uidparam=refid&attrc=true&Provider=Viator&area=viator_multi&slot=5&cnt=1&geo=3220900&clt=TM&from=api&nt=true",
+                "price": "$60.00",
+                "rounded_up_price": "$60",
+                "offer_type": "",
+                "title": "Sigiriya and Dambulla Private Tour from Colombo or Kandy",
+                "product_code": "104893P48",
+                "partner": "Viator",
+                "image_url": "https://media.tacdn.com/media/attractions-splice-spp-360x240/0e/7f/a6/0c.jpg",
+                "description": null,
+                "primary_category": "Cultural Tours"
+              }
+            ],
+            "has_see_all_url": true,
+            "is_eligible_for_ap_list": true
+          }
+        },
+        {
+          "location_id": "5960756",
+          "name": "Pethikada",
+          "latitude": "7.951378",
+          "longitude": "80.75391",
+          "num_reviews": "36",
+          "timezone": "Asia/Colombo",
+          "location_string": "Sigiriya, Central Province",
+          "photo": {
+            "images": {
+              "small": {
+                "width": "150",
+                "url": "https://media-cdn.tripadvisor.com/media/photo-l/09/10/37/4c/pethikada.jpg",
+                "height": "150"
+              },
+              "thumbnail": {
+                "width": "50",
+                "url": "https://media-cdn.tripadvisor.com/media/photo-t/09/10/37/4c/pethikada.jpg",
+                "height": "50"
+              },
+              "original": {
+                "width": "2000",
+                "url": "https://media-cdn.tripadvisor.com/media/photo-o/09/10/37/4c/pethikada.jpg",
+                "height": "1500"
+              },
+              "large": {
+                "width": "550",
+                "url": "https://media-cdn.tripadvisor.com/media/photo-s/09/10/37/4c/pethikada.jpg",
+                "height": "413"
+              },
+              "medium": {
+                "width": "250",
+                "url": "https://media-cdn.tripadvisor.com/media/photo-f/09/10/37/4c/pethikada.jpg",
+                "height": "188"
+              }
+            },
+            "is_blessed": true,
+            "uploaded_date": "2015-09-28T10:57:01-0400",
+            "caption": "24",
+            "id": "152057676",
+            "helpful_votes": "6",
+            "published_date": "2015-09-28T10:57:01-0400",
+            "user": {
+              "user_id": null,
+              "member_id": "0",
+              "type": "user"
+            }
+          },
+          "awards": [],
+          "location_subtype": "none",
+          "doubleclick_zone": "as.sri_lanka",
+          "preferred_map_engine": "default",
+          "raw_ranking": "3.1262078285217285",
+          "ranking_geo": "Sigiriya",
+          "ranking_geo_id": "304141",
+          "ranking_position": "6",
+          "ranking_denominator": "24",
+          "ranking_category": "attraction",
+          "ranking_subcategory": "#6 of 24 things to do in Sigiriya",
+          "subcategory_ranking": "#6 of 24 things to do in Sigiriya",
+          "ranking": "#6 of 24 things to do in Sigiriya",
+          "distance": "8.932541300820544",
+          "distance_string": "8.9 km",
+          "bearing": "north",
+          "rating": "4.6",
+          "is_closed": false,
+          "open_now_text": "Closed Now",
+          "is_long_closed": false,
+          "description": "Hello Everyone Pethikada Paintings and craft gallery gives unique collection of crafts and mostly paintings. What’s very unique about our art is that most of them are traditional paintings. Mostly from Dambulla Cave temple and other heritage sights. And adding to that we have a wonderful collection of frescoes too. Most of paintings are done on well treated wood and we try to keep authentic nature of the paintings as much as we can. Adding further you don’t have to buy anything from us we appreciate even your visit to our place. Because as a traveler if you are interested about art and authentic traditional art of Sri Lanka we highly recommend you to visit our place so we can give you a quality idea of our country’s painting history with examples. Finally our stall is not gigantic as other galleries and craft shops around the island but we can assure you fulfilling experience if you are an art lover.",
+          "web_url": "https://www.tripadvisor.com/Attraction_Review-g304141-d5960756-Reviews-Pethikada-Sigiriya_Central_Province.html",
+          "write_review": "https://www.tripadvisor.com/UserReview-g304141-d5960756-Pethikada-Sigiriya_Central_Province.html",
+          "ancestors": [
+            {
+              "subcategory": [
+                {
+                  "key": "city",
+                  "name": "City"
+                }
+              ],
+              "name": "Sigiriya",
+              "abbrv": null,
+              "location_id": "304141"
+            },
+            {
+              "subcategory": [
+                {
+                  "key": "province",
+                  "name": "Province"
+                }
+              ],
+              "name": "Central Province",
+              "abbrv": null,
+              "location_id": "2467830"
+            },
+            {
+              "subcategory": [
+                {
+                  "key": "country",
+                  "name": "Country"
+                }
+              ],
+              "name": "Sri Lanka",
+              "abbrv": null,
+              "location_id": "293961"
+            }
+          ],
+          "category": {
+            "key": "attraction",
+            "name": "Attraction"
+          },
+          "subcategory": [
+            {
+              "key": "26",
+              "name": "Shopping"
+            },
+            {
+              "key": "49",
+              "name": "Museums"
+            }
+          ],
+          "parent_display_name": "Sigiriya",
+          "is_jfy_enabled": false,
+          "nearest_metro_station": [],
+          "phone": "+94 77 713 2504",
+          "website": "https://www.facebook.com/pethikada/",
+          "email": "pethikada@gmail.com",
+          "address_obj": {
+            "street1": "Gallery, Near Rest House",
+            "street2": null,
+            "city": "Sigiriya",
+            "state": null,
+            "country": "Sri Lanka",
+            "postalcode": "20500"
+          },
+          "address": "Gallery, Near Rest House, Sigiriya 20500 Sri Lanka",
+          "hours": {
+            "week_ranges": [
+              [
+                {
+                  "open_time": 540,
+                  "close_time": 1320
+                }
+              ],
+              [
+                {
+                  "open_time": 540,
+                  "close_time": 1320
+                }
+              ],
+              [
+                {
+                  "open_time": 540,
+                  "close_time": 1320
+                }
+              ],
+              [
+                {
+                  "open_time": 540,
+                  "close_time": 1320
+                }
+              ],
+              [
+                {
+                  "open_time": 540,
+                  "close_time": 1320
+                }
+              ],
+              [
+                {
+                  "open_time": 540,
+                  "close_time": 1320
+                }
+              ],
+              [
+                {
+                  "open_time": 540,
+                  "close_time": 1320
+                }
+              ]
+            ],
+            "timezone": "Asia/Colombo"
+          },
+          "is_candidate_for_contact_info_suppression": false,
+          "subtype": [
+            {
+              "key": "1",
+              "name": "Art Galleries"
+            }
+          ]
+        },
+        {
+          "location_id": "2441456",
+          "name": "Sigiriya Museum",
+          "latitude": "7.957148",
+          "longitude": "80.75194",
+          "num_reviews": "789",
+          "timezone": "Asia/Colombo",
+          "location_string": "Sigiriya, Central Province",
+          "photo": {
+            "images": {
+              "small": {
+                "width": "150",
+                "url": "https://media-cdn.tripadvisor.com/media/photo-l/09/b6/ae/3b/sigiriya-museum.jpg",
+                "height": "150"
+              },
+              "thumbnail": {
+                "width": "50",
+                "url": "https://media-cdn.tripadvisor.com/media/photo-t/09/b6/ae/3b/sigiriya-museum.jpg",
+                "height": "50"
+              },
+              "original": {
+                "width": "2000",
+                "url": "https://media-cdn.tripadvisor.com/media/photo-o/09/b6/ae/3b/sigiriya-museum.jpg",
+                "height": "1500"
+              },
+              "large": {
+                "width": "550",
+                "url": "https://media-cdn.tripadvisor.com/media/photo-s/09/b6/ae/3b/sigiriya-museum.jpg",
+                "height": "413"
+              },
+              "medium": {
+                "width": "250",
+                "url": "https://media-cdn.tripadvisor.com/media/photo-f/09/b6/ae/3b/sigiriya-museum.jpg",
+                "height": "188"
+              }
+            },
+            "is_blessed": false,
+            "uploaded_date": "2015-12-09T15:00:49-0500",
+            "caption": "Sigiriya museum",
+            "id": "162967099",
+            "helpful_votes": "1",
+            "published_date": "2015-12-09T15:00:49-0500",
+            "user": {
+              "user_id": null,
+              "member_id": "0",
+              "type": "user"
+            }
+          },
+          "awards": [],
+          "location_subtype": "none",
+          "doubleclick_zone": "as.sri_lanka",
+          "preferred_map_engine": "default",
+          "raw_ranking": "3.2976739406585693",
+          "ranking_geo": "Sigiriya",
+          "ranking_geo_id": "304141",
+          "ranking_position": "4",
+          "ranking_denominator": "24",
+          "ranking_category": "attraction",
+          "ranking_subcategory": "#4 of 24 things to do in Sigiriya",
+          "subcategory_ranking": "#4 of 24 things to do in Sigiriya",
+          "ranking": "#4 of 24 things to do in Sigiriya",
+          "distance": "9.607053142501094",
+          "distance_string": "9.6 km",
+          "bearing": "north",
+          "rating": "3.6",
+          "is_closed": false,
+          "is_long_closed": false,
+          "description": "",
+          "web_url": "https://www.tripadvisor.com/Attraction_Review-g304141-d2441456-Reviews-Sigiriya_Museum-Sigiriya_Central_Province.html",
+          "write_review": "https://www.tripadvisor.com/UserReview-g304141-d2441456-Sigiriya_Museum-Sigiriya_Central_Province.html",
+          "ancestors": [
+            {
+              "subcategory": [
+                {
+                  "key": "city",
+                  "name": "City"
+                }
+              ],
+              "name": "Sigiriya",
+              "abbrv": null,
+              "location_id": "304141"
+            },
+            {
+              "subcategory": [
+                {
+                  "key": "province",
+                  "name": "Province"
+                }
+              ],
+              "name": "Central Province",
+              "abbrv": null,
+              "location_id": "2467830"
+            },
+            {
+              "subcategory": [
+                {
+                  "key": "country",
+                  "name": "Country"
+                }
+              ],
+              "name": "Sri Lanka",
+              "abbrv": null,
+              "location_id": "293961"
+            }
+          ],
+          "category": {
+            "key": "attraction",
+            "name": "Attraction"
+          },
+          "subcategory": [
+            {
+              "key": "49",
+              "name": "Museums"
+            }
+          ],
+          "parent_display_name": "Sigiriya",
+          "is_jfy_enabled": false,
+          "nearest_metro_station": [],
+          "phone": "+94 77 844 3304",
+          "website": "http://www.highsoftlankatours.com",
+          "address_obj": {
+            "street1": "Sigiriya Thalkotta",
+            "street2": "Sigiriya Thalkotta, Sigiriya, Central Province",
+            "city": "Sigiriya",
+            "state": null,
+            "country": "Sri Lanka",
+            "postalcode": "21120"
+          },
+          "address": "Sigiriya Thalkotta Sigiriya Thalkotta, Sigiriya, Central Province, Sigiriya 21120 Sri Lanka",
+          "is_candidate_for_contact_info_suppression": false,
+          "subtype": [
+            {
+              "key": "161",
+              "name": "Specialty Museums"
+            }
+          ],
+          "booking": {
+            "provider": "Viator",
+            "url": "https://www.tripadvisor.com/Commerce?url=https%3A%2F%2Fwww.viator.com%2Ftours%2FColombo%2FHighlights-Of-Sigiriya-and-Dambulla-Day-Excursions-From-Colombo%2Fd4619-68395P15%3Feap%3Dmobile-app-11383%26aid%3Dtripenandr&partnerKey=1&urlKey=297533d8be1004c4a&logme=true&uidparam=refid&attrc=true&Provider=Viator&area=TOP&slot=1&cnt=1&geo=2441456&clt=TM&from=api&nt=true"
+          },
+          "offer_group": {
+            "lowest_price": "$38.00",
+            "offer_list": [
+              {
+                "url": "https://www.tripadvisor.com/Commerce?url=https%3A%2F%2Fwww.viator.com%2Ftours%2FColombo%2FHighlights-Of-Sigiriya-and-Dambulla-Day-Excursions-From-Colombo%2Fd4619-68395P15%3Feap%3Dmobile-app-11383%26aid%3Dtripenandr&partnerKey=1&urlKey=297533d8be1004c4a&logme=true&uidparam=refid&attrc=true&Provider=Viator&area=viator_multi&slot=1&cnt=1&geo=2441456&clt=TM&from=api&nt=true",
+                "price": "$70.00",
+                "rounded_up_price": "$70",
+                "offer_type": "",
+                "title": "Sigiriya Rock and Dambulla Cave Temples Tour from Colombo",
+                "product_code": "68395P15",
+                "partner": "Viator",
+                "image_url": "https://media.tacdn.com/media/attractions-splice-spp-360x240/15/73/8b/b6.jpg",
+                "description": null,
+                "primary_category": "Cultural Tours"
+              },
+              {
+                "url": "https://www.tripadvisor.com/Commerce?url=https%3A%2F%2Fwww.viator.com%2Ftours%2FColombo%2F03-Days-Highlights-Of-Sigiriya-Kandy-Nuwara-Eliya-Ella-and-Udawalawe%2Fd4619-68395P175%3Feap%3Dmobile-app-11383%26aid%3Dtripenandr&partnerKey=1&urlKey=037d0f3e509ca3e66&logme=true&uidparam=refid&attrc=true&Provider=Viator&area=viator_multi&slot=2&cnt=1&geo=2441456&clt=TM&from=api&nt=true",
+                "price": "$265.00",
+                "rounded_up_price": "$265",
+                "offer_type": "",
+                "title": "Private 2-Night Sri Lanka Tour with Kandy, Ella and Udawalawe",
+                "product_code": "68395P175",
+                "partner": "Viator",
+                "image_url": "https://media.tacdn.com/media/attractions-splice-spp-360x240/15/73/8d/bf.jpg",
+                "description": null,
+                "primary_category": "Multi-day Tours"
+              },
+              {
+                "url": "https://www.tripadvisor.com/Commerce?url=https%3A%2F%2Fwww.viator.com%2Ftours%2FColombo%2F3-Day-Tour-to-Kandy-Nuwara-Eliya-and-Sigiriya-from-Colombo%2Fd4619-68395P57%3Feap%3Dmobile-app-11383%26aid%3Dtripenandr&partnerKey=1&urlKey=29856cd9afea20383&logme=true&uidparam=refid&attrc=true&Provider=Viator&area=viator_multi&slot=3&cnt=1&geo=2441456&clt=TM&from=api&nt=true",
+                "price": "$250.00",
+                "rounded_up_price": "$250",
+                "offer_type": "",
+                "title": "3 Days Tour to Kandy Nuwara Eliya & Sigiriya from Colombo",
+                "product_code": "68395P57",
+                "partner": "Viator",
+                "image_url": "https://media.tacdn.com/media/attractions-splice-spp-360x240/09/5b/af/1b.jpg",
+                "description": null,
+                "primary_category": "Multi-day Tours"
+              },
+              {
+                "url": "https://www.tripadvisor.com/Commerce?url=https%3A%2F%2Fwww.viator.com%2Ftours%2FColombo%2FSri-Lankan-Tourist-Driver-with-great-local-knowledge-all-over-the-country%2Fd4619-183250P1%3Feap%3Dmobile-app-11383%26aid%3Dtripenandr&partnerKey=1&urlKey=752b21722a181ce0c&logme=true&uidparam=refid&attrc=true&Provider=Viator&area=viator_multi&slot=4&cnt=1&geo=2441456&clt=TM&from=api&nt=true",
+                "price": "$998.00",
+                "rounded_up_price": "$998",
+                "offer_type": "",
+                "title": "Private Sri Lanka Custom Tour with Driver-Guide",
+                "product_code": "183250P1",
+                "partner": "Viator",
+                "image_url": "https://media.tacdn.com/media/attractions-splice-spp-360x240/07/c5/77/f4.jpg",
+                "description": null,
+                "primary_category": "Cultural Tours"
+              },
+              {
+                "url": "https://www.tripadvisor.com/Commerce?url=https%3A%2F%2Fwww.viator.com%2Ftours%2FSigiriya%2FFull-Day-Tour-To-Sigiriya-Rock-Fortress-And-Ancient-City-Of-Polonnaruwa%2Fd25903-69721P4%3Feap%3Dmobile-app-11383%26aid%3Dtripenandr&partnerKey=1&urlKey=f23d7bb348e280bf6&logme=true&uidparam=refid&attrc=true&Provider=Viator&area=viator_multi&slot=5&cnt=1&geo=2441456&clt=TM&from=api&nt=true",
+                "price": "$150.00",
+                "rounded_up_price": "$150",
+                "offer_type": "",
+                "title": "Sigiriya and Polonnaruwa Private Full-Day Tour",
+                "product_code": "69721P4",
+                "partner": "Viator",
+                "image_url": "https://media.tacdn.com/media/attractions-splice-spp-360x240/07/ad/73/87.jpg",
+                "description": null,
+                "primary_category": "Historical & Heritage Tours"
+              }
+            ],
+            "has_see_all_url": true,
+            "is_eligible_for_ap_list": true
+          }
+        },
+        {
+          "location_id": "13476701",
+          "name": "Ederagala Wana Senasuna",
+          "latitude": "7.913573",
+          "longitude": "80.680016",
+          "num_reviews": "3",
+          "timezone": "Asia/Colombo",
+          "location_string": "Dambulla, Central Province",
+          "photo": {
+            "images": {
+              "small": {
+                "width": "150",
+                "url": "https://media-cdn.tripadvisor.com/media/photo-l/16/6b/49/4d/photo3jpg.jpg",
+                "height": "150"
+              },
+              "thumbnail": {
+                "width": "50",
+                "url": "https://media-cdn.tripadvisor.com/media/photo-t/16/6b/49/4d/photo3jpg.jpg",
+                "height": "50"
+              },
+              "original": {
+                "width": "1024",
+                "url": "https://media-cdn.tripadvisor.com/media/photo-w/16/6b/49/4d/photo3jpg.jpg",
+                "height": "1365"
+              },
+              "large": {
+                "width": "550",
+                "url": "https://media-cdn.tripadvisor.com/media/photo-p/16/6b/49/4d/photo3jpg.jpg",
+                "height": "733"
+              },
+              "medium": {
+                "width": "338",
+                "url": "https://media-cdn.tripadvisor.com/media/photo-s/16/6b/49/4d/photo3jpg.jpg",
+                "height": "450"
+              }
+            },
+            "is_blessed": true,
+            "uploaded_date": "2019-02-10T11:11:21-0500",
+            "caption": "",
+            "id": "376129869",
+            "helpful_votes": "0",
+            "published_date": "2019-02-10T11:11:21-0500",
+            "user": {
+              "user_id": null,
+              "member_id": "0",
+              "type": "user"
+            }
+          },
+          "awards": [],
+          "location_subtype": "none",
+          "doubleclick_zone": "as.sri_lanka",
+          "preferred_map_engine": "default",
+          "raw_ranking": "2.783651828765869",
+          "ranking_geo": "Dambulla",
+          "ranking_geo_id": "304133",
+          "ranking_position": "9",
+          "ranking_denominator": "21",
+          "ranking_category": "attraction",
+          "ranking_subcategory": "#9 of 21 things to do in Dambulla",
+          "subcategory_ranking": "#9 of 21 things to do in Dambulla",
+          "ranking": "#9 of 21 things to do in Dambulla",
+          "distance": "11.076174919133107",
+          "distance_string": "11.1 km",
+          "bearing": "northwest",
+          "rating": "5.0",
+          "is_closed": false,
+          "is_long_closed": false,
+          "description": "",
+          "web_url": "https://www.tripadvisor.com/Attraction_Review-g304133-d13476701-Reviews-Ederagala_Wana_Senasuna-Dambulla_Central_Province.html",
+          "write_review": "https://www.tripadvisor.com/UserReview-g304133-d13476701-Ederagala_Wana_Senasuna-Dambulla_Central_Province.html",
+          "ancestors": [
+            {
+              "subcategory": [
+                {
+                  "key": "city",
+                  "name": "City"
+                }
+              ],
+              "name": "Dambulla",
+              "abbrv": null,
+              "location_id": "304133"
+            },
+            {
+              "subcategory": [
+                {
+                  "key": "province",
+                  "name": "Province"
+                }
+              ],
+              "name": "Central Province",
+              "abbrv": null,
+              "location_id": "2467830"
+            },
+            {
+              "subcategory": [
+                {
+                  "key": "country",
+                  "name": "Country"
+                }
+              ],
+              "name": "Sri Lanka",
+              "abbrv": null,
+              "location_id": "293961"
+            }
+          ],
+          "category": {
+            "key": "attraction",
+            "name": "Attraction"
+          },
+          "subcategory": [
+            {
+              "key": "47",
+              "name": "Sights & Landmarks"
+            }
+          ],
+          "parent_display_name": "Dambulla",
+          "is_jfy_enabled": false,
+          "nearest_metro_station": [],
+          "address_obj": {
+            "street1": "Ambepussa - Triconmalee Highway",
+            "street2": null,
+            "city": "Dambulla",
+            "state": null,
+            "country": "Sri Lanka",
+            "postalcode": "21100"
+          },
+          "address": "Ambepussa - Triconmalee Highway, Dambulla 21100 Sri Lanka",
+          "is_candidate_for_contact_info_suppression": false,
+          "subtype": [
+            {
+              "key": "10",
+              "name": "Sacred & Religious Sites"
+            }
+          ],
+          "booking": {
+            "provider": "Viator",
+            "url": "https://www.tripadvisor.com/Commerce?url=https%3A%2F%2Fwww.viator.com%2Ftours%2FColombo%2FPrivate-Sigiriya-and-Dambulla-Day-Tour-From-Colombo%2Fd4619-63959P40%3Feap%3Dmobile-app-11383%26aid%3Dtripenandr&partnerKey=1&urlKey=31b97b0812990ce09&logme=true&uidparam=refid&attrc=true&Provider=Viator&area=TOP&slot=1&cnt=1&geo=13476701&clt=TM&from=api&nt=true"
+          },
+          "offer_group": {
+            "lowest_price": "$0.70",
+            "offer_list": [
+              {
+                "url": "https://www.tripadvisor.com/Commerce?url=https%3A%2F%2Fwww.viator.com%2Ftours%2FColombo%2FPrivate-Sigiriya-and-Dambulla-Day-Tour-From-Colombo%2Fd4619-63959P40%3Feap%3Dmobile-app-11383%26aid%3Dtripenandr&partnerKey=1&urlKey=31b97b0812990ce09&logme=true&uidparam=refid&attrc=true&Provider=Viator&area=viator_multi&slot=1&cnt=1&geo=13476701&clt=TM&from=api&nt=true",
+                "price": "$70.00",
+                "rounded_up_price": "$70",
+                "offer_type": "",
+                "title": "Sigiriya & Dambulla Day Tour From Colombo",
+                "product_code": "63959P40",
+                "partner": "Viator",
+                "image_url": "https://media.tacdn.com/media/attractions-splice-spp-360x240/12/48/45/88.jpg",
+                "description": null,
+                "primary_category": "Day Trips"
+              },
+              {
+                "url": "https://www.tripadvisor.com/Commerce?url=https%3A%2F%2Fwww.viator.com%2Ftours%2FNegombo%2FPrivate-Sigiriya-Day-Tour-From-Negombo%2Fd33888-68395P60%3Feap%3Dmobile-app-11383%26aid%3Dtripenandr&partnerKey=1&urlKey=230783965223fd908&logme=true&uidparam=refid&attrc=true&Provider=Viator&area=viator_multi&slot=2&cnt=1&geo=13476701&clt=TM&from=api&nt=true",
+                "price": "$80.00",
+                "rounded_up_price": "$80",
+                "offer_type": "",
+                "title": "Explore the Ancient City of Dambulla and Sigiriya From Negombo.",
+                "product_code": "68395P60",
+                "partner": "Viator",
+                "image_url": "https://media.tacdn.com/media/attractions-splice-spp-360x240/0f/fb/7b/1c.jpg",
+                "description": null,
+                "primary_category": "Cultural Tours"
+              },
+              {
+                "url": "https://www.tripadvisor.com/Commerce?url=https%3A%2F%2Fwww.viator.com%2Ftours%2FColombo%2FHighlights-Of-Srilanka-in-6-Days-5-Nights-from-Colombo%2Fd4619-68395P74%3Feap%3Dmobile-app-11383%26aid%3Dtripenandr&partnerKey=1&urlKey=5eb0f2c0844f2c776&logme=true&uidparam=refid&attrc=true&Provider=Viator&area=viator_multi&slot=3&cnt=1&geo=13476701&clt=TM&from=api&nt=true",
+                "price": "$222.00",
+                "rounded_up_price": "$222",
+                "offer_type": "",
+                "title": "Explore the Gallery of Archeology 4 Day tour",
+                "product_code": "68395P74",
+                "partner": "Viator",
+                "image_url": "https://media.tacdn.com/media/attractions-splice-spp-360x240/0f/fe/50/c5.jpg",
+                "description": null,
+                "primary_category": "Multi-day Tours"
+              },
+              {
+                "url": "https://www.tripadvisor.com/Commerce?url=https%3A%2F%2Fwww.viator.com%2Ftours%2FNegombo%2F4-Days-Tour-To-Kandy-Nuwara-Eliya-Dambulla-and-Anuradhapura-From-Negombo%2Fd33888-68395P85%3Feap%3Dmobile-app-11383%26aid%3Dtripenandr&partnerKey=1&urlKey=9899584378903ec46&logme=true&uidparam=refid&attrc=true&Provider=Viator&area=viator_multi&slot=4&cnt=1&geo=13476701&clt=TM&from=api&nt=true",
+                "price": "$400.00",
+                "rounded_up_price": "$400",
+                "offer_type": "",
+                "title": "5 Day Multi-City Sightseeing Tour",
+                "product_code": "68395P85",
+                "partner": "Viator",
+                "image_url": "https://media.tacdn.com/media/attractions-splice-spp-360x240/0f/fe/27/7a.jpg",
+                "description": null,
+                "primary_category": "Multi-day Tours"
+              },
+              {
+                "url": "https://www.tripadvisor.com/Commerce?url=https%3A%2F%2Fwww.viator.com%2Ftours%2FNegombo%2F07-Days-Highlights-of-Srilanka-From-Negombo%2Fd33888-68395P186%3Feap%3Dmobile-app-11383%26aid%3Dtripenandr&partnerKey=1&urlKey=b2f86f9043e779dd6&logme=true&uidparam=refid&attrc=true&Provider=Viator&area=viator_multi&slot=5&cnt=1&geo=13476701&clt=TM&from=api&nt=true",
+                "price": "$822.00",
+                "rounded_up_price": "$822",
+                "offer_type": "",
+                "title": "8 Nights 09 Days Simply Sri Lanka ",
+                "product_code": "68395P186",
+                "partner": "Viator",
+                "image_url": "https://media.tacdn.com/media/attractions-splice-spp-360x240/0f/fc/ca/1c.jpg",
+                "description": null,
+                "primary_category": "Cultural Tours"
+              }
+            ],
+            "has_see_all_url": true,
+            "is_eligible_for_ap_list": true
+          }
+        },
+        {
+          "location_id": "12815380",
+          "name": "Ranmudu Ella Falls",
+          "latitude": "7.873054",
+          "longitude": "80.7718",
+          "num_reviews": "5",
+          "timezone": "Asia/Colombo",
+          "location_string": "Labugama, Western Province",
+          "photo": {
+            "images": {
+              "small": {
+                "width": "150",
+                "url": "https://media-cdn.tripadvisor.com/media/photo-l/10/68/85/db/ranmudu-ella-falls.jpg",
+                "height": "150"
+              },
+              "thumbnail": {
+                "width": "50",
+                "url": "https://media-cdn.tripadvisor.com/media/photo-t/10/68/85/db/ranmudu-ella-falls.jpg",
+                "height": "50"
+              },
+              "original": {
+                "width": "3968",
+                "url": "https://media-cdn.tripadvisor.com/media/photo-o/10/68/85/db/ranmudu-ella-falls.jpg",
+                "height": "2976"
+              },
+              "large": {
+                "width": "550",
+                "url": "https://media-cdn.tripadvisor.com/media/photo-s/10/68/85/db/ranmudu-ella-falls.jpg",
+                "height": "413"
+              },
+              "medium": {
+                "width": "250",
+                "url": "https://media-cdn.tripadvisor.com/media/photo-f/10/68/85/db/ranmudu-ella-falls.jpg",
+                "height": "188"
+              }
+            },
+            "is_blessed": true,
+            "uploaded_date": "2017-08-24T12:15:47-0400",
+            "caption": "Ranmudu ella falls",
+            "id": "275285467",
+            "helpful_votes": "4",
+            "published_date": "2017-08-24T12:15:47-0400",
+            "user": {
+              "user_id": null,
+              "member_id": "0",
+              "type": "user"
+            }
+          },
+          "awards": [],
+          "location_subtype": "none",
+          "doubleclick_zone": "as.sri_lanka",
+          "preferred_map_engine": "default",
+          "raw_ranking": "2.778663396835327",
+          "ranking_geo": "Labugama",
+          "ranking_geo_id": "12901140",
+          "ranking_position": "1",
+          "ranking_denominator": "2",
+          "ranking_category": "attraction",
+          "ranking_subcategory": "#1 of 2 things to do in Labugama",
+          "subcategory_ranking": "#1 of 2 things to do in Labugama",
+          "ranking": "#1 of 2 things to do in Labugama",
+          "distance": "0.005216016005211961",
+          "distance_string": "5 m",
+          "bearing": "south",
+          "rating": "4.2",
+          "is_closed": false,
+          "open_now_text": "Closed Now",
+          "is_long_closed": false,
+          "description": "",
+          "web_url": "https://www.tripadvisor.com/Attraction_Review-g12901140-d12815380-Reviews-Ranmudu_Ella_Falls-Labugama_Western_Province.html",
+          "write_review": "https://www.tripadvisor.com/UserReview-g12901140-d12815380-Ranmudu_Ella_Falls-Labugama_Western_Province.html",
+          "ancestors": [
+            {
+              "subcategory": [
+                {
+                  "key": "city",
+                  "name": "City"
+                }
+              ],
+              "name": "Labugama",
+              "abbrv": null,
+              "location_id": "12901140"
+            },
+            {
+              "subcategory": [
+                {
+                  "key": "province",
+                  "name": "Province"
+                }
+              ],
+              "name": "Western Province",
+              "abbrv": null,
+              "location_id": "2467812"
+            },
+            {
+              "subcategory": [
+                {
+                  "key": "country",
+                  "name": "Country"
+                }
+              ],
+              "name": "Sri Lanka",
+              "abbrv": null,
+              "location_id": "293961"
+            }
+          ],
+          "category": {
+            "key": "attraction",
+            "name": "Attraction"
+          },
+          "subcategory": [
+            {
+              "key": "57",
+              "name": "Nature & Parks"
+            }
+          ],
+          "parent_display_name": "Labugama",
+          "is_jfy_enabled": false,
+          "nearest_metro_station": [],
+          "address_obj": {
+            "street1": null,
+            "street2": null,
+            "city": "Labugama",
+            "state": null,
+            "country": "Sri Lanka",
+            "postalcode": "10700"
+          },
+          "address": "Labugama 10700 Sri Lanka",
+          "hours": {
+            "week_ranges": [
+              [
+                {
+                  "open_time": 420,
+                  "close_time": 1080
+                }
+              ],
+              [
+                {
+                  "open_time": 420,
+                  "close_time": 1080
+                }
+              ],
+              [
+                {
+                  "open_time": 420,
+                  "close_time": 1080
+                }
+              ],
+              [
+                {
+                  "open_time": 420,
+                  "close_time": 1080
+                }
+              ],
+              [
+                {
+                  "open_time": 420,
+                  "close_time": 1080
+                }
+              ],
+              [
+                {
+                  "open_time": 420,
+                  "close_time": 1080
+                }
+              ],
+              [
+                {
+                  "open_time": 420,
+                  "close_time": 1080
+                }
+              ]
+            ],
+            "timezone": "Asia/Colombo"
+          },
+          "is_candidate_for_contact_info_suppression": false,
+          "subtype": [
+            {
+              "key": "95",
+              "name": "Waterfalls"
+            }
+          ]
+        },
+        {
+          "location_id": "0",
+          "name": "Multi-day Tours",
+          "latitude": "7.873054",
+          "longitude": "80.7718",
+          "num_reviews": "485",
+          "timezone": "Asia/Colombo",
+          "location_string": "Kandy, Kandy District, Central Province",
+          "photo": {
+            "images": {
+              "small": {
+                "width": "150",
+                "url": "https://media-cdn.tripadvisor.com/media/photo-l/2d/e2/22/c2/ella-rock.jpg",
+                "height": "150"
+              },
+              "thumbnail": {
+                "width": "50",
+                "url": "https://media-cdn.tripadvisor.com/media/photo-t/2d/e2/22/c2/ella-rock.jpg",
+                "height": "50"
+              },
+              "original": {
+                "width": "1280",
+                "url": "https://media-cdn.tripadvisor.com/media/photo-o/2d/e2/22/c2/ella-rock.jpg",
+                "height": "850"
+              },
+              "large": {
+                "width": "1024",
+                "url": "https://media-cdn.tripadvisor.com/media/photo-w/2d/e2/22/c2/ella-rock.jpg",
+                "height": "680"
+              },
+              "medium": {
+                "width": "550",
+                "url": "https://media-cdn.tripadvisor.com/media/photo-s/2d/e2/22/c2/ella-rock.jpg",
+                "height": "365"
+              }
+            },
+            "is_blessed": true,
+            "uploaded_date": "2024-10-24T14:52:05-0400",
+            "caption": "Ella rock",
+            "id": "769794754",
+            "helpful_votes": "0",
+            "published_date": "2024-10-24T14:52:05-0400",
+            "user": {
+              "user_id": null,
+              "member_id": "0",
+              "type": "user"
+            }
+          },
+          "awards": [],
+          "doubleclick_zone": "as.sri_lanka.kandy",
+          "distance": "0.005216016005211961",
+          "distance_string": null,
+          "bearing": "south",
+          "is_closed": false,
+          "is_long_closed": false,
+          "description": "",
+          "web_url": "https://www.tripadvisor.com/Attractions",
+          "write_review": "https://www.tripadvisor.com",
+          "ancestors": [
+            {
+              "subcategory": [
+                {
+                  "key": "municipality",
+                  "name": "Municipality"
+                }
+              ],
+              "name": "Kandy",
+              "abbrv": null,
+              "location_id": "304138"
+            },
+            {
+              "subcategory": [
+                {
+                  "key": "district",
+                  "name": "District"
+                }
+              ],
+              "name": "Kandy District",
+              "abbrv": null,
+              "location_id": "12289092"
+            },
+            {
+              "subcategory": [
+                {
+                  "key": "province",
+                  "name": "Province"
+                }
+              ],
+              "name": "Central Province",
+              "abbrv": null,
+              "location_id": "2467830"
+            },
+            {
+              "subcategory": [
+                {
+                  "key": "country",
+                  "name": "Country"
+                }
+              ],
+              "name": "Sri Lanka",
+              "abbrv": null,
+              "location_id": "293961"
+            }
+          ],
+          "category": {
+            "key": "rollup",
+            "name": "Rollup"
+          },
+          "subcategory": [
+            {
+              "key": "42",
+              "name": "Tours"
+            }
+          ],
+          "parent_display_name": "Kandy",
+          "is_jfy_enabled": false,
+          "nearest_metro_station": [],
+          "address_obj": {
+            "street1": null,
+            "street2": null,
+            "city": "Kandy",
+            "state": null,
+            "country": "Sri Lanka",
+            "postalcode": ""
+          },
+          "address": "",
+          "is_candidate_for_contact_info_suppression": false,
+          "subtype": [
+            {
+              "key": "288",
+              "name": "Multi-day Tours"
+            }
+          ],
+          "rollup_category": {
+            "key": "attraction",
+            "name": "Attraction"
+          },
+          "rollup_contains_bookable": false,
+          "rollup_count": 17
+        },
+        {
+          "location_id": "0",
+          "name": "Private Tours",
+          "latitude": "7.873054",
+          "longitude": "80.7718",
+          "num_reviews": "470",
+          "timezone": "Asia/Colombo",
+          "location_string": "Kandy, Kandy District, Central Province",
+          "photo": {
+            "images": {
+              "small": {
+                "width": "150",
+                "url": "https://media-cdn.tripadvisor.com/media/photo-l/28/24/8b/72/beautiful-kandy.jpg",
+                "height": "150"
+              },
+              "thumbnail": {
+                "width": "50",
+                "url": "https://media-cdn.tripadvisor.com/media/photo-t/28/24/8b/72/beautiful-kandy.jpg",
+                "height": "50"
+              },
+              "original": {
+                "width": "660",
+                "url": "https://media-cdn.tripadvisor.com/media/photo-o/28/24/8b/72/beautiful-kandy.jpg",
+                "height": "440"
+              },
+              "large": {
+                "width": "660",
+                "url": "https://media-cdn.tripadvisor.com/media/photo-o/28/24/8b/72/beautiful-kandy.jpg",
+                "height": "440"
+              },
+              "medium": {
+                "width": "550",
+                "url": "https://media-cdn.tripadvisor.com/media/photo-s/28/24/8b/72/beautiful-kandy.jpg",
+                "height": "367"
+              }
+            },
+            "is_blessed": true,
+            "uploaded_date": "2023-02-10T12:19:36-0500",
+            "caption": "Beautiful kandy , ❤❤",
+            "id": "673483634",
+            "helpful_votes": "0",
+            "published_date": "2023-02-10T12:19:36-0500",
+            "user": {
+              "user_id": null,
+              "member_id": "0",
+              "type": "user"
+            }
+          },
+          "awards": [],
+          "doubleclick_zone": "as.sri_lanka.kandy",
+          "distance": "0.005216016005211961",
+          "distance_string": null,
+          "bearing": "south",
+          "is_closed": false,
+          "is_long_closed": false,
+          "description": "",
+          "web_url": "https://www.tripadvisor.com/Attractions",
+          "write_review": "https://www.tripadvisor.com",
+          "ancestors": [
+            {
+              "subcategory": [
+                {
+                  "key": "municipality",
+                  "name": "Municipality"
+                }
+              ],
+              "name": "Kandy",
+              "abbrv": null,
+              "location_id": "304138"
+            },
+            {
+              "subcategory": [
+                {
+                  "key": "district",
+                  "name": "District"
+                }
+              ],
+              "name": "Kandy District",
+              "abbrv": null,
+              "location_id": "12289092"
+            },
+            {
+              "subcategory": [
+                {
+                  "key": "province",
+                  "name": "Province"
+                }
+              ],
+              "name": "Central Province",
+              "abbrv": null,
+              "location_id": "2467830"
+            },
+            {
+              "subcategory": [
+                {
+                  "key": "country",
+                  "name": "Country"
+                }
+              ],
+              "name": "Sri Lanka",
+              "abbrv": null,
+              "location_id": "293961"
+            }
+          ],
+          "category": {
+            "key": "rollup",
+            "name": "Rollup"
+          },
+          "subcategory": [
+            {
+              "key": "42",
+              "name": "Tours"
+            }
+          ],
+          "parent_display_name": "Kandy",
+          "is_jfy_enabled": false,
+          "nearest_metro_station": [],
+          "address_obj": {
+            "street1": null,
+            "street2": null,
+            "city": "Kandy",
+            "state": null,
+            "country": "Sri Lanka",
+            "postalcode": ""
+          },
+          "address": "",
+          "is_candidate_for_contact_info_suppression": false,
+          "subtype": [
+            {
+              "key": "235",
+              "name": "Private Tours"
+            }
+          ],
+          "rollup_category": {
+            "key": "attraction",
+            "name": "Attraction"
+          },
+          "rollup_contains_bookable": false,
+          "rollup_count": 11
+        },
+        {
+          "location_id": "0",
+          "name": "Day Trips",
+          "latitude": "7.873054",
+          "longitude": "80.7718",
+          "num_reviews": "1454",
+          "timezone": "Asia/Colombo",
+          "location_string": "Udawalawe National Park",
+          "photo": {
+            "images": {
+              "small": {
+                "width": "150",
+                "url": "https://media-cdn.tripadvisor.com/media/photo-l/28/0c/99/10/udawalawa.jpg",
+                "height": "150"
+              },
+              "thumbnail": {
+                "width": "50",
+                "url": "https://media-cdn.tripadvisor.com/media/photo-t/28/0c/99/10/udawalawa.jpg",
+                "height": "50"
+              },
+              "original": {
+                "width": "1280",
+                "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/28/0c/99/10/udawalawa.jpg",
+                "height": "960"
+              },
+              "large": {
+                "width": "550",
+                "url": "https://media-cdn.tripadvisor.com/media/photo-s/28/0c/99/10/udawalawa.jpg",
+                "height": "412"
+              },
+              "medium": {
+                "width": "250",
+                "url": "https://media-cdn.tripadvisor.com/media/photo-f/28/0c/99/10/udawalawa.jpg",
+                "height": "188"
+              }
+            },
+            "is_blessed": true,
+            "uploaded_date": "2023-01-29T10:52:00-0500",
+            "caption": "Lahiru ",
+            "id": "671914256",
+            "helpful_votes": "0",
+            "published_date": "2023-01-29T10:52:00-0500",
+            "user": {
+              "user_id": null,
+              "member_id": "0",
+              "type": "user"
+            }
+          },
+          "awards": [],
+          "doubleclick_zone": "as.sri_lanka.kandy",
+          "distance": "0.005216016005211961",
+          "distance_string": null,
+          "bearing": "south",
+          "is_closed": false,
+          "is_long_closed": false,
+          "description": "",
+          "web_url": "https://www.tripadvisor.com/Attractions",
+          "write_review": "https://www.tripadvisor.com",
+          "ancestors": [
+            {
+              "subcategory": [
+                {
+                  "key": "nationalpark",
+                  "name": "National Park"
+                }
+              ],
+              "name": "Udawalawe National Park",
+              "abbrv": null,
+              "location_id": "674587"
+            },
+            {
+              "subcategory": [
+                {
+                  "key": "country",
+                  "name": "Country"
+                }
+              ],
+              "name": "Sri Lanka",
+              "abbrv": null,
+              "location_id": "293961"
+            }
+          ],
+          "category": {
+            "key": "rollup",
+            "name": "Rollup"
+          },
+          "subcategory": [
+            {
+              "key": "42",
+              "name": "Tours"
+            }
+          ],
+          "parent_display_name": "Udawalawe National Park",
+          "is_jfy_enabled": false,
+          "nearest_metro_station": [],
+          "address_obj": {
+            "street1": null,
+            "street2": null,
+            "city": null,
+            "state": null,
+            "country": "Sri Lanka",
+            "postalcode": null
+          },
+          "address": "",
+          "is_candidate_for_contact_info_suppression": false,
+          "subtype": [
+            {
+              "key": "287",
+              "name": "Day Trips"
+            }
+          ],
+          "rollup_category": {
+            "key": "attraction",
+            "name": "Attraction"
+          },
+          "rollup_contains_bookable": false,
+          "rollup_count": 16
+        },
+        {
+          "location_id": "0",
+          "name": "City Tours",
+          "latitude": "7.873054",
+          "longitude": "80.7718",
+          "num_reviews": "643",
+          "timezone": "Asia/Colombo",
+          "location_string": "Kandy, Kandy District, Central Province",
+          "photo": {
+            "images": {
+              "small": {
+                "width": "150",
+                "url": "https://media-cdn.tripadvisor.com/media/photo-l/2a/e9/59/90/caption.jpg",
+                "height": "150"
+              },
+              "thumbnail": {
+                "width": "50",
+                "url": "https://media-cdn.tripadvisor.com/media/photo-t/2a/e9/59/90/caption.jpg",
+                "height": "50"
+              },
+              "original": {
+                "width": "1280",
+                "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/2a/e9/59/90/caption.jpg",
+                "height": "960"
+              },
+              "large": {
+                "width": "550",
+                "url": "https://media-cdn.tripadvisor.com/media/photo-s/2a/e9/59/90/caption.jpg",
+                "height": "413"
+              },
+              "medium": {
+                "width": "250",
+                "url": "https://media-cdn.tripadvisor.com/media/photo-f/2a/e9/59/90/caption.jpg",
+                "height": "188"
+              }
+            },
+            "is_blessed": true,
+            "uploaded_date": "2023-11-29T12:24:15-0500",
+            "caption": "",
+            "id": "719935888",
+            "helpful_votes": "0",
+            "published_date": "2023-11-29T12:24:15-0500",
+            "user": {
+              "user_id": null,
+              "member_id": "0",
+              "type": "user"
+            }
+          },
+          "awards": [],
+          "doubleclick_zone": "as.sri_lanka.kandy",
+          "distance": "0.005216016005211961",
+          "distance_string": null,
+          "bearing": "south",
+          "is_closed": false,
+          "is_long_closed": false,
+          "description": "",
+          "web_url": "https://www.tripadvisor.com/Attractions",
+          "write_review": "https://www.tripadvisor.com",
+          "ancestors": [
+            {
+              "subcategory": [
+                {
+                  "key": "municipality",
+                  "name": "Municipality"
+                }
+              ],
+              "name": "Kandy",
+              "abbrv": null,
+              "location_id": "304138"
+            },
+            {
+              "subcategory": [
+                {
+                  "key": "district",
+                  "name": "District"
+                }
+              ],
+              "name": "Kandy District",
+              "abbrv": null,
+              "location_id": "12289092"
+            },
+            {
+              "subcategory": [
+                {
+                  "key": "province",
+                  "name": "Province"
+                }
+              ],
+              "name": "Central Province",
+              "abbrv": null,
+              "location_id": "2467830"
+            },
+            {
+              "subcategory": [
+                {
+                  "key": "country",
+                  "name": "Country"
+                }
+              ],
+              "name": "Sri Lanka",
+              "abbrv": null,
+              "location_id": "293961"
+            }
+          ],
+          "category": {
+            "key": "rollup",
+            "name": "Rollup"
+          },
+          "subcategory": [
+            {
+              "key": "42",
+              "name": "Tours"
+            }
+          ],
+          "parent_display_name": "Kandy",
+          "is_jfy_enabled": false,
+          "nearest_metro_station": [],
+          "address_obj": {
+            "street1": null,
+            "street2": null,
+            "city": "Kandy",
+            "state": null,
+            "country": "Sri Lanka",
+            "postalcode": "20000"
+          },
+          "address": "",
+          "is_candidate_for_contact_info_suppression": false,
+          "subtype": [
+            {
+              "key": "224",
+              "name": "City Tours"
+            }
+          ],
+          "rollup_category": {
+            "key": "attraction",
+            "name": "Attraction"
+          },
+          "rollup_contains_bookable": true,
+          "booking": {
+            "provider": "Viator",
+            "url": "https://www.tripadvisor.com"
+          },
+          "offer_group": {
+            "lowest_price": "$9.00",
+            "has_see_all_url": true,
+            "is_eligible_for_ap_list": true
+          },
+          "rollup_count": 21
+        }
+      ]
+    }
+  }

@@ -1,0 +1,1233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exploring Maharashtra Forts</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <style>
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f2f5;
+            color: #333;
+            display: flex;
+            flex-direction: row-reverse;
+        }
+        
+        .main-container {
+            flex: 1;
+            max-width: 800px;
+            border-left: 1px solid #ddd;
+        }
+        
+        .map-sidebar {
+            width: 40%;
+            height: 100vh;
+            position: sticky;
+            top: 0;
+        }
+        
+        #map {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .top-bar {
+            background-color: #ffffff;
+            padding: 10px 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .search-box {
+            display: flex;
+            align-items: center;
+            background-color: #f0f2f5;
+            padding: 5px 10px;
+            border-radius: 20px;
+            width: 150px;
+        }
+        
+        .search-box i {
+            color: #666;
+            margin-right: 5px;
+        }
+        
+        .search-input {
+            border: none;
+            background: transparent;
+            outline: none;
+            font-size: 14px;
+        }
+        
+        .support-btn {
+            background-color: #f7d154;
+            border: none;
+            border-radius: 20px;
+            padding: 5px 15px;
+            font-weight: 500;
+            cursor: pointer;
+        }
+        
+        .profile-section {
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            background-color: white;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .profile-img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        
+        .profile-name {
+            font-weight: 50;
+            font-size: 14px;
+            color: #333;
+        }
+        
+        .action-buttons {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 50px;
+            background-color: white;
+        }
+        
+        .action-btn {
+            display: flex;
+            align-items: center;
+            color: #666;
+            font-size: 14px;
+            font-weight: 500;
+        }
+        
+        .action-btn i {
+            margin-right: 5px;
+        }
+        
+        .main-content {
+            padding: 15px;
+        }
+        
+        .title {
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+        
+        .itinerary-section {
+            background-color: white;
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        
+        .itinerary-title {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        
+        .itinerary-text {
+            font-size: 14px;
+            line-height: 1.5;
+            color: #666;
+            margin-bottom: 10px;
+        }
+        
+        .premium-box {
+            background-color: #37474f;
+            color: white;
+            border-radius: 10px;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        
+        .premium-box-title {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        
+        .premium-box-text {
+            font-size: 12px;
+            margin-bottom: 15px;
+        }
+        
+        .try-now-btn {
+            background-color: #26c6da;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            padding: 8px 15px;
+            font-weight: 500;
+            cursor: pointer;
+        }
+        
+        .exploration-section {
+            margin-top: 20px;
+        }
+        
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        
+        .tab-buttons {
+            display: flex;
+        }
+        
+        .tab-btn {
+            background-color: #e0f7fa;
+            border: none;
+            border-radius: 20px;
+            padding: 5px 15px;
+            font-size: 12px;
+            margin-left: 5px;
+            cursor: pointer;
+        }
+        
+        .tab-btn.active {
+            background-color: #26c6da;
+            color: white;
+        }
+        
+        .fort-card {
+            background-color: #e0f7fa;
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 15px;
+            position: relative;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .fort-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+        }
+        
+        .fort-number {
+            position: absolute;
+            left: 15px;
+            top: 15px;
+            background-color: #4db6ac;
+            color: white;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+        }
+        
+        .fort-card-actions {
+            position: absolute;
+            right: 15px;
+            top: 15px;
+            display: flex;
+        }
+        
+        .fort-card-action-btn {
+            background-color: white;
+            border: none;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 5px;
+            cursor: pointer;
+        }
+        
+        .fort-card-content {
+            margin-top: 30px;
+        }
+        
+        .fort-title {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        
+        .fort-description {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.5;
+            margin-bottom: 15px;
+        }
+        
+        .guide-btn {
+            background-color: #e0f7fa;
+            border: 1px solid #26c6da;
+            border-radius: 20px;
+            padding: 5px 15px;
+            color: #26c6da;
+            font-size: 12px;
+            font-weight: 500;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+        }
+        
+        .guide-btn i {
+            margin-right: 5px;
+        }
+        
+        .gallery {
+            display: flex;
+            justify-content: space-between;
+            margin: 15px 0;
+            position: relative;
+        }
+        
+        .gallery-img {
+            width: 23%;
+            height: 80px;
+            border-radius: 8px;
+            object-fit: cover;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .gallery-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .play-icon {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 20px;
+        }
+        
+        .gallery-nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 30px;
+            height: 30px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            z-index: 10;
+        }
+        
+        .gallery-nav.prev {
+            left: -10px;
+        }
+        
+        .gallery-nav.next {
+            right: -10px;
+        }
+        
+        .social-icons {
+            display: flex;
+            margin-top: 15px;
+        }
+        
+        .social-icon {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: #e0f7fa;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+        }
+        
+        .map-link {
+            color: #666;
+            font-size: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            margin-top: 10px;
+        }
+        
+        .map-link i {
+            margin-right: 5px;
+            color: #26c6da;
+        }
+        
+        .torna-fort-section {
+            background-color: #e0f7fa;
+            border-radius: 10px;
+            padding: 15px;
+            margin: 20px 0;
+            position: relative;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .torna-fort-section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+        }
+        
+        .fort-marker {
+            position: absolute;
+            left: 15px;
+            top: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .fort-marker-number {
+            background-color: #4db6ac;
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+        }
+        
+        .fort-marker-title {
+            font-size: 18px;
+            font-weight: 600;
+            margin-left: 10px;
+            color: #333;
+        }
+        
+        .fort-actions {
+            position: absolute;
+            right: 15px;
+            top: 15px;
+            display: flex;
+        }
+        
+        .fort-action-btn {
+            background: none;
+            border: none;
+            color: #333;
+            font-size: 20px;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+        
+        .torna-description {
+            margin-top: 40px;
+            font-size: 14px;
+            line-height: 1.6;
+            color: #555;
+        }
+        
+        .map-controls {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            z-index: 1000;
+        }
+        
+        .map-control {
+            background-color: white;
+            border: 1px solid #ddd;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 5px;
+            cursor: pointer;
+        }
+        
+        .map-attribution {
+            position: absolute;
+            bottom: 5px;
+            left: 5px;
+            font-size: 10px;
+            background-color: rgba(255, 255, 255, 0.7);
+            padding: 2px 5px;
+            border-radius: 3px;
+        }
+        
+        .map-attribution a {
+            color: #0078A8;
+            text-decoration: none;
+        }
+        
+        /* Highlighted marker style */
+        .marker-highlighted {
+            z-index: 1000 !important;
+        }
+        
+        .marker-highlighted div {
+            background-color: #ff5722 !important;
+            width: 40px !important;
+            height: 40px !important;
+            font-size: 18px !important;
+            box-shadow: 0 0 15px rgba(255, 87, 34, 0.8) !important;
+        }
+        
+        /* Animate the highlighted marker */
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+        
+        .marker-highlighted div {
+            animation: pulse 1s infinite;
+        }
+    </style>
+</head>
+<body>
+    <div class="map-sidebar">
+        <div id="map"></div>
+        <div class="map-controls">
+            <div class="map-control">
+                <i class="fas fa-route"></i>
+            </div>
+            <div class="map-control">
+                <i class="fas fa-expand"></i>
+            </div>
+            <div class="map-control">
+                <i class="fas fa-cog"></i>
+            </div>
+        </div>
+        <div class="map-attribution">
+            <a href="https://leafletjs.com" target="_blank">Leaflet</a> | © <a href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a> contributors
+        </div>
+    </div>
+    
+    <div class="main-container">
+        <div class="top-bar">
+            <div class="search-box">
+                <i class="fas fa-search"></i>
+                <input type="text" class="search-input" placeholder="Search...">
+            </div>
+            <!--<button class="support-btn">Support</button>-->
+            
+        </div>
+        <img src="https://s7ap1.scene7.com/is/image/incredibleindia/pratapgarh-fort-mahabaleshwar-maharashtra-1-attr-hero?qlt=82&ts=1726668891652" style="width: 100%; height: auto;">
+
+        
+        <!-- <div>
+            <img src="https://s7ap1.scene7.com/is/image/incredibleindia/pratapgarh-fort-mahabaleshwar-maharashtra-1-attr-hero?qlt=82&ts=1726668891652">
+            <div class="profile-name">@CLivingstone</div>
+        </div> -->
+        
+        <!-- <div class="action-buttons">
+            <div class="action-btn">
+                <i class="fas fa-thumbs-up"></i> Review
+            </div>
+            <div class="action-btn">
+                <i class="fas fa-heart"></i> Like
+            </div>
+            <div class="action-btn">
+                <i class="fas fa-share"></i> Share
+            </div>
+        </div> -->
+        
+        <div class="main-content">
+            <h1 class="">Exploring Maharashtra Forts </h1>
+            
+            <div class="itinerary-section">
+                <h2 class="itinerary-title">Overview of Maharashtra Forts Trip Itinerary</h2>
+                <p class="itinerary-text">Embark on an exciting 5-day journey through the magnificent forts of Maharashtra, where history-steeped walls tell tales of valor and strategic brilliance. This is a historic trail that takes you through significant roles in the Maratha Empire, such as Raigad, Rajgad, and Lohagad. You'll experience stunning aerial views, beautiful heritage, and panoramic views that will leave you in awe.</p>
+                
+                <p class="itinerary-text">Your adventure begins at Raigad Fort, the capital of the Maratha Empire, known for its historical significance and stunning vistas. Here, you will see Raigad Fort, which offers breathtaking insights into Maratha history along with lush green surroundings, perfect for trekking. Raigad Fort will provide an unforgettable hiking experience with its towering heights and ancient architecture.</p>
+                
+                <p class="itinerary-text">Continue your expedition to Rajgad, Sindhudurg, Pratapgad, and other magnificent forts, each showcasing spectacular architecture and historical significance. Each location promises a blend of adventure and exploration, making this a memorable expedition through the cultural heart of Maharashtra.</p>
+                
+                <p class="itinerary-text">Join us for an unforgettable experience filled with history, adventure, and the beauty of Maharashtra's forts!</p>
+            </div>
+            
+            <!--<div class="premium-box">-->
+            <!--    <h3 class="premium-box-title">Enhance your adventure for just $1.99!</h3>-->
+            <!--    <p class="premium-box-text">Try our Premium AI Planner. No subscriptions, just personalized journeys.</p>-->
+            <!--    <button class="try-now-btn">Try Now</button>-->
+            <!--</div>-->
+            
+            <div class="exploration-section">
+                <div class="section-header">
+                    <h2 class="itinerary-title">Recommended Explorations</h2>
+                    <!--<div class="tab-buttons">-->
+                    <!--    <button class="tab-btn active">Overview</button>-->
+                    <!--    <button class="tab-btn">By Days</button>-->
+                    <!--</div>-->
+                </div>
+                
+                <div class="fort-card" data-fort-id="raigad">
+                    <div class="fort-number">1</div>
+                    <div class="fort-card-actions">
+                        <button class="fort-card-action-btn"><i class="fas fa-bookmark"></i></button>
+                        <button class="fort-card-action-btn"><i class="fas fa-ellipsis-vertical"></i></button>
+                    </div>
+                    
+                    <div class="fort-card-content">
+                        <h3 class="fort-title">Raigad Fort</h3>
+                        <p class="fort-description">Raigad Fort served as the capital of the Maratha Empire and is a symbol of Chhatrapati Shivaji's triumphant legacy. It offers historical significance, stunning views of the surrounding valleys, and architectural marvels that transport visitors back in time.</p>
+                        
+                        <button class="guide-btn">
+                            <i class="fas fa-volume-up"></i> Guide
+                        </button>
+                        
+                        <div class="gallery">
+                            <div class="gallery-nav prev">
+                                <i class="fas fa-chevron-left"></i>
+                            </div>
+                            <div class="gallery-img">
+                                <img src="https://th.bing.com/th/id/OIP.nkLR2_8tyFTuL6wDvILtmQHaEU?w=277&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Raigad Fort">
+                            </div>
+                            <div class="gallery-img">
+                                 <img src="https://th.bing.com/th/id/OIP.COddITUyHksjoJzk7vR5IwHaFj?w=239&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Raigad Fort">
+                                <!--<i class="fas fa-play play-icon"></i>-->
+                            </div>
+                            <div class="gallery-img">
+                                 <img src="https://th.bing.com/th/id/OIP.U1EC0qHtjFeQ_LDOt4XC2AHaEK?w=234&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Raigad Fort">
+                                <!--<i class="fas fa-play play-icon"></i>-->
+                            </div>
+                            <div class="gallery-img">
+                                <img src="images/image.png" alt="Raigad Fort">                                 
+                                <!--<i class="fas fa-play play-icon"></i>-->
+                            </div>
+                            <!-- <div class="gallery-img">
+                                <img src="images/rajgad_2.jpeg" alt="Raigad Fort">                                 
+                                <i class="fas fa-play play-icon"></i>
+                            </div> -->
+                            <div class="gallery-nav next">
+                                <i class="fas fa-chevron-right"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="social-icons">
+                            <div class="social-icon"><i class="fab fa-instagram"></i></div>
+                            <div class="social-icon"><i class="fab fa-tiktok"></i></div>
+                        </div>
+                        
+                        <div class="map-link">
+                            <i class="fas fa-map-marker-alt"></i> Google Maps
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="fort-card" data-fort-id="Lohagad">
+                    <div class="fort-number">2</div>
+                    <div class="fort-card-actions">
+                        <button class="fort-card-action-btn"><i class="fas fa-bookmark"></i></button>
+                        <button class="fort-card-action-btn"><i class="fas fa-ellipsis-vertical"></i></button>
+                    </div>
+                    
+                    <div class="fort-card-content">
+                        <h3 class="fort-title">Lohagad Fort</h3>
+                        <p class="fort-description">lohagad Fort is known for its historical importance and breathtaking landscapes. It was the first capital of the Maratha Empire and offers fascinating insights into Maratha history along with beautiful trekking routes and lush greenery that make it known for nature lovers.</p>
+                        
+                        <button class="guide-btn">
+                            <i class="fas fa-volume-up"></i> Guide
+                        </button>
+                        
+                        <div class="gallery">
+                            <div class="gallery-nav prev">
+                                <i class="fas fa-chevron-left"></i>
+                            </div>
+                            <div class="gallery-img">
+                                <img src="images/lohagad_1.jpeg" alt="Rajgad Fort">
+                            </div>
+                            <div class="gallery-img">
+                                <img src="images/lohagad_2.jpeg" alt="Rajgad Fort Video">
+                                <!-- <i class="fas fa-play "></i> -->
+                            </div>
+                            <div class="gallery-img">
+                                <img src="images/lohagad_3.jpeg" alt="Rajgad Fort Video">
+                                <!-- <i class="fas fa-play play-icon"></i> -->
+                            </div>
+                            <div class="gallery-img">
+                                <img src="images/lohagad_4.jpeg" alt="Rajgad Fort Video">
+                                <!-- <i class="fas fa-play play-icon"></i> -->
+                            </div>
+                            <div class="gallery-nav next">
+                                <i class="fas fa-chevron-right"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="social-icons">
+                            <div class="social-icon"><i class="fab fa-instagram"></i></div>
+                            <div class="social-icon"><i class="fab fa-tiktok"></i></div>
+                        </div>
+                        
+                        <div class="map-link">
+                            <i class="fas fa-map-marker-alt"></i> Google Maps
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="torna-fort-section" data-fort-id="torna">
+                    <div class="fort-marker">
+                        <div class="fort-marker-number">3</div>
+                        <div class="fort-marker-title">Torna Fort</div>
+                    </div>
+                    
+                    <div class="fort-actions">
+                        <button class="fort-action-btn"><i class="far fa-bookmark"></i></button>
+                        <button class="fort-action-btn"><i class="fas fa-ellipsis-v"></i></button>
+                    </div>
+                    
+                    <div class="torna-description">
+                        <p>Torna Fort is one of the tallest forts in the Pune region and offers an adventurous trekking experience. With its commanding views and rich history, it is a great spot for history enthusiasts and adventure seekers alike, and it provides a chance to explore the remnants of ancient architecture amidst stunning natural beauty.</p>
+                    </div>
+                    
+                    <button class="guide-btn" style="margin-top: 15px;">
+                        <i class="fas fa-volume-up"></i> Guide
+                    </button>
+                    
+                    <div class="gallery" style="margin-top: 20px;">
+                        <div class="gallery-nav prev">
+                            <i class="fas fa-chevron-left"></i>
+                        </div>
+                        <div class="gallery-img">
+                            <img src="https://th.bing.com/th/id/OIP.sUZVlQCOVeojV6Hz81YfdAHaEO?w=274&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Torna Fort">
+                        </div>
+                        <div class="gallery-img">
+                            <img src="images//torna_2.jpeg" alt="">
+                            <!--<i class="fas fa-play play-icon"></i>-->
+                        </div>
+                        <div class="gallery-img">
+                            <img src="images/torna_3.jpeg" alt="">
+                            <!--<i class="fas fa-play play-icon"></i>-->
+                        </div>
+                        <div class="gallery-img">
+                            <img src="https://ts4.mm.bing.net/th?id=OIP.K15MNHbx2k8hVyiUqoTrdwHaGA&pid=15.1" alt="Torna Fort Video">
+                            <!--<i class="fas fa-play play-icon"></i>-->
+                        </div>
+                        <div class="gallery-nav next">
+                            <i class="fas fa-chevron-right"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="social-icons">
+                        <div class="social-icon"><i class="fab fa-instagram"></i></div>
+                        <div class="social-icon"><i class="fab fa-tiktok"></i></div>
+                    </div>
+                    
+                    <div class="map-link">
+                        <i class="fas fa-map-marker-alt"></i> Google Maps
+                    </div>
+                </div>
+                <div class="fort-card" data-fort-id="Sindhugarh Fort">
+                    <div class="fort-number">4</div>
+                    <div class="fort-card-actions">
+                        <button class="fort-card-action-btn"><i class="fas fa-bookmark"></i></button>
+                        <button class="fort-card-action-btn"><i class="fas fa-ellipsis-vertical"></i></button>
+                    </div>
+                    
+                    <div class="fort-card-content">
+                        <h3 class="fort-title">Sindhugarh Fort</h3>
+                        <p class="fort-description">Sindhugarh Fort is known for its historical importance and breathtaking landscapes. It was the first capital of the Maratha Empire and offers fascinating insights into Maratha history along with beautiful trekking routes and lush greenery that make it known for nature lovers.</p>
+                        
+                        <button class="guide-btn">
+                            <i class="fas fa-volume-up"></i> Guide
+                        </button>
+                        
+                        <div class="gallery">
+                            <div class="gallery-nav prev">
+                                <i class="fas fa-chevron-left"></i>
+                            </div>
+                            <div class="gallery-img">
+                                <img src="images/s_1.jpeg" alt="Rajgad Fort">
+                            </div>
+                            <div class="gallery-img">
+                                <img src="images/s_2.jpeg" alt="Rajgad Fort Video">
+                                <!-- <i class="fas fa-play play-icon"></i> -->
+                            </div>
+                            <div class="gallery-img">
+                                <img src="images/s_3.jpeg" alt="Rajgad Fort Video">
+                                <!-- <i class="fas fa-play play-icon"></i> -->
+                            </div>
+                            <div class="gallery-img">
+                                <img src="images/s_4.jpeg" alt="Rajgad Fort Video">
+                                <!-- <i class="fas fa-play play-icon"></i> -->
+                            </div>
+                            <div class="gallery-nav next">
+                                <i class="fas fa-chevron-right"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="social-icons">
+                            <div class="social-icon"><i class="fab fa-instagram"></i></div>
+                            <div class="social-icon"><i class="fab fa-tiktok"></i></div>
+                        </div>
+                        
+                        <div class="map-link">
+                            <i class="fas fa-map-marker-alt"></i> Google Maps
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="fort-card" data-fort-id="pratapgad">
+                    <div class="fort-number">5</div>
+                    <div class="fort-card-actions">
+                        <button class="fort-card-action-btn"><i class="fas fa-bookmark"></i></button>
+                        <button class="fort-card-action-btn"><i class="fas fa-ellipsis-vertical"></i></button>
+                    </div>
+                    
+                    <div class="fort-card-content">
+                        <h3 class="fort-title">Pratapgad Fort</h3>
+                        <p class="fort-description">Pratapgad Fort is a mountain fort known for its historical battle of Pratapgad. Built in 1656, this fort combines military construction with natural beauty and offers spectacular views of the surrounding landscapes and Western Ghats.</p>
+                        
+                        <button class="guide-btn">
+                            <i class="fas fa-volume-up"></i> Guide
+                        </button>
+                        
+                        <div class="gallery">
+                            <div class="gallery-nav prev">
+                                <i class="fas fa-chevron-left"></i>
+                            </div>
+                            <div class="gallery-img">
+                                <img src="images/p_1.jpeg" alt="Pratapgad Fort">
+                            </div>
+                            <div class="gallery-img">
+                                <img src="images/p_2.jpeg" alt="">
+                                
+                                <!--<i class="fas fa-play play-icon"></i>-->
+                            </div>
+                            <div class="gallery-img">
+                                <img src="https://ts2.mm.bing.net/th?id=OIP.NOhKD8riBieBqyuqS3mnFQHaEo&pid=15.1" alt="Pratapgad Fort Video">
+                                <!--<i class="fas fa-play play-icon"></i>-->
+                            </div>
+                            <div class="gallery-img">
+                                <img src="https://th.bing.com/th/id/OIP.ZGTDQ-_9Mbq4tM7X641eNQEgDY?w=235&h=183&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Pratapgad Fort Video">
+                                <!--<i class="fas fa-play play-icon"></i>-->
+                            </div>
+                            <div class="gallery-nav next">
+                                <i class="fas fa-chevron-right"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="social-icons">
+                            <div class="social-icon"><i class="fab fa-instagram"></i></div>
+                            <div class="social-icon"><i class="fab fa-tiktok"></i></div>
+                        </div>
+                        
+                        <div class="map-link">
+                            <i class="fas fa-map-marker-alt"></i> Google Maps
+                        </div>
+                    </div>
+                </div>
+                <!-- Sinhagadh Fort -->
+<div class="fort-card" data-fort-id="Sinhagadh Fort">
+    <div class="fort-number">6</div>
+    <div class="fort-card-actions">
+        <button class="fort-card-action-btn"><i class="fas fa-bookmark"></i></button>
+        <button class="fort-card-action-btn"><i class="fas fa-ellipsis-vertical"></i></button>
+    </div>
+
+    <div class="fort-card-content">
+        <h3 class="fort-title">Sinhagadh Fort</h3>
+        <p class="fort-description">Sinhagadh Fort is a famous hill fortress near Pune, known for its valiant Maratha warriors and scenic views. It's a popular trekking spot and holds deep historical significance.</p>
+
+        <button class="guide-btn">
+            <i class="fas fa-volume-up"></i> Guide
+        </button>
+
+        <div class="gallery">
+            <div class="gallery-nav prev"><i class="fas fa-chevron-left"></i></div>
+            <div class="gallery-img"><img src="images/sinhagadh_1.jpeg" alt="Sinhagadh Fort"></div>
+            <div class="gallery-img"><img src="images/sinhagadh_2.jpeg" alt="Sinhagadh Fort"></div>
+            <div class="gallery-img"><img src="images/sinhagadh_3.jpeg" alt="Sinhagadh Fort"></div>
+            <div class="gallery-img"><img src="images/sinhagadh_4.jpeg" alt="Sinhagadh Fort"></div>
+            <div class="gallery-nav next"><i class="fas fa-chevron-right"></i></div>
+        </div>
+
+        <div class="social-icons">
+            <div class="social-icon"><i class="fab fa-instagram"></i></div>
+            <div class="social-icon"><i class="fab fa-tiktok"></i></div>
+        </div>
+
+        <div class="map-link"><i class="fas fa-map-marker-alt"></i> Google Maps</div>
+    </div>
+</div>
+
+<!-- Rajmachi Fort -->
+<div class="fort-card" data-fort-id="Rajmachi Fort">
+    <div class="fort-number">7</div>
+    <div class="fort-card-actions">
+        <button class="fort-card-action-btn"><i class="fas fa-bookmark"></i></button>
+        <button class="fort-card-action-btn"><i class="fas fa-ellipsis-vertical"></i></button>
+    </div>
+
+    <div class="fort-card-content">
+        <h3 class="fort-title">Rajmachi Fort</h3>
+        <p class="fort-description">Rajmachi Fort is a popular trekking destination between Lonavala and Karjat. Surrounded by dense forests, it is a favorite among adventure lovers and nature enthusiasts.</p>
+
+        <button class="guide-btn">
+            <i class="fas fa-volume-up"></i> Guide
+        </button>
+
+        <div class="gallery">
+            <div class="gallery-nav prev"><i class="fas fa-chevron-left"></i></div>
+            <div class="gallery-img"><img src="images/rajmachi_1.jpeg" alt="Rajmachi Fort"></div>
+            <div class="gallery-img"><img src="images/rajmachi_2.jpeg" alt="Rajmachi Fort"></div>
+            <div class="gallery-img"><img src="images/rajmachi_3.jpeg" alt="Rajmachi Fort"></div>
+            <div class="gallery-img"><img src="images/rajmachi_4.jpeg" alt="Rajmachi Fort"></div>
+            <div class="gallery-nav next"><i class="fas fa-chevron-right"></i></div>
+        </div>
+
+        <div class="social-icons">
+            <div class="social-icon"><i class="fab fa-instagram"></i></div>
+            <div class="social-icon"><i class="fab fa-tiktok"></i></div>
+        </div>
+
+        <div class="map-link"><i class="fas fa-map-marker-alt"></i> Google Maps</div>
+    </div>
+</div>
+
+<!-- Visapur Fort -->
+<div class="fort-card" data-fort-id="Visapur Fort">
+    <div class="fort-number">8</div>
+    <div class="fort-card-actions">
+        <button class="fort-card-action-btn"><i class="fas fa-bookmark"></i></button>
+        <button class="fort-card-action-btn"><i class="fas fa-ellipsis-vertical"></i></button>
+    </div>
+
+    <div class="fort-card-content">
+        <h3 class="fort-title">Visapur Fort</h3>
+        <p class="fort-description">Visapur Fort is located near Lonavala and is known for its scenic trek routes, monsoon waterfalls, and panoramic views of Lohagad Fort and the Western Ghats.</p>
+
+        <button class="guide-btn">
+            <i class="fas fa-volume-up"></i> Guide
+        </button>
+
+        <div class="gallery">
+            <div class="gallery-nav prev"><i class="fas fa-chevron-left"></i></div>
+            <div class="gallery-img"><img src="images/visapur_1.jpeg" alt="Visapur Fort"></div>
+            <div class="gallery-img"><img src="images/visapur_2.jpeg" alt="Visapur Fort"></div>
+            <div class="gallery-img"><img src="images/visapur_3.jpeg" alt="Visapur Fort"></div>
+            <div class="gallery-img"><img src="images/visapur_4.jpeg" alt="Visapur Fort"></div>
+            <div class="gallery-nav next"><i class="fas fa-chevron-right"></i></div>
+        </div>
+
+        <div class="social-icons">
+            <div class="social-icon"><i class="fab fa-instagram"></i></div>
+            <div class="social-icon"><i class="fab fa-tiktok"></i></div>
+        </div>
+
+        <div class="map-link"><i class="fas fa-map-marker-alt"></i> Google Maps</div>
+    </div>
+</div>
+
+<!-- Harishchandragad Fort -->
+<div class="fort-card" data-fort-id="Harishchandragad Fort">
+    <div class="fort-number">9</div>
+    <div class="fort-card-actions">
+        <button class="fort-card-action-btn"><i class="fas fa-bookmark"></i></button>
+        <button class="fort-card-action-btn"><i class="fas fa-ellipsis-vertical"></i></button>
+    </div>
+
+    <div class="fort-card-content">
+        <h3 class="fort-title">Harishchandragad Fort</h3>
+        <p class="fort-description">Harishchandragad Fort is one of the most spectacular trekking destinations in the Sahyadri range. It features the famous Konkan Kada cliff and ancient caves that attract history and nature lovers alike.</p>
+
+        <button class="guide-btn">
+            <i class="fas fa-volume-up"></i> Guide
+        </button>
+
+        <div class="gallery">
+            <div class="gallery-nav prev"><i class="fas fa-chevron-left"></i></div>
+            <div class="gallery-img"><img src="images/harishchandragad_1.jpeg" alt="Harishchandragad Fort"></div>
+            <div class="gallery-img"><img src="images/harishchandragad_2.jpeg" alt="Harishchandragad Fort"></div>
+            <div class="gallery-img"><img src="images/harishchandragad_3.jpeg" alt="Harishchandragad Fort"></div>
+            <div class="gallery-img"><img src="images/harishchandragad_4.jpeg" alt="Harishchandragad Fort"></div>
+            <div class="gallery-nav next"><i class="fas fa-chevron-right"></i></div>
+        </div>
+
+        <div class="social-icons">
+            <div class="social-icon"><i class="fab fa-instagram"></i></div>
+            <div class="social-icon"><i class="fab fa-tiktok"></i></div>
+        </div>
+
+        <div class="map-link"><i class="fas fa-map-marker-alt"></i> Google Maps</div>
+    </div>
+</div>
+<!-- Mandangad Fort -->
+<div class="fort-card" data-fort-id="Mandangad Fort">
+    <div class="fort-number">10</div>
+    <div class="fort-card-actions">
+        <button class="fort-card-action-btn"><i class="fas fa-bookmark"></i></button>
+        <button class="fort-card-action-btn"><i class="fas fa-ellipsis-vertical"></i></button>
+    </div>
+    <div class="fort-card-content">
+        <h3 class="fort-title">Mandangad Fort</h3>
+        <p class="fort-description">Located in the Ratnagiri district, Mandangad Fort offers spectacular views and is steeped in historical tales from the Maratha period. It consists of three forts: Mandangad, Parkot, and Jamba.</p>
+        <button class="guide-btn"><i class="fas fa-volume-up"></i> Guide</button>
+        <div class="gallery">
+            <div class="gallery-nav prev"><i class="fas fa-chevron-left"></i></div>
+            <div class="gallery-img"><img src="images/mandangad_1.jpeg" alt="Mandangad Fort"></div>
+            <div class="gallery-img"><img src="images/mandangad_2.jpeg" alt="Mandangad Fort"></div>
+            <div class="gallery-img"><img src="images/mandangad_3.jpeg" alt="Mandangad Fort"></div>
+            <div class="gallery-img"><img src="images/mandangad_4.jpeg" alt="Mandangad Fort"></div>
+            <div class="gallery-nav next"><i class="fas fa-chevron-right"></i></div>
+        </div>
+        <div class="social-icons">
+            <div class="social-icon"><i class="fab fa-instagram"></i></div>
+            <div class="social-icon"><i class="fab fa-tiktok"></i></div>
+        </div>
+        <div class="map-link"><i class="fas fa-map-marker-alt"></i> Google Maps</div>
+    </div>
+</div>
+
+<!-- Vijaydurg Fort -->
+<div class="fort-card" data-fort-id="Vijaydurg Fort">
+    <div class="fort-number">11</div>
+    <div class="fort-card-actions">
+        <button class="fort-card-action-btn"><i class="fas fa-bookmark"></i></button>
+        <button class="fort-card-action-btn"><i class="fas fa-ellipsis-vertical"></i></button>
+    </div>
+    <div class="fort-card-content">
+        <h3 class="fort-title">Vijaydurg Fort</h3>
+        <p class="fort-description">Vijaydurg Fort is one of the strongest marine forts on the Konkan coast, built by Raja Bhoja II and later strengthened by Shivaji Maharaj. It boasts a triple-layered defense system and historic naval importance.</p>
+        <button class="guide-btn"><i class="fas fa-volume-up"></i> Guide</button>
+        <div class="gallery">
+            <div class="gallery-nav prev"><i class="fas fa-chevron-left"></i></div>
+            <div class="gallery-img"><img src="images/vijaydurg_1.jpeg" alt="Vijaydurg Fort"></div>
+            <div class="gallery-img"><img src="images/vijaydurg_2.jpeg" alt="Vijaydurg Fort"></div>
+            <div class="gallery-img"><img src="images/vijaydurg_3.jpeg" alt="Vijaydurg Fort"></div>
+            <div class="gallery-img"><img src="images/vijaydurg_4.jpeg" alt="Vijaydurg Fort"></div>
+            <div class="gallery-nav next"><i class="fas fa-chevron-right"></i></div>
+        </div>
+        <div class="social-icons">
+            <div class="social-icon"><i class="fab fa-instagram"></i></div>
+            <div class="social-icon"><i class="fab fa-tiktok"></i></div>
+        </div>
+        <div class="map-link"><i class="fas fa-map-marker-alt"></i> Google Maps</div>
+    </div>
+</div>
+
+<!-- Shaniwarwada Fort -->
+<div class="fort-card" data-fort-id="Shaniwarwada Fort">
+    <div class="fort-number">12</div>
+    <div class="fort-card-actions">
+        <button class="fort-card-action-btn"><i class="fas fa-bookmark"></i></button>
+        <button class="fort-card-action-btn"><i class="fas fa-ellipsis-vertical"></i></button>
+    </div>
+    <div class="fort-card-content">
+        <h3 class="fort-title">Shaniwarwada Fort</h3>
+        <p class="fort-description">Shaniwarwada, a historic fortification in the heart of Pune, was the seat of the Peshwas of the Maratha Empire. Known for its architecture and haunting tales, it is a popular tourist destination.</p>
+        <button class="guide-btn"><i class="fas fa-volume-up"></i> Guide</button>
+        <div class="gallery">
+            <div class="gallery-nav prev"><i class="fas fa-chevron-left"></i></div>
+            <div class="gallery-img"><img src="images/shaniwarwada_1.jpeg" alt="Shaniwarwada Fort"></div>
+            <div class="gallery-img"><img src="images/shaniwarwada_2.jpeg" alt="Shaniwarwada Fort"></div>
+            <div class="gallery-img"><img src="images/shaniwarwada_3.jpeg" alt="Shaniwarwada Fort"></div>
+            <div class="gallery-img"><img src="images/shaniwarwada_4.jpeg" alt="Shaniwarwada Fort"></div>
+            <div class="gallery-nav next"><i class="fas fa-chevron-right"></i></div>
+        </div>
+        <div class="social-icons">
+            <div class="social-icon"><i class="fab fa-instagram"></i></div>
+            <div class="social-icon"><i class="fab fa-tiktok"></i></div>
+        </div>
+        <div class="map-link"><i class="fas fa-map-marker-alt"></i> Google Maps</div>
+    </div>
+</div>
+
+<!-- Ghangad Fort -->
+<div class="fort-card" data-fort-id="Ghangad Fort">
+    <div class="fort-number">13</div>
+    <div class="fort-card-actions">
+        <button class="fort-card-action-btn"><i class="fas fa-bookmark"></i></button>
+        <button class="fort-card-action-btn"><i class="fas fa-ellipsis-vertical"></i></button>
+    </div>
+    <div class="fort-card-content">
+        <h3 class="fort-title">Ghangad Fort</h3>
+        <p class="fort-description">Ghangad Fort is situated in the heart of the Sahyadris near Tailbaila and is a lesser-known but stunning fort ideal for quick treks. It served as a watchtower for the trade route in the Mulshi region.</p>
+        <button class="guide-btn"><i class="fas fa-volume-up"></i> Guide</button>
+        <div class="gallery">
+            <div class="gallery-nav prev"><i class="fas fa-chevron-left"></i></div>
+            <div class="gallery-img"><img src="images/ghangad_1.jpeg" alt="Ghangad Fort"></div>
+            <div class="gallery-img"><img src="images/ghangad_2.jpeg" alt="Ghangad Fort"></div>
+            <div class="gallery-img"><img src="images/ghangad_3.jpeg" alt="Ghangad Fort"></div>
+            <div class="gallery-img"><img src="images/ghangad_4.jpeg" alt="Ghangad Fort"></div>
+            <div class="gallery-nav next"><i class="fas fa-chevron-right"></i></div>
+        </div>
+        <div class="social-icons">
+            <div class="social-icon"><i class="fab fa-instagram"></i></div>
+            <div class="social-icon"><i class="fab fa-tiktok"></i></div>
+        </div>
+        <div class="map-link"><i class="fas fa-map-marker-alt"></i> Google Maps</div>
+    </div>
+</div>
+
+<!-- Purandar Fort -->
+<div class="fort-card" data-fort-id="Purandar Fort">
+    <div class="fort-number">14</div>
+    <div class="fort-card-actions">
+        <button class="fort-card-action-btn"><i class="fas fa-bookmark"></i></button>
+        <button class="fort-card-action-btn"><i class="fas fa-ellipsis-vertical"></i></button>
+    </div>
+    <div class="fort-card-content">
+        <h3 class="fort-title">Purandar Fort</h3>
+        <p class="fort-description">Purandar Fort, near Pune, is historically significant as the birthplace of Sambhaji Maharaj. It has massive gates, temples, and sweeping views of the surrounding valley.</p>
+        <button class="guide-btn"><i class="fas fa-volume-up"></i> Guide</button>
+        <div class="gallery">
+            <div class="gallery-nav prev"><i class="fas fa-chevron-left"></i></div>
+            <div class="gallery-img"><img src="images/purandar_1.jpeg" alt="Purandar Fort"></div>
+            <div class="gallery-img"><img src="images/purandar_2.jpeg" alt="Purandar Fort"></div>
+            <div class="gallery-img"><img src="images/purandar_3.jpeg" alt="Purandar Fort"></div>
+            <div class="gallery-img"><img src="images/purandar_4.jpeg" alt="Purandar Fort"></div>
+            <div class="gallery-nav next"><i class="fas fa-chevron-right"></i></div>
+        </div>
+        <div class="social-icons">
+            <div class="social-icon"><i class="fab fa-instagram"></i></div>
+            <div class="social-icon"><i class="fab fa-tiktok"></i></div>
+        </div>
+        <div class="map-link"><i class="fas fa-map-marker-alt"></i> Google Maps</div>
+    </div>
+</div>
+
+<!-- Malhargad Fort -->
+<div class="fort-card" data-fort-id="Malhargad Fort">
+    <div class="fort-number">15</div>
+    <div class="fort-card-actions">
+        <button class="fort-card-action-btn"><i class="fas fa-bookmark"></i></button>
+        <button class="fort-card-action-btn"><i class="fas fa-ellipsis-vertical"></i></button>
+    </div>
+    <div class="fort-card-content">
+        <h3 class="fort-title">Malhargad Fort</h3>
+        <p class="fort-description">Malhargad, also known as Sonori Fort, is located near Kalewadi. It is the last fort built by the Marathas and offers splendid views of Jejuri and surrounding regions.</p>
+        <button class="guide-btn"><i class="fas fa-volume-up"></i> Guide</button>
+        <div class="gallery">
+            <div class="gallery-nav prev"><i class="fas fa-chevron-left"></i></div>
+            <div class="gallery-img"><img src="images/malhargad_1.jpeg" alt="Malhargad Fort"></div>
+            <div class="gallery-img"><img src="images/malhargad_2.jpeg" alt="Malhargad Fort"></div>
+            <div class="gallery-img"><img src="images/malhargad_3.jpeg" alt="Malhargad Fort"></div>
+            <div class="gallery-img"><img src="images/malhargad_4.jpeg" alt="Malhargad Fort"></div>
+            <div class="gallery-nav next"><i class="fas fa-chevron-right"></i></div>
+        </div>
+        <div class="social-icons">
+            <div class="social-icon"><i class="fab fa-instagram"></i></div>
+            <div class="social-icon"><i class="fab fa-tiktok"></i></div>
+        </div>
+        <div class="map-link"><i class="fas fa-map-marker-alt"></i> Google Maps</div>
+    </div>
+</div>
+
+
+                
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Initialize map
+            var map = L.map('map').setView([18.5, 73.8], 10);
+
+            // Add OpenStreetMap tiles
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            }).addTo(map);
+
+            // Create fort icon
+            var fortIcon = L.icon({
+                iconUrl: 'castle.png', // Ensure the path is correct
+                iconSize: [40, 40],
+                iconAnchor: [20, 40],
+                popupAnchor: [0, -40]
+            });
+
+
+            // Add fort markers with popups
+            // Existing forts
+            L.marker([18.2339, 73.4485], { icon: fortIcon })
+                .addTo(map)
+                .bindPopup('<div class="popup-title">Raigad Fort</div><div class="popup-desc">Capital fort of Chhatrapati Shivaji Maharaj’s kingdom.</div>');
+
+            L.marker([18.694317, 73.487259], { icon: fortIcon })
+                .addTo(map)
+                .bindPopup('<div class="popup-title">Lohagad Fort</div><div class="popup-desc">Known for its strategic location and architecture.</div>');
+
+            L.marker([18.2778, 73.6167], { icon: fortIcon })
+                .addTo(map)
+                .bindPopup('<div class="popup-title">Torna Fort</div><div class="popup-desc">The first fort captured by Shivaji Maharaj.</div>');
+
+            L.marker([16.0421, 73.4592], { icon: fortIcon })
+                .addTo(map)
+                .bindPopup('<div class="popup-title">Sindhugarh Fort</div><div class="popup-desc">Site of the historic battle with Afzal Khan.</div>');
+
+            // New forts starting from number 10
+
+            // 10. Mandangad Fort
+            L.marker([17.9972, 73.0937], { icon: fortIcon })
+                .addTo(map)
+                .bindPopup('<div class="popup-title">Mandangad Fort</div><div class="popup-desc">Historic fort located in Ratnagiri District.</div>');
+
+            // 11. Vijaydurg Fort
+            L.marker([16.5670, 73.3373], { icon: fortIcon })
+                .addTo(map)
+                .bindPopup('<div class="popup-title">Vijaydurg Fort</div><div class="popup-desc">Known as the "Gibraltar of the East", an important naval base.</div>');
+
+            // 12. Shaniwarwada Fort
+            L.marker([18.5196, 73.8553], { icon: fortIcon })
+                .addTo(map)
+                .bindPopup('<div class="popup-title">Shaniwarwada Fort</div><div class="popup-desc">Historic fortification in Pune, famous for its architecture and legends.</div>');
+
+            // 13. Ghangad Fort
+            L.marker([18.4598, 73.4708], { icon: fortIcon })
+                .addTo(map)
+                .bindPopup('<div class="popup-title">Ghangad Fort</div><div class="popup-desc">Small fort used as a watchtower, near Tail Baila.</div>');
+
+            // 14. Purandar Fort
+            L.marker([18.2978, 73.9490], { icon: fortIcon })
+                .addTo(map)
+                .bindPopup('<div class="popup-title">Purandar Fort</div><div class="popup-desc">Birthplace of Chhatrapati Sambhaji Maharaj, important in Maratha history.</div>');
+
+            // 15. Malhargad Fort
+            L.marker([18.3893, 73.9421], { icon: fortIcon })
+                .addTo(map)
+                .bindPopup('<div class="popup-title">Malhargad Fort</div><div class="popup-desc">Also known as Sonori Fort, the last fort built by the Marathas.</div>');
+
+                L.marker([18.3664, 73.7552], { icon: fortIcon })
+    .addTo(map)
+    .bindPopup('<div class="popup-title">Sinhagad Fort</div><div class="popup-desc">Famous for the battle fought by Tanaji Malusare.</div>');
+
+// Rajmachi Fort
+            L.marker([18.8472, 73.3912], { icon: fortIcon })
+                .addTo(map)
+                .bindPopup('<div class="popup-title">Rajmachi Fort</div><div class="popup-desc">Popular trekking destination with beautiful views and twin forts Shrivardhan and Manaranjan.</div>');
+
+            // Visapur Fort
+            L.marker([18.7105, 73.4926], { icon: fortIcon })
+                .addTo(map)
+                .bindPopup('<div class="popup-title">Visapur Fort</div><div class="popup-desc">Known for its massive fortification walls and scenic monsoon treks.</div>');
+
+            // Harishchandragad Fort
+            L.marker([19.3906, 73.7815], { icon: fortIcon })
+                .addTo(map)
+                .bindPopup('<div class="popup-title">Harishchandragad Fort</div><div class="popup-desc">Ancient fort known for Konkan Kada and stunning sunsets.</div>');
+
+        });
+        
+    </script>
+</body>
+</html>
