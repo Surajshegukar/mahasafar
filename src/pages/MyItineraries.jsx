@@ -1,5 +1,5 @@
 import React, { use } from "react";
-import ItineraryCard from "../component/common/itineraryCard";
+import ItineraryCard from "../component/common/ItineraryCard";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchItineraries } from "../store/itinerarySlice";
 import { useEffect } from "react";
