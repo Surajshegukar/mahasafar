@@ -28,7 +28,8 @@ function App() {
   return (
     <>
       {/* React router */}
-      <Router>
+      <Router basename="/app">
+
         {/* Header */}
         <Header />
         <Routes>
