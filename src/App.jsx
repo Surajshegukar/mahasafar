@@ -34,7 +34,7 @@ function App() {
         <Header />
         <Routes>
           {/* Add your routes here */}
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={()=>window.location.href = "/home"} />
           <Route path="/home" element={<Home />} />
           <Route path="/create-itinerary" element={<CreateItinerary />} />
           <Route path="/my-itineraries" element={<MyItineraries />} />

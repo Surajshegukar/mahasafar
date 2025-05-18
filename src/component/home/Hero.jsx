@@ -1,18 +1,18 @@
-import { useState,useRef,useEffect } from "react";
+import { useState, useRef, useEffect } from "react";
 import { Clock } from "lucide-react";
 import bgvideo from "../../assets/bg-video.mp4"; // Adjust the path as necessary
 import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { saveItinerary } from "../../store/itinerarySlice";
-
+import Cookies from 'js-cookie';
 import { chatSession } from "../../services/AiModel";
 import { FetchDetails } from "../../services/TravelAdvisor";
 import PlaneLoader from "../common/PlaneLoader";
 import { AIPrompt } from "../../config/AIPrompt";
 import axios from "axios";
+import toast from "react-hot-toast";
 
 export default function Hero(props) {
-
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const [isGenerating, setIsGenerating] = useState(false);
@@ -24,100 +24,101 @@ export default function Hero(props) {
     budget: "moderate",
     days: 5,
   });
+  const cookies = Cookies.get("user") ? JSON.parse(Cookies.get("user")) : null;
+  const token = Cookies.get("token");
+  const [suggestions, setSuggestions] = useState([]);
+  const [showSuggestions, setShowSuggestions] = useState(false);
+  const [selectedLocation, setSelectedLocation] = useState(null);
+  const dropdownRef = useRef(null);
 
-   const [suggestions, setSuggestions] = useState([]);
-    const [showSuggestions, setShowSuggestions] = useState(false);
-    const [selectedLocation, setSelectedLocation] = useState(null);
-    const dropdownRef = useRef(null);
-  
-    useEffect(() => {
-      const handleClickOutside = (event) => {
-        if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
-          setShowSuggestions(false);
-        }
-      };
-  
-      document.addEventListener("mousedown", handleClickOutside);
-      return () => {
-        document.removeEventListener("mousedown", handleClickOutside);
-      };
-    }, []);
-  
-    // Debounce function to prevent excessive API calls
-    const debounce = (func, delay) => {
-      let timeoutId;
-      return function (...args) {
-        clearTimeout(timeoutId);
-        timeoutId = setTimeout(() => {
-          func.apply(this, args);
-        }, delay);
-      };
-    };
-  
-    const fetchSuggestions = async (query) => {
-      if (!query || query.length < 2) {
-        setSuggestions([]);
-        return;
-      }
-  
-      setIsLoading(true);
-      try {
-        const options = {
-          method: "GET",
-          url: "https://travel-advisor.p.rapidapi.com/locations/v2/auto-complete",
-          params: {
-            query: query,
-            lang: "en_US",
-            units: "km",
-          },
-          headers: {
-            "x-rapidapi-key": import.meta.env.VITE_RAPID_API_KEY,
-            "x-rapidapi-host": "travel-advisor.p.rapidapi.com",
-          },
-        };
-  
-        const response = await axios.request(options);
-        const results =
-          response.data?.data?.Typeahead_autocomplete?.results || [];
-  
-        setSuggestions(results);
-        setIsLoading(false);
-      } catch (error) {
-        console.error("Error fetching suggestions:", error);
-        setSuggestions([]);
-        setIsLoading(false);
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setShowSuggestions(false);
       }
     };
-  
-    // Create debounced version of fetchSuggestions
-    const debouncedFetchSuggestions = useRef(
-      debounce(fetchSuggestions, 300)
-    ).current;
-  
-    const handleInputChange = (e) => {
-      const value = e.target.value;
-      setDestination(value);
-      setShowSuggestions(true);
-      debouncedFetchSuggestions(value);
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
     };
-  
-    const handleSelectSuggestion = (suggestion) => {
-      // Safe access to nested properties with fallbacks
-      const locationName =
-        suggestion?.detailsV2?.names?.name || "Unknown Location";
-      const locationRegion =
-        suggestion?.detailsV2?.names?.longOnlyHierarchyTypeaheadV2 || "";
-  
-      setDestination(
-        locationRegion ? `${locationName}, ${locationRegion}` : locationName
-      );
-      setFormData((prevData) => ({
-        ...prevData,
-        ['destination']: `${locationName}, ${locationRegion}`,
-      }));
-      setSelectedLocation(suggestion);
-      setShowSuggestions(false);
+  }, []);
+
+  // Debounce function to prevent excessive API calls
+  const debounce = (func, delay) => {
+    let timeoutId;
+    return function (...args) {
+      clearTimeout(timeoutId);
+      timeoutId = setTimeout(() => {
+        func.apply(this, args);
+      }, delay);
     };
+  };
+
+  const fetchSuggestions = async (query) => {
+    if (!query || query.length < 2) {
+      setSuggestions([]);
+      return;
+    }
+
+    setIsLoading(true);
+    try {
+      const options = {
+        method: "GET",
+        url: "https://travel-advisor.p.rapidapi.com/locations/v2/auto-complete",
+        params: {
+          query: query,
+          lang: "en_US",
+          units: "km",
+        },
+        headers: {
+          "x-rapidapi-key": import.meta.env.VITE_RAPID_API_KEY,
+          "x-rapidapi-host": "travel-advisor.p.rapidapi.com",
+        },
+      };
+
+      const response = await axios.request(options);
+      const results =
+        response.data?.data?.Typeahead_autocomplete?.results || [];
+
+      setSuggestions(results);
+      setIsLoading(false);
+    } catch (error) {
+      console.error("Error fetching suggestions:", error);
+      setSuggestions([]);
+      setIsLoading(false);
+    }
+  };
+
+  // Create debounced version of fetchSuggestions
+  const debouncedFetchSuggestions = useRef(
+    debounce(fetchSuggestions, 300)
+  ).current;
+
+  const handleInputChange = (e) => {
+    const value = e.target.value;
+    setDestination(value);
+    setShowSuggestions(true);
+    debouncedFetchSuggestions(value);
+  };
+
+  const handleSelectSuggestion = (suggestion) => {
+    // Safe access to nested properties with fallbacks
+    const locationName =
+      suggestion?.detailsV2?.names?.name || "Unknown Location";
+    const locationRegion =
+      suggestion?.detailsV2?.names?.longOnlyHierarchyTypeaheadV2 || "";
+
+    setDestination(
+      locationRegion ? `${locationName}, ${locationRegion}` : locationName
+    );
+    setFormData((prevData) => ({
+      ...prevData,
+      ["destination"]: `${locationName}, ${locationRegion}`,
+    }));
+    setSelectedLocation(suggestion);
+    setShowSuggestions(false);
+  };
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -138,11 +139,10 @@ export default function Hero(props) {
 
   const getResponse = async (data) => {
     try {
-      
-      const FinalPrompt =   AIPrompt.replace("{destination}", data.destination)
-      .replace("{days}", data.days)
-      .replace("{peoples}", data.people)
-      .replace("{budget}", data.budget);
+      const FinalPrompt = AIPrompt.replace("{destination}", data.destination)
+        .replace("{days}", data.days)
+        .replace("{peoples}", data.people)
+        .replace("{budget}", data.budget);
       console.log(FinalPrompt);
 
       const result = await chatSession.sendMessage(FinalPrompt);
@@ -167,7 +167,7 @@ export default function Hero(props) {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(formData)
+    console.log(formData);
     if (
       !formData.destination ||
       !formData.days ||
@@ -178,12 +178,20 @@ export default function Hero(props) {
       return;
     }
 
+    if (!cookies && !token) {
+      toast.error("please login to continoue !");
+      return;
+      // setTimeout(() => {
+      //   window.location.href = "/login"; // Redirect to login page if not authenticated
+      // }, 3000);
+    }
+
     try {
       setIsGenerating(true);
       setErrors({});
 
       const generatedItinerary = await getResponse(formData);
-      generatedItinerary.destination  = formData.destination;
+      generatedItinerary.destination = formData.destination;
       console.log("Generated Itinerary:", generatedItinerary.destination);
 
       if (!generatedItinerary) {
@@ -294,11 +302,11 @@ export default function Hero(props) {
                       name="destination"
                       value={destination}
                       onChange={handleInputChange}
-                    placeholder="Where to? (e.g. Shivneri Fort, Maharashtra)"
+                      placeholder="Where to? (e.g. Shivneri Fort, Maharashtra)"
                       className="w-full border-0 focus:ring-0 p-1 text-gray-800"
                       required
                     />
-                     {isLoading && (
+                    {isLoading && (
                       <span className="text-gray-400">
                         <svg
                           className="animate-spin h-5 w-5"
@@ -324,7 +332,7 @@ export default function Hero(props) {
                     )}
                   </div>
                   {showSuggestions && suggestions.length > 0 && (
-                    <div  className="absolute z-10 w-full mt-1 bg-white rounded-md shadow-lg max-h-60 overflow-auto">
+                    <div className="absolute z-10 w-full mt-1 bg-white rounded-md shadow-lg max-h-60 overflow-auto">
                       {suggestions.map((suggestion) => {
                         // Safe access to nested properties
                         const name = suggestion?.detailsV2?.names?.name || "";
@@ -408,18 +416,14 @@ export default function Hero(props) {
                         </option>
                       ))}
                     </select>
-                    <span className="text-gray-400">
-                     
-                    </span>
+                    <span className="text-gray-400"></span>
                   </div>
                 </div>
 
                 {/* Budget */}
                 <div className="md:w-40 mb-2 md:mb-0">
                   <div className="flex items-center bg-white rounded p-2">
-                    <span className="text-gray-500 mr-2">
-                  
-                    </span>
+                    <span className="text-gray-500 mr-2"></span>
                     <select
                       name="budget"
                       value={formData.budget}
@@ -432,18 +436,14 @@ export default function Hero(props) {
                         </option>
                       ))}
                     </select>
-                    <span className="text-gray-400">
-                     
-                    </span>
+                    <span className="text-gray-400"></span>
                   </div>
                 </div>
 
                 {/* Number of Days */}
                 <div className="md:w-40 mb-2 md:mb-0">
                   <div className="flex items-center bg-white rounded p-2">
-                    <span className="text-gray-500 mr-2">
-                    
-                    </span>
+                    <span className="text-gray-500 mr-2"></span>
                     <select
                       name="days"
                       value={formData.days}
@@ -458,9 +458,7 @@ export default function Hero(props) {
                         )
                       )}
                     </select>
-                    <span className="text-gray-400">
-                     
-                    </span>
+                    <span className="text-gray-400"></span>
                   </div>
                 </div>
 

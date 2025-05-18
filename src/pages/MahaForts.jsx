@@ -192,7 +192,7 @@ export default function MaharashtraFortsExplorer() {
                 <div className="w-2/3 p-4">
                   <h3 className="text-xl font-semibold">{fort.title}</h3>
                   <p className="text-sm text-gray-600 mb-2">{fort.location}</p>
-                  <p className="text-sm">{fort.description}</p>
+                  <p className="text-sm">{fort.short_description}</p>
                 </div>
               </div>
             ))}
@@ -224,7 +224,7 @@ export default function MaharashtraFortsExplorer() {
                     <div className="text-center">
                       <h2 className="text-lg font-semibold">{fort.title}</h2>
                       {/* <p className="text-sm">{fort.location}</p> */}
-                      <p className="text-xs mt-1">{fort.description}...</p>
+                      <p className="text-xs mt-1">{fort.short_description}...</p>
                     </div>
                   </Popup>
                 </Marker>

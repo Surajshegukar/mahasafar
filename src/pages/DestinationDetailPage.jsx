@@ -46,7 +46,11 @@ export default function DestinationDetailPage() {
   };
 
   // Activities data
-  const activities = selectedArray.activities || ["Trekking", "Historical sightseeing", "Photography"];
+  const activities = selectedArray.activities.split(
+    ","
+  ).map((activity) => activity.trim() // Trim whitespace
+  ).filter((activity) => activity !== "" // Filter out empty strings
+  ) || ["Trekking", "Historical sightseeing", "Photography"];
 
   // Shopping items
   const shoppingItems = [

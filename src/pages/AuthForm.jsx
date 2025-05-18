@@ -23,7 +23,7 @@ const AuthForm = () => {
       dispatch(login({ email, password }))
         .unwrap()
         .then((response) => {
-          navigate("/");
+          navigate("/home");
           toast.success("Login successful!");
         })
         .catch((error) => {
@@ -33,7 +33,7 @@ const AuthForm = () => {
       dispatch(register({ email, password, name, code }))
         .unwrap()
         .then((response) => {
-          navigate("/");
+          navigate("/home");
           toast.success("Registration successful!");
         })
         .catch((error) => {
