@@ -4,6 +4,8 @@ import { login, register } from "../store/authSlice";
 import { useCookies } from "react-cookie";
 import toast from "react-hot-toast";
 import { useNavigate } from "react-router-dom";
+import { GoogleLogin } from '@react-oauth/google';
+import { googleLogin } from "../store/authSlice";
 
 const AuthForm = () => {
   const [isLogin, setIsLogin] = useState(true);
@@ -42,6 +44,22 @@ const AuthForm = () => {
         });
     }
   };
+
+  const handleGoogleSuccess = (credentialResponse) => {
+  dispatch(googleLogin({ credential: credentialResponse.credential }))
+    .unwrap()
+    .then((response) => {
+      navigate("/home");
+      toast.success("Google login successful!");
+    })
+    .catch((error) => {
+      toast.error("Google login failed. Please try again.");
+    });
+};
+
+const handleGoogleError = () => {
+  toast.error("Google login failed. Please try again.");
+};
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-100">
@@ -161,6 +179,28 @@ const AuthForm = () => {
             >
               {isLogin ? "Sign In" : "Create Account"}
             </button>
+
+            <div className="mt-4">
+  <div className="relative">
+    <div className="absolute inset-0 flex items-center">
+      <div className="w-full border-t border-gray-300" />
+    </div>
+    <div className="relative flex justify-center text-sm">
+      <span className="px-2 bg-white text-gray-500">Or continue with</span>
+    </div>
+  </div>
+  
+  <div className="mt-4">
+    <GoogleLogin
+      onSuccess={handleGoogleSuccess}
+      onError={handleGoogleError}
+      useOneTap
+      theme="outline"
+      size="large"
+      width="100%"
+    />
+  </div>
+</div>
             
           
           </form>

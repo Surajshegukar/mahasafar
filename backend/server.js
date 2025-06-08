@@ -9,10 +9,11 @@ const bcrypt = require('bcryptjs');
 const connectDB = require('./dbConnect');
 const axios = require('axios');
 const cheerio = require('cheerio');
+const { OAuth2Client } = require('google-auth-library');
 
 // Load environment variables
 dotenv.config();
-
+const client = new OAuth2Client(process.env.GOOGLE_CLIENT_ID);
 const app = express();
 
 // Middleware
@@ -35,7 +36,12 @@ const itinerarySchema = new mongoose.Schema({
   json : { type: String, required: true },
   travelAdvisorData : { type: String },
   destination :{ type: String },
-  userId: { type: mongoose.Schema.Types.ObjectId, ref: 'User' }
+  userId: { type: mongoose.Schema.Types.ObjectId, ref: 'User' },
+  googleId: {
+  type: String,
+  unique: true,
+  sparse: true // Allows null values to be non-unique
+}
 });
 
 
@@ -189,7 +195,52 @@ app.post('/download_images', async (req, res) => {
     return res.status(500).json({ error: "Failed to fetch images." });
   }
 });
-
+// Google Login endpoint
+app.post('/api/google-login', async (req, res) => {
+  try {
+    const { credential } = req.body;
+    
+    // Verify the Google token
+    const ticket = await client.verifyIdToken({
+      idToken: credential,
+      audience: process.env.GOOGLE_CLIENT_ID,
+    });
+    
+    const payload = ticket.getPayload();
+    const { email, name, sub: googleId } = payload;
+    
+    // Check if user exists
+    let user = await User.findOne({ email });
+    
+    if (!user) {
+      // Create new user if doesn't exist
+      user = new User({
+        name,
+        email,
+        googleId,
+        // Don't set password for Google users
+      });
+      await user.save();
+    } else if (!user.googleId) {
+      // Link existing account with Google
+      user.googleId = googleId;
+      await user.save();
+    }
+    
+    const token = jwt.sign({ userId: user._id }, process.env.JWT_SECRET);
+    res.json({
+      token,
+      user: {
+        _id: user._id,
+        email: user.email,
+        name: user.name
+      }
+    });
+  } catch (error) {
+    console.error('Google login error:', error);
+    res.status(400).json({ error: 'Google login failed' });
+  }
+});
 
 app.use((err, req, res, next) => {
   console.error(err.stack);
@@ -200,4 +251,5 @@ const PORT = process.env.PORT || 5001;
 
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
+  console.log(`Base URL: http://localhost:${PORT}/api`);
 }); 

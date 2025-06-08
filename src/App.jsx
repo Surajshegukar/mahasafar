@@ -22,6 +22,7 @@ import MaharashtraFortsExplorer from "./pages/MahaForts";
 import DestinationDetailPage from "./pages/DestinationDetailPage";
 import Terms from "./pages/Terms";
 
+
 function App() {
 
 
