@@ -68,7 +68,7 @@ const handleGoogleError = () => {
         <div className="w-1/2 p-12">
         <a href="javascript:void(0)" className="flex items-center justify-center mb-5">
             <span className="uppercase text-2xl font-medium text-orange-500">Maha </span>
-            <span className="uppercase text-2xl font-light text-gray-500">Safar</span>
+            <span className="uppercase text-2xl font-light text-gray-500">Trip</span>
           </a>
           
           <h2 className="text-md font-medium text-gray-800 mb-8">

@@ -10,7 +10,7 @@ import {
   miscellaneous,
 } from "../api/data";
 import { useParams } from "react-router-dom";
-import Hero2 from "../component/home/Hero2";
+import Hero2 from "../component/home/HeroMini";
 import { Search } from "lucide-react";
 
 // Define default and selected marker icons

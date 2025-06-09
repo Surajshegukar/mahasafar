@@ -30,7 +30,7 @@ export default function Header() {
     toast.error("please login to continoue !");
   setTimeout(() => {
     window.location.href = "/login"; // Redirect to login page if not authenticated
-  }, 3000);
+  }, 1000);
 }
 
 
@@ -41,7 +41,7 @@ export default function Header() {
         <div className="flex items-center">
           <a href="/home" className="flex items-center">
             <span className="uppercase text-2xl font-medium text-orange-500">Maha </span>
-            <span className="uppercase text-2xl font-light text-gray-500">safar</span>
+            <span className="uppercase text-2xl font-light text-gray-500">Trip</span>
           </a>
         </div>
 

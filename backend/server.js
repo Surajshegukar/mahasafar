@@ -17,7 +17,23 @@ const client = new OAuth2Client(process.env.GOOGLE_CLIENT_ID);
 const app = express();
 
 // Middleware
-app.use(cors());
+// app.use(cors());
+// app.use(cors({ origin: ["'https://maha-backend.vercel.app",'https://mahasafar.vercel.app/','http://localhost:5001','http://localhost:5173'], credentials: true }));
+app.use(cors({
+  origin: '*', // Allow requests from your frontend
+  methods: ['GET', 'POST', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization'],
+  credentials: true
+}));
+
+// app.options('/api/google-login', (req, res) => {
+//   res.setHeader('Access-Control-Allow-Origin', 'https://mahasafar.vercel.app');
+//   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
+//   res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
+//   res.setHeader('Access-Control-Allow-Credentials', 'true');
+//   res.sendStatus(200);
+// });
+
 app.use(express.json());
 app.use((req, res, next) => {
     res.setHeader("Cross-Origin-Opener-Policy", "same-origin");
@@ -29,9 +45,10 @@ connectDB();
 
 // User Schema
 const userSchema = new mongoose.Schema({
-  name:{type: String, required:true},
+  name:{type: String, required:false},
   email: { type: String, required: true, unique: true },
-  password: { type: String },
+  password: { type: String, required: false }, // Optional for Google users
+  googleId: { type: String, unique: true, sparse: true }, // Optional for Google users
   itineraries: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Itinerary' }]
 });
 
@@ -42,11 +59,9 @@ const itinerarySchema = new mongoose.Schema({
   travelAdvisorData : { type: String },
   destination :{ type: String },
   userId: { type: mongoose.Schema.Types.ObjectId, ref: 'User' },
-  googleId: {
-  type: String,
-  unique: true,
-  sparse: true // Allows null values to be non-unique
-}
+  createdAt: { type: Date, default: Date.now }
+
+  
 });
 
 

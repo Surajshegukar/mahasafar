@@ -18,7 +18,7 @@ export default function Footer() {
           <div className="flex flex-col">
             <div className="text-3xl font-bold mb-8">
               <span className="text-orange-400 uppercase">Maha</span>
-              <span className="text-white uppercase">safar</span>
+              <span className="text-white uppercase">Trip</span>
             </div>
           </div>
           
@@ -100,7 +100,7 @@ export default function Footer() {
         
         {/* Copyright */}
         <div className="text-center">
-          <p>© Maha Safar {currentYear}. All right reserved.</p>
+          <p>© Maha Trip {currentYear}. All right reserved.</p>
         </div>
       </div>
     </footer>

@@ -292,7 +292,7 @@ export default function Hero(props) {
   };
 
   return (
-    <section className="relative text-white py-24">
+    <section className="relative text-white py-1">
       {isGenerating && (
         <div className="absolute inset-0 flex items-center justify-center z-20">
           <PlaneLoader />

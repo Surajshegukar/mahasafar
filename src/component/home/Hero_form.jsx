@@ -1,29 +1,31 @@
-import { useRef, useState, useEffect } from "react";
+import { useState, useRef, useEffect } from "react";
 import { Clock } from "lucide-react";
 import bgvideo from "../../assets/bg-video.mp4"; // Adjust the path as necessary
 import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { saveItinerary } from "../../store/itinerarySlice";
-
+import Cookies from 'js-cookie';
 import { chatSession } from "../../services/AiModel";
 import { FetchDetails } from "../../services/TravelAdvisor";
 import PlaneLoader from "../common/PlaneLoader";
 import { AIPrompt } from "../../config/AIPrompt";
 import axios from "axios";
+import toast from "react-hot-toast";
 
-export default function Hero2(props) {
+export default function Hero(props) {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const [isGenerating, setIsGenerating] = useState(false);
-  const [destination, setDestination] = useState("");
   const [isLoading, setIsLoading] = useState(false);
+  const [destination, setDestination] = useState("");
   const [formData, setFormData] = useState({
     destination: "",
     people: 1,
     budget: "moderate",
-    days: 1,
+    days: 5,
   });
-
+  const cookies = Cookies.get("user") ? JSON.parse(Cookies.get("user")) : null;
+  const token = Cookies.get("token");
   const [suggestions, setSuggestions] = useState([]);
   const [showSuggestions, setShowSuggestions] = useState(false);
   const [selectedLocation, setSelectedLocation] = useState(null);
@@ -112,7 +114,7 @@ export default function Hero2(props) {
     );
     setFormData((prevData) => ({
       ...prevData,
-      ['destination']: `${locationName}, ${locationRegion}`,
+      ["destination"]: `${locationName}, ${locationRegion}`,
     }));
     setSelectedLocation(suggestion);
     setShowSuggestions(false);
@@ -165,6 +167,7 @@ export default function Hero2(props) {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    console.log(formData);
     if (
       !formData.destination ||
       !formData.days ||
@@ -173,6 +176,14 @@ export default function Hero2(props) {
     ) {
       alert("Please fill all the fields");
       return;
+    }
+
+    if (!cookies && !token) {
+      toast.error("please login to continoue !");
+      return;
+      // setTimeout(() => {
+      //   window.location.href = "/login"; // Redirect to login page if not authenticated
+      // }, 3000);
     }
 
     try {
@@ -206,10 +217,10 @@ export default function Hero2(props) {
   };
 
   return (
-    <section className="relative  text-white w-full mb-3">
+    <section className="relative   text-white py-24">
       {/* <PlaneLoader/> */}
       {isGenerating && (
-        <div className="fixed w-full h-full top-0 left-0 inset-0 flex items-center justify-center z-20">
+        <div className="absolute inset-0 flex items-center justify-center z-20">
           <PlaneLoader />
         </div>
       )}
@@ -223,13 +234,52 @@ export default function Hero2(props) {
 
       {/* Hot Air Balloon Image */}
 
-      <div className="container mx-auto relative z-10">
-        <div className="max-w-3xl text-start">
-          <div className="w-full p-4 bg-orange-50 rounded-md shadow-md">
-            <div onSubmit={() => handleSubmit()}>
-              <div className="flex flex-col md:flex-row md:items-center md:space-x-2">
+      <div className="absolute left-0 top-0 h-full w-full overflow-hidden">
+        <video
+          src={bgvideo}
+          autoPlay // Corrected `autoplay` to `autoPlay`
+          muted // Added `muted` to allow autoplay in modern browsers
+          loop // Added `loop` to make the video play continuously
+          alt="Hot air balloon"
+          className="h-full object-cover w-full"
+          style={{ filter: "blur(1px)" }} // Optional: Add a blur effect to the background video
+        />
+        <div className="absolute inset-0 bg-black opacity-50"></div>
+      </div>
+
+      <div className="container mx-auto px-4 relative z-10">
+        <div className="max-w-3xl mx-auto text-center">
+          {/* Main Heading */}
+          <h1 className="text-4xl md:text-5xl font-bold mb-6">{title}</h1>
+          {/* Subheading */}
+          <p className="text-xl mb-12">{subtitle}</p>
+          {/* Search Form */}
+          {/* <form onSubmit={handleSubmit} className="mb-6">
+            <div className="relative flex items-center max-w-2xl mx-auto">
+              <input
+                type="text"
+                className="w-full bg-white text-gray-900 font-medium  px-6 py-4 rounded-full border border-orange-600 focus:border-orange-700 focus:ring focus:ring-orange-200 transition-colors duration-300 shadow-sm"
+                style={{
+                  boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
+                  paddingRight: "125px",
+                }} // Optional: Add a shadow effect to the input field
+                placeholder="Where do you want to go?"
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+              />
+              <button
+                type="submit"
+                className="absolute right-2 bg-orange-600 hover:bg-orange-700 text-white font-medium px-6 py-3 rounded-full transition-colors"
+              >
+                Craft Trip
+              </button>
+            </div>
+          </form> */}
+          <div className="w-full bg-gray-100 bg-opacity-90 p-4 rounded-md shadow-md">
+            <form onSubmit={handleSubmit}>
+              <div className="relative flex flex-col md:flex-row md:items-center md:space-x-2">
                 {/* Destination */}
-                <div className="flex-1 mb-2 md:mb-0 relative" ref={dropdownRef}>
+                <div className=" flex-2 mb-2 md:mb-0">
                   <div className="flex items-center bg-white rounded p-2">
                     <span className="text-gray-500 mr-2">
                       <svg
@@ -253,7 +303,8 @@ export default function Hero2(props) {
                       value={destination}
                       onChange={handleInputChange}
                       placeholder="Where to? (e.g. Shivneri Fort, Maharashtra)"
-                      className="w-full border-0 focus:ring-0 focus:border-orange-400 focus:outline-0 p-1 text-gray-800"
+                      className="w-full border-0 focus:ring-0 p-1 text-gray-800"
+                      required
                     />
                     {isLoading && (
                       <span className="text-gray-400">
@@ -280,9 +331,8 @@ export default function Hero2(props) {
                       </span>
                     )}
                   </div>
-
                   {showSuggestions && suggestions.length > 0 && (
-                    <div  className="absolute z-10 w-full mt-1 bg-white rounded-md shadow-lg max-h-60 overflow-auto">
+                    <div className="absolute z-10 w-full mt-1 bg-white rounded-md shadow-lg max-h-60 overflow-auto">
                       {suggestions.map((suggestion) => {
                         // Safe access to nested properties
                         const name = suggestion?.detailsV2?.names?.name || "";
@@ -366,20 +416,71 @@ export default function Hero2(props) {
                         </option>
                       ))}
                     </select>
+                    <span className="text-gray-400"></span>
+                  </div>
+                </div>
+
+                {/* Budget */}
+                <div className="md:w-40 mb-2 md:mb-0">
+                  <div className="flex items-center bg-white rounded p-2">
+                    <span className="text-gray-500 mr-2"></span>
+                    <select
+                      name="budget"
+                      value={formData.budget}
+                      onChange={handleChange}
+                      className="w-full border-0 focus:ring-0 p-1 text-gray-800 bg-transparent"
+                    >
+                      {budgetOptions.map((option) => (
+                        <option key={option.value} value={option.value}>
+                          {option.label}
+                        </option>
+                      ))}
+                    </select>
+                    <span className="text-gray-400"></span>
+                  </div>
+                </div>
+
+                {/* Number of Days */}
+                <div className="md:w-40 mb-2 md:mb-0">
+                  <div className="flex items-center bg-white rounded p-2">
+                    <span className="text-gray-500 mr-2"></span>
+                    <select
+                      name="days"
+                      value={formData.days}
+                      onChange={handleChange}
+                      className="w-full border-0 focus:ring-0 p-1 text-gray-800 bg-transparent"
+                    >
+                      {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 14, 21, 30].map(
+                        (num) => (
+                          <option key={num} value={num}>
+                            {num} {num === 1 ? "Day" : "Days"}
+                          </option>
+                        )
+                      )}
+                    </select>
+                    <span className="text-gray-400"></span>
                   </div>
                 </div>
 
                 {/* Search Button */}
                 <div className="md:w-auto">
                   <button
-                    onClick={handleSubmit}
-                    className="w-full md:w-auto bg-orange-500 hover:bg-orange-600 text-white font-medium px-3 py-2 rounded transition-colors"
+                    type="submit"
+                    className="w-full md:w-auto bg-orange-500 hover:bg-orange-600 text-white font-medium px-6 py-3 rounded transition-colors"
                   >
-                    Generate
+                    Search
                   </button>
                 </div>
               </div>
-            </div>
+            </form>
+          </div>
+
+          <div className="flex items-center justify-center text-sm text-white">
+            {/* <Clock size={16} className="mr-2" /> */}
+            {/* <p>
+              Example: 2 days trip to Goa, want to visit places for cool
+              instagram photos
+            </p> */}
           </div>
         </div>
       </div>

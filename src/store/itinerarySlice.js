@@ -24,7 +24,7 @@ api.interceptors.request.use((config) => {
   // const token = localStorage.getItem('token');
   const default_token = `eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2ZmZTU4NjNmNWRmMmU4ZWMwYTg3OTAiLCJpYXQiOjE3NDUxOTM4MjF9.J3CLniALB9TfeP6vdgVpo5iVngAyMDZoqxe5T0qmSaM`;
 
-  const token = Cookies.get('token') || default_token; // Use the token from cookies or a default token for testing
+  const token = Cookies.get('token') ; // Use the token from cookies or a default token for testing
   if (token) {
     config.headers.Authorization = `Bearer ${token}`;
   }
