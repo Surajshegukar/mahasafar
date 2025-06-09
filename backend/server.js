@@ -17,14 +17,14 @@ const client = new OAuth2Client(process.env.GOOGLE_CLIENT_ID);
 const app = express();
 
 // Middleware
-// app.use(cors());
+app.use(cors());
 // app.use(cors({ origin: ["'https://maha-backend.vercel.app",'https://mahasafar.vercel.app/','http://localhost:5001','http://localhost:5173'], credentials: true }));
-app.use(cors({
-  origin: '*', // Allow requests from your frontend
-  methods: ['GET', 'POST', 'OPTIONS'],
-  allowedHeaders: ['Content-Type', 'Authorization'],
-  credentials: true
-}));
+// app.use(cors({
+//   origin: '*', // Allow requests from your frontend
+//   methods: ['GET', 'POST', 'OPTIONS'],
+//   allowedHeaders: ['Content-Type', 'Authorization'],
+//   credentials: true
+// }));
 
 // app.options('/api/google-login', (req, res) => {
 //   res.setHeader('Access-Control-Allow-Origin', 'https://mahasafar.vercel.app');
@@ -35,11 +35,11 @@ app.use(cors({
 // });
 
 app.use(express.json());
-app.use((req, res, next) => {
-    res.setHeader("Cross-Origin-Opener-Policy", "same-origin");
-    res.setHeader("Cross-Origin-Embedder-Policy", "require-corp");
-    next();
-});
+// app.use((req, res, next) => {
+//     res.setHeader("Cross-Origin-Opener-Policy", "same-origin");
+//     res.setHeader("Cross-Origin-Embedder-Policy", "require-corp");
+//     next();
+// });
 
 connectDB();
 
