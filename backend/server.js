@@ -19,6 +19,11 @@ const app = express();
 // Middleware
 app.use(cors());
 app.use(express.json());
+app.use((req, res, next) => {
+    res.setHeader("Cross-Origin-Opener-Policy", "same-origin");
+    res.setHeader("Cross-Origin-Embedder-Policy", "require-corp");
+    next();
+});
 
 connectDB();
 
@@ -26,7 +31,7 @@ connectDB();
 const userSchema = new mongoose.Schema({
   name:{type: String, required:true},
   email: { type: String, required: true, unique: true },
-  password: { type: String, required: true },
+  password: { type: String },
   itineraries: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Itinerary' }]
 });
 
