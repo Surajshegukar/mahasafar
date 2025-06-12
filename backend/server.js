@@ -18,7 +18,7 @@ const app = express();
 
 // Middleware
 app.use(cors());
-// app.use(cors({ origin: ["'https://maha-backend.vercel.app",'https://mahasafar.vercel.app/','http://localhost:5001','http://localhost:5173'], credentials: true }));
+app.use(cors({ origin: ["'https://maha-backend.vercel.app",'https://mahasafar.vercel.app/','http://localhost:5001','http://localhost:5173'], credentials: true }));
 // app.use(cors({
 //   origin: '*', // Allow requests from your frontend
 //   methods: ['GET', 'POST', 'OPTIONS'],
@@ -35,11 +35,11 @@ app.use(cors());
 // });
 
 app.use(express.json());
-// app.use((req, res, next) => {
-//     res.setHeader("Cross-Origin-Opener-Policy", "same-origin");
-//     res.setHeader("Cross-Origin-Embedder-Policy", "require-corp");
-//     next();
-// });
+app.use((req, res, next) => {
+    res.setHeader("Cross-Origin-Opener-Policy", "same-origin");
+    res.setHeader("Cross-Origin-Embedder-Policy", "require-corp");
+    next();
+});
 
 connectDB();
 
@@ -262,10 +262,10 @@ app.post('/api/google-login', async (req, res) => {
   }
 });
 
-app.use((err, req, res, next) => {
-  console.error(err.stack);
-  res.status(500).json({ error: 'Something went wrong!' });
-});
+// app.use((err, req, res, next) => {
+//   console.error(err.stack);
+//   res.status(500).json({ error: 'Something went wrong!' });
+// });
 
 const PORT = process.env.PORT || 5001;
 
